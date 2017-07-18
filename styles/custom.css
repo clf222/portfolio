@@ -1,5 +1,23 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #333;
 
+}
 
-.hero {
-  background-image: url("paper.gif");
+.jumbotron-fluid {
+  background-image: url("../img/wrench.jpeg");
+  color:#333;
+  background-size: cover;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+.headline {
+  font-size: 3em;
+}
+li {
+  list-style: none;
+  display: inline;
+  margin-right: 2em;
 }

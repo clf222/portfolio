@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="56px" viewBox="0 0 102 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Custom-Preset" transform="translate(0.000000, -9.000000)" fill="#000000">
+            <g id="Group" transform="translate(0.000000, 6.000000)">
+                <text id="cl-francies" font-family="Merriweather-Regular, Merriweather" font-size="20" font-weight="normal">
+                    <tspan x="0.07421875" y="20">cl francies</tspan>
+                </text>
+                <rect id="Rectangle" x="4" y="26" width="96" height="3" rx="1.5"></rect>
+                <text id="Design-&amp;-Code" font-family="Raleway-Regular, Raleway" font-size="14" font-weight="normal">
+                    <tspan x="2.875" y="55">Design &amp; Code</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
