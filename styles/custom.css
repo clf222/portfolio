@@ -27,15 +27,46 @@ li {
   list-style: none;
   display: inline;
   margin-right: 2em;
+  padding-left: 0;
+}
+#right-header {
+padding-top: 10em;
+text-align: center;
+}
+
+
+footer {
+  margin: 0 auto;
+  padding-top: 25px;
+
+
 }
 /*responsive */
+@media (min-width: 850px) and (max-width: 939px) {
+  .jumbotron-fluid {
+    background-size: cover;
+    max-width: 60%;
+    height: 640px;
+  }
+  #right-header {
+  padding-top: 10em;
+  text-align: left;
+  }
+}
 @media (min-width: 940px) {
   .jumbotron-fluid {
     background-size: cover;
     max-width: 70%;
-    height: 640px;
+    height: 600px;
+  }
+  #right-header {
+  padding-top: 10em;
+  text-align: right;
   }
 }
+  /*@media (min-width: 1120px) {
+
+  }*/
 @media (max-width: 1275px) {
 h1, h2, h3 {
   text-align: left;
@@ -50,4 +81,5 @@ h2 {
 h3 {
   font-size: 1.25em;
   }
+
 }
