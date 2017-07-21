@@ -7,7 +7,14 @@ body {
 .jumbotron-fluid {
   background-image: url("../img/wrench.jpeg");
   color:#333;
-  background-size: cover;
+  max-width:70%;
+
+  display:block;
+  height: auto;
+  background-size: 0 0;
+  /*background-size: cover;*/
+  margin: auto;
+  padding-top: 1em;
 }
 
 h1, h2 {
@@ -20,4 +27,27 @@ li {
   list-style: none;
   display: inline;
   margin-right: 2em;
+}
+/*responsive */
+@media (min-width: 940px) {
+  .jumbotron-fluid {
+    background-size: cover;
+    max-width: 70%;
+    height: 640px;
+  }
+}
+@media (max-width: 1275px) {
+h1, h2, h3 {
+  text-align: left;
+}
+h1.display-1{
+  font-size: 2em;
+  padding-left: 0;
+  }
+h2 {
+  font-size: 1.5em;
+  }
+h3 {
+  font-size: 1.25em;
+  }
 }
