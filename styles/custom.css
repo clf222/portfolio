@@ -1,18 +1,22 @@
 body {
     font-family: 'Raleway', sans-serif;
     color: #333;
-
+    background-image: url("../img/wrench.jpeg");
+    /*background-size: 0 0;*/
+    background-size: cover;
+    margin: auto 0 auto 30%;
+    max-height: 70%;
 }
 
 .jumbotron-fluid {
-  background-image: url("../img/wrench.jpeg");
+  /*background-image: url("../img/wrench.jpeg");*/
   color:#333;
   max-width:70%;
 
   display:block;
   height: auto;
-  background-size: 0 0;
-  /*background-size: cover;*/
+  /*background-size: 0 0;
+  background-size: cover;*/
   margin: auto;
   padding-top: 1em;
 }
@@ -56,6 +60,7 @@ footer {
 @media (min-width: 940px) {
   .jumbotron-fluid {
     background-size: cover;
+
     max-width: 70%;
     height: 570px;
   }
