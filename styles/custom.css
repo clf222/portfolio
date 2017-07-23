@@ -1,38 +1,85 @@
-body {
-    font-family: 'Raleway', sans-serif;
-    color: #333;
 
-}
 
-.jumbotron-fluid {
-  background-image: url("../img/wrench.jpeg");
-  color:#333;
-  max-width:70%;
-
-  display:block;
-  height: auto;
-  background-size: 0 0;
-  /*background-size: cover;*/
-  margin: auto;
-  padding-top: 1em;
-}
-
-h1, h2 {
-  font-weight: 700;
-}
-.headline {
-  font-size: 3em;
-}
 li {
   list-style: none;
   display: inline;
   margin-right: 2em;
   padding-left: 0;
+
 }
-#right-header {
-padding-top: 10em;
-text-align: center;
+
+img {
+  max-width: 100%;
 }
+
+h1, h2, h3,h4, h6, p {
+  text-align: center;
+}
+h6 {
+  font-weight: 700;
+}
+h1 {
+  margin-top: .3em auto;
+}
+h2 {
+  margin-top: .1em auto;
+}
+
+.right-header {
+  margin-top: 7em;
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+nav {
+  margin: 1em auto;
+}
+.active {
+  text-decoration: none;
+}
+
+
+
+
+ body {
+
+    color: #333;
+    background: #ffffff url("../images/wrench.jpeg") no-repeat right -40px;
+
+    background-size: 30%;
+    /*margin: auto 0 auto;*/
+
+
+
+}
+
+
+/*.jumbotron-fluid {
+  /*background-image: url("../img/wrench.jpeg");*/
+  /*color:#333333;
+  max-width:70%;
+
+  display:block;
+  height: auto;
+  /*background-size: 0 0;
+  background-size: cover;*/
+  /*margin: auto;
+  padding-top: 1em;*/
+/*}*/
+
+/*h1, h2 {
+  font-weight: 700;
+}
+.headline {
+  font-size: 3em;
+}
+
+
+
 
 
 footer {
@@ -40,9 +87,9 @@ footer {
   padding-top: 25px;
 
 
-}
+}*/
 /*responsive */
-@media (min-width: 850px) and (max-width: 939px) {
+/*@media (min-width: 850px) and (max-width: 939px) {
   .jumbotron-fluid {
     background-size: cover;
     max-width: 60%;
@@ -56,6 +103,7 @@ footer {
 @media (min-width: 940px) {
   .jumbotron-fluid {
     background-size: cover;
+
     max-width: 70%;
     height: 570px;
   }
@@ -67,7 +115,7 @@ footer {
   /*@media (min-width: 1120px) {
 
   }*/
-@media (max-width: 1275px) {
+/*@media (max-width: 1275px) {
 h1, h2, h3 {
   text-align: left;
 }
@@ -82,4 +130,4 @@ h3 {
   font-size: 1.25em;
   }
 
-}
+}*/

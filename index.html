@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
     <script src="https://use.fontawesome.com/ac2791126c.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link href="styles/normalize.css" type="text/css" rel="stylesheet">
+    <link href="styles/skeleton.css" type="text/css" rel="stylesheet">
     <!--  custom css -->
     <link rel="stylesheet" href="styles/custom.css" type="text/css">
 
@@ -18,70 +19,55 @@
 
   <!-- nav and logo -->
 
-
-  <nav class="navbar navbar-toggleable-md navbar-light bg-faded m-b-1">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-<a class="navbar-brand" href="#">
-  <img src="img/logo.svg" width="103" height="58" class="d-inline-block align-top" alt="logo">
-
+<div class="container">
+<nav class = "row u-full-width">
+<a class="two columns" href="#">
+  <img src="images/logo.svg" width="103" height="58" alt="logo">
 </a>
+    <ul class="six columns">
+    <li>  <a class="nav-item nav-link active" href="#">Home</a></i>
+    <li>  <a class="nav-item nav-link" href="pages/case-studies.html">Projects</a></li>
+    <li>  <a class="nav-item nav-link" href="pages/about.html">About</a></li>
+    <li>  <a class="nav-item nav-link" href="pages/contact.html">Contact</a></li>
+  </ul>
 
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="pages/case-studies.html">Projects</a>
-      <a class="nav-item nav-link" href="pages/about.html">About</a>
-      <a class="nav-item nav-link" href="pages/contact.html">Contact</a>
-    </div>
-  </div>
+
 </nav>
   <!-- end nav and logo -->
   <!-- hero-->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container-fluid text-center">
-        <!-- <img src="img/wrench.jpeg" class="img-fluid col-lg-12" alt="decorative image"> -->
-        <h1 class="display-1 col-lg-12 headline">Hi I'm <strong>Cindy</strong>. I like to design and code.</h1>
-        <h2>The most important tools in my toolkit are:</h2>
-        <h3><strong>Knowledge, Empathy, and Curiosity</strong></h3>
+    <div id="tag u-pull-left">
+
+        <h1 class ="twelve colums">Hi I'm <strong>Cindy</strong>. I like to design and code.</h1>
+        <h2 class = "twelve columns">The most important tools in my toolkit are:</h2>
+        <h3 class = "twelve columns"><strong>Knowledge, Empathy, and Curiosity</strong></h3>
       </div>
-      <div class="container-fluid text-right">
-        <div id="right-header">
-          <h4>Sketch, <br/>Balsamiq and <br />Git help too&#42;</h4>
-          <h6>&#42;Along with Javascript, <br/>InVision, and a few other things.</h3>
+
+        <div >
+          <h4 class = "row"><class = "twelve columns">Sketch, Balsamiq and Git help too&#42;</class></h4>
+          <h6  class = "row ">&#42;Along with Javascript, <br/>InVision, and a few other things.</h3>
         </div>
-      </div>
-    </div>
   <!-- hero-->
 
 
   <!-- footer-->
-<footer class="row navbar-light bg-faded ">
-
-        <div class="col-md-12">
-          <div class="row center-row-9 ">
-        <div class = "col-md-4 text-center">
+<footer class="row u-full-width u-cf">
+        <div class="four columns left">
           <p><a href="mailto:clfrancies@comcast.net">Cindy Francies</a> Copyright 2017</p>
         </div>
-
-      <div class = "col-md-4 text-center">
-        <p>Made in Baltimore, Maryland</p>
-    </div>
-    <div class = "col-md-4 text-left socials">
-        <ul class="list-inline">
-          <li><a href="https://www.facebook.com/cindy.francies"><span class = "fa fa-facebook-official"></span></a></li>
-          <li><a href="https://github.com/clf222"><span class = "fa fa-github-square"></span></a></li>
-          <li><a href="https://twitter.com/clf222"><span class = "fa fa-twitter"></span></a></li>
-          <li><a href="https://www.linkedin.com/in/clfrancies/"><span class = "fa fa-linkedin-square"></span></a></li>
-        </ul>
-    </div>
-  </div>
-
-
+        <div class="four columns">
+          <p>Made in Baltimore, Maryland</p>
+       </div>
+      <div class="four columns right">
+          <ul class="list-inline">
+            <li><a href="https://www.facebook.com/cindy.francies"><span class = "fa fa-facebook-official"></span></a></li>
+            <li><a href="https://github.com/clf222"><span class = "fa fa-github-square"></span></a></li>
+            <li><a href="https://twitter.com/clf222"><span class = "fa fa-twitter"></span></a></li>
+            <li><a href="https://www.linkedin.com/in/clfrancies/"><span class = "fa fa-linkedin-square"></span></a></li>
+          </ul>
+      </div>
 </footer>
   <!-- end footer-->
-</div>
+
 
     <!-- google analytics -->
       <script>
@@ -94,10 +80,6 @@
       ga('send', 'pageview');
 
     </script>
-
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </div>
   </body>
 </html>
