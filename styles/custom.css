@@ -7,6 +7,9 @@ li {
   padding-left: 0;
 
 }
+ .socials {
+  margin-left: 0;
+}
 
 img {
   max-width: 100%;
@@ -15,11 +18,12 @@ img {
 h1, h2, h3,h4, h6, p {
   text-align: center;
 }
-h6 {
-  font-weight: 700;
+h2, h6 {
+  font-weight: 500;
 }
 h1 {
   margin-top: .3em auto;
+  font-weight: 700;
 }
 h2 {
   margin-top: .1em auto;
@@ -42,93 +46,81 @@ nav {
   text-decoration: none;
 }
 
+/*form styles*/
+input, textarea {
+  min-width: 90%;
+}
+/*x*/
 
 
-
- body {
+ body.front {
 
     color: #333;
 
     background: #ffffff url("../images/wrench.jpeg") no-repeat right;
 
     background-size: 30%;
-    /*margin: auto 0 auto;*/
-
-
 
 }
 
-
-/*.jumbotron-fluid {
-  /*background-image: url("../img/wrench.jpeg");*/
-  /*color:#333333;
-    background-image: url("../img/wrench.jpeg");
-    /*background-size: 0 0;*/
-    /*background-size: cover;
-    margin: auto 0 auto 30%;
-    max-height: 70%;
-}*/
-
-/*.jumbotron-fluid {*/
-  /*background-image: url("../img/wrench.jpeg");*/
-  /*color:#333;
-
-  max-width:70%;
-
-  display:block;
-  height: auto;*/
-  /*background-size: 0 0;
-  background-size: cover;*/
-
-  /*margin: auto;
-  padding-top: 1em;*/
-/*}*/
-
-  /*margin: auto;
-  padding-top: 1em;
-}*/
-
-/*h1, h2 {
-  font-weight: 700;
-}
-.headline {
-  font-size: 3em;
-}
-
-
-
-
-
-footer {
-  margin: 0 auto;
-  padding-top: 25px;
-
-
-}*/
-/*responsive */
-/*@media (min-width: 850px) and (max-width: 939px) {
-  .jumbotron-fluid {
-    background-size: cover;
-    max-width: 60%;
-    height: 640px;
-  }
-  #right-header {
-  padding-top: 10em;
+/*case studies*/
+.overview p{
+  max-width: 90;
   text-align: left;
-  }
-}
-@media (min-width: 940px) {
-  .jumbotron-fluid {
-    background-size: cover;
 
-    max-width: 70%;
-    height: 570px;
-  }
-  #right-header {
-  padding-top: 10em;
-  text-align: right;
-  }
+
 }
+.row image {
+  max-width: 90%;
+  float: left;
+}
+
+
+
+/*responsive */
+@media (max-width: 550px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.85rem;
+  }
+  h3 {
+    font-size: 2.2rem;
+  }
+  .socials {
+    text-align: center;
+
+     padding-left: 0;
+     padding-right: 0;
+
+  }
+  .socials li {
+  }
+  body.front {
+
+     color: #333;
+
+     background: #ffffff url("../images/wrench.jpeg") no-repeat top -20px right;
+
+     background-size: 30%;
+
+ }
+}
+
+@media (max-width: 750px) {
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.8rem;
+}
+h3 {
+  font-size: 2.9rem;
+}
+}
+
+
   /*@media (min-width: 1120px) {
 
   }*/
