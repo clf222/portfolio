@@ -1,19 +1,23 @@
 
 
- li {
-  list-style: none;
-  display: inline;
-  margin-right: 2em;
-  padding-left: 0;
-
-}
-  ul.toc {
+  ul.toc li {
     list-style-type: none;
     display: block;
     /*margin: 0;
     padding: 0;*/
     overflow: hidden;
     background-color: #FFFFFF;
+
+  }
+  ul.toc li {
+    display: block;
+  }
+
+   li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 2em;
+    padding-left: 0;
 
   }
 
@@ -108,7 +112,7 @@ input, textarea {
      padding-right: 0;
 
   }
-
+}
   body.front {
 
      color: #333;
@@ -121,15 +125,15 @@ input, textarea {
 }
 
 @media (max-width: 750px) {
-h1 {
-  font-size: 4rem;
-}
-h2 {
-  font-size: 3.8rem;
-}
-h3 {
-  font-size: 2.9rem;
-}
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3.8rem;
+  }
+  h3 {
+    font-size: 2.9rem;
+  }
 }
 
 
