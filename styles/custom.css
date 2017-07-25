@@ -89,7 +89,7 @@ p.text {
   font-size: 1em;
 }
 .text-container {
-  margin: 2em 0;
+  margin: 2em auto;
   padding: 1em 5em;
   width: 40em;
 }
