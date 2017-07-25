@@ -61,12 +61,13 @@ input, textarea {
 /*case styles*/
 ul.toc  {
   list-style-type: none;
-  display: block;
-
+  /*display: block'*/
   padding: 0;
   /*overflow: hidden;*/
   background-color: #F1F1F1;
-
+}
+ul.toc li {
+  display: inline;
 }
 .toc a{
   display: block;
