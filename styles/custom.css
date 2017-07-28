@@ -10,9 +10,9 @@
 
   }
 
- .socials {
+ /*.socials {
   margin-left: 0;
-}
+}*/
 iframe {
   margin: auto;
 }
@@ -39,12 +39,19 @@ h2 {
   margin-top: 7em;
   text-align: right;
 }
-.left {
-  text-align: left;
+.text-left {
+text-align: left;
+
 }
-.right {
+ul.socials li.last {
+  padding-right: 0;
+}
+
+/*footer ul.right {
   text-align: right;
-}
+  margin-right:0;
+  padding-right:0;
+}*/
 nav {
   margin: 1em auto;
 }
@@ -157,13 +164,13 @@ h1.case-name {
   h3 {
     font-size: 2.2rem;
   }
-  .socials {
+  /*.socials {
     text-align: center;
 
      padding-left: 0;
      padding-right: 0;
 
-  }
+  }*/
 }
   body.front {
 
