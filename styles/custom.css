@@ -148,13 +148,12 @@ p.text {
 }
 
 
-#banner {
-  display: table;
-}
 
 #lead-art {
-    display: table-cell;
-    vertical-align: middle;
+    margin-top: 30%;
+    display: block;
+    align: center;
+
 }
 
 iframe {
@@ -172,12 +171,7 @@ iframe {
   display: inline-block;
 }
 
-.lead-art {
-  max-width: 200%;
-  max-height: 200%;
-  margin: auto auto;
-  display: block;
-}
+
 #fn1, #fn2 {
   text-align: left;
   font-size: .75em;
@@ -192,6 +186,7 @@ hr {
 h1.case-name {
   margin-bottom: .25rem;
 }
+
 .center {
   text-align: center;
 }
@@ -208,6 +203,24 @@ h1.case-name {
 /*case studies*/
 .cases {
   margin-bottom: 2em;
+}
+.header-row {
+  display: table;
+}
+.header-left {
+  display: table-cell;
+  vertical-align: top;
+}
+.header-right {
+  display: table-cell;
+  vertical-align: middle;
+}
+.header-right img {
+  display: block;
+  margin: auto;
+}
+.header-right h4 {
+  text-align: center;
 }
 
 
