@@ -27,9 +27,11 @@ li {
 h1, h2, h3,h4, h6, p {
   text-align: center;
 }
+
 p.name {
   padding-left: 0;
   margin-left: 0;
+  text-align: left;
 }
 h2, h6 {
   font-weight: 500;
@@ -75,7 +77,9 @@ img.case {
 .text-left {
 text-align: left;
 }
-
+.slug {
+  text-align: center;
+}
 
 four.columns.right {
   margin-right: 0;
@@ -225,6 +229,9 @@ h1.case-name {
     text-align: center;
     line-height: 1.75em;
     margin: auto;
+  }
+  p.name {
+    text-align: left;
   }
   nav.six.columns {
     width: 75%;
