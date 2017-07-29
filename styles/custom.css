@@ -27,6 +27,10 @@ li {
 h1, h2, h3,h4, h6, p {
   text-align: center;
 }
+p.name {
+  padding-left: 0;
+  margin-left: 0;
+}
 h2, h6 {
   font-weight: 500;
 }
@@ -78,15 +82,15 @@ four.columns.right {
   padding:0;
   max-width: 275px;
 }
-
+ul.socials li {
+  text-align: right;
+}
  li.last {
   margin-right: 0;
 }
 
-footer ul.socials {
-  margin-right:0;
-  padding-right:0;
-}
+
+
 footer p {
   margin-bottom: 1.3em;
 }
@@ -241,25 +245,10 @@ h1.case-name {
     margin-bottom: 1em;
   }
 
-/*img.last {
-
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: .5em;
-  ]
-}*/
-
 
 footer ul.socials {
-  text-align: left;
+  text-align: right;
 }
-/*.four.columns.case {
-  margin: 1.5em auto;
-}
-.last-case {
-  margin-bottom: .5em;
-}*/
-
 
   body.front {
 
@@ -273,7 +262,7 @@ footer ul.socials {
 }
 
 
-@media (max-width: 750px) {
+@media (min-width: 750px) {
   h1 {
     font-size: 4rem;
   }
@@ -286,10 +275,10 @@ footer ul.socials {
 }
 
 @media (min-width: 1000px) {
-  img {
+  /*img {
     max-width: 85%;
     margin: 1.5em auto;
-  }
+  }*/
 
 }
 
