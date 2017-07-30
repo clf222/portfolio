@@ -326,22 +326,13 @@ footer ul.socials {
 }
 
 
-  /*@media (min-width: 1120px) {
+@media (min-width: 1200px) {}
 
-  }*/
-/*@media (max-width: 1275px) {
-h1, h2, h3 {
-  text-align: left;
+img.left {
+  margin-left: 0;
+  display: block;
 }
-h1.display-1{
-  font-size: 2em;
-  padding-left: 0;
-  }
-h2 {
-  font-size: 1.5em;
-  }
-h3 {
-  font-size: 1.25em;
-  }
-
-}*/
+img.right {
+  margin-right: 0;
+  display: block;
+}
