@@ -13,7 +13,9 @@ body.front {
 .case-container {
   max-width: 275px;
   margin: 0 auto 1em auto;
+
 }
+
 .case-container-text {
   font-size: 1em;
   color: #FFFFFF;
@@ -87,6 +89,18 @@ h3.text-left {
 
 
 /*utilities*/
+.row {
+  position: relative;
+}
+.top {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.seven.columns {
+  position: relative;
+}
+
 .centered {
   display: block;
   margin-top: 20%;
