@@ -38,9 +38,13 @@ body.front {
   min-height: 80px;
 
 }
+strong {
+  color: #671CAF;
+  font-weight: 700;
+}
 
 a, .fa {
-  color: #6542f4;
+  color: #671CAF;
 }
 
 li {
@@ -99,6 +103,9 @@ h3.text-left {
 }
 .seven.columns {
   position: relative;
+}
+.align-left {
+  text-align: left;
 }
 
 .centered {
