@@ -23,7 +23,7 @@
 
   </head>
   <body>
-    <div class = "main"> <!-- required for scrolling -->
+
   <!-- nav and logo -->
 
         <div class="container">
@@ -55,18 +55,18 @@
               </div>
             </div>
 
-<!-- start TOC -- >
+<!-- TOC -->
               <div class = "row header-row u-full-width">
                 <div class = "three columns header-left">
                   <h3 class = "text-left">Case Guide</h3>
                   <ul class="toc">
-                    <li><a href="#sum" class="active-toc">Summary</a></li>
-                    <li><a href="#exp">Explanation</a></li>
-                    <li><a href="#prob">Problem</a></li>
-                    <li><a href="#res">Research</a></li>
-                    <li><a href="#sol">Solution</a></li>
-                    <li><a href="#result">Results</a></li>
-                    <li><a href="#conc">Conclusion</a></li>
+                    <li><a href="#page-one" class="active-toc">Summary</a></li>
+                    <li><a href="#page-two">Explanation</a></li>
+                    <li><a href="#page-three">Problem</a></li>
+                    <li><a href="#page-four">Research</a></li>
+                    <li><a href="#page-five">Solution</a></li>
+                    <li><a href="#page-six">Results</a></li>
+                    <li><a href="#page-seven">Conclusion</a></li>
                   </ul>
                 </div>
                 <div class = "nine columns header-right" >
@@ -78,10 +78,10 @@
 
               </div>
 
-<!-- end TOC -->
+<!-- end TOC  -->
 <!-- start summary text container -->
 
-            <section class ="text-container" id="sum">
+            <div class  ="text-container" id="page-one">
 
             <div class = "row">
 
@@ -115,15 +115,15 @@
 
 
             </div> <!-- close row -->
-              </section>
+      </div>
 
 
 
 
           <!-- end sum container -->
           <!-- Explanation container -->
-  <section>
-            <div class ="text-container" id="exp">
+
+            <div class ="text-container" id="page-two">
               <div class = "row">
 
               <div class = "seven columns">
@@ -145,14 +145,14 @@
             </div> <!-- close row -->
 
             </div>
-  </section>
+
 
         <!-- end explanation -->
         <!-- Problem container -->
 
-        <div class ="text-container" id="prob">
+        <div class ="text-container" id="page-three">
           <div class = "row">
-              <section>
+
             <div class = "twelve columns">
               <h4 class = "text-left header">Problem</h4>
             </div>
@@ -170,16 +170,16 @@
                <p> some kind of graphic</p>
              </div> <!-- close column -->
            </div> <!-- close row -->
-            </section><!-- close section -->
+
          </div>
 
         <!-- end problem  -->
 
         <!-- Research container -->
 
-          <div class ="text-container" id="res">
+          <div class ="text-container" id="page-four">
             <div class = "row">
-                <section>
+
               <div class = "eight columns">
                 <h4 class = "text-left header">Research</h4>
               </div>
@@ -199,14 +199,14 @@
                   <p>some kind of graphic</p>
                 </div> <!-- close column -->
               </div> <!-- close row -->
-                </section>
+
             </div>
 
         <!-- end problem  -->
 
         <!-- solution container -->
-        <section>
-        <div class ="text-container" id="sol">
+
+        <div class ="text-container" id="page-five">
           <div class = "row">
             <div class = "twelve columns">
               <h4 class = "text-left header">Solution</h4>
@@ -227,12 +227,12 @@
             </div> <!-- close column -->
           </div> <!--close row -->
         </div>
-        </section>
+
         <!-- end solution  -->
 
         <!-- result container -->
-        <section>
-        <div class ="text-container" id="result">
+
+        <div class ="text-container" id="page-six">
           <div class = "row">
             <div class = "twelve columns">
               <h4 class = "text-left header">Results</h4>
@@ -253,12 +253,12 @@
             </div> <!-- close column -->
           </div> <!--close row -->
         </div>
-        </section>
+
 
         <!-- end results container -->
         <!-- conclusions container -->
-        <section>
-        <div class ="text-container" id="conc">
+
+        <div class ="text-container" id="page-seven">
           <div class = "row">
             <div class = "twelve columns">
               <h4 class = "text-left header">Conclusions</h4>
@@ -279,7 +279,7 @@
         </div> <!-- close row -->
         </div>
         <!-- end conclusions -->
-        </section>
+
         <!-- end projects-->
 
         <!-- navigation controls -->
@@ -335,10 +335,27 @@
               </script>
               <script>
 
-                $(".main").onepage_scroll({
-                      });
+              /* ***************************
+Enable Smooth Scrolling
+Author: Chris Coyier
+URL:  CSS-Tricks.com
+***************************** */
+
+// Enable Smooth Scrolling ...  by Chris Coyier of CSS-Tricks.com
+$('a[href*="#"]:not([href="#"]):not([href="#show"]):not([href="#hide"])').click(function() {
+  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    if (target.length) {
+      $('html,body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
+    }
+  }
+});
               </script>
-    </div> <!-- close main div needed for scrolling -->
+
 
   </body>
 </html>
