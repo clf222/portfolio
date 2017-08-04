@@ -96,7 +96,7 @@ h3.text-left {
 .row {
   position: relative;
 }
-.top {
+.topnav {
   position: absolute;
   bottom: 0px;
   right: 0px;
