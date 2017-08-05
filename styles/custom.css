@@ -1,58 +1,25 @@
-/* background image styles */
-/*experiment*/
-.hex-menu {
+/*logo at narrow widths*/
+.narrow-logo {
   display: block;
+  margin: 1em auto;
 }
-
-.hex {
-    width: 100px;
-    height: 50px;
-    background: #671CAF;
-    position: relative;
-    margin: 40px 1em;
-    display: table
-
-}
-
-.hex:before {
-    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: -25px;
-    left: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 25px solid #671CAF;
-
-}
-
-.hex:after {
-    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    bottom: -25px;
-    left: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 25px solid #671CAF;
-
-
-}
-.hex {
-  display: table-cell;
-  text-align: center;
-  padding-top: 20px;
-
-  vertical-align: center;
-  color: #FFF9F8;
-  margin-right: 2em;
+.hex-menu {
+  .hex-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5em
+  }
 }
 p.hex-text {
-  text-align: center;
+  font-size: 1em;
+
 }
-/*end experiment*/
+
+
+
+
+/* background image styles */
+
 
 
 body.front {
@@ -436,31 +403,64 @@ footer ul.socials {
   }
   /*nav styles*/
   /*Strip the ul of padding and list styling*/
- #menu ul {
-     list-style-type:none;
-     margin:0;
-     padding:0;
-     position: absolute;
- }
- /*Create a horizontal list with spacing*/
- #menu li {
-     display:inline-block;
-     float: left;
-     margin-right: 1px;
- }
+  /*experiment*/
+  .hex-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
 
- /*Style for menu links*/
- #menu li a {
-     display:block;
-     min-width:140px;
-     height: 50px;
-     text-align: center;
-     line-height: 50px;
-     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-     color: #fff;
-     background: #671caf;
-     text-decoration: none;
- }
+  .hex {
+      width: 100px;
+      height: 30px;
+      background: #671CAF;
+      position: relative;
+      margin: 1em auto;
+
+      display: table-cell;
+
+      /*padding-top: 20px;*/
+
+      color: #FFF9F8;
+
+
+  }
+
+  .hex:before {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: -20px;
+      left: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 20px solid #671CAF;
+
+  }
+
+  .hex:after {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 20px solid #671CAF;
+
+
+  }
+  .hex {
+
+  }
+  p.hex-text {
+    /*text-align: center;*/
+    display: table-cell;
+    vertical-align: middle;
+  }
+  /*end experiment*/
  /*Hover state for top level links*/
  li:hover a {
      background: #333333;
@@ -509,6 +509,65 @@ footer ul.socials {
    display: block;
    margin-left: 0;
  }
+ /*experiment*/
+ .hex-menu {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 2em;
+ }
+
+ .hex {
+     width: 100px;
+     height: 30px;
+     background: #671CAF;
+     position: relative;
+     margin: 1em auto;
+
+     display: table-cell;
+
+     /*padding-top: 20px;*/
+
+     color: #FFF9F8;
+
+
+ }
+
+ .hex:before {
+     content: "";
+     width: 0;
+     height: 0;
+     position: absolute;
+     top: -18px;
+     left: 0;
+     border-left: 50px solid transparent;
+     border-right: 50px solid transparent;
+     border-bottom: 18px solid #671CAF;
+
+ }
+
+ .hex:after {
+     content: "";
+     width: 0;
+     height: 0;
+     position: absolute;
+     bottom: -20px;
+     left: 0;
+     border-left: 50px solid transparent;
+     border-right: 50px solid transparent;
+     border-top: 20px solid #671CAF;
+
+
+ }
+ .hex a {
+   color: #fff;
+   text-decoration: none;
+
+ }
+.hex a:hover {
+  color: #C6FF88;
+}
+
+ /*end experiment*/
 
 }
 
