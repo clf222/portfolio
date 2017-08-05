@@ -1,4 +1,60 @@
 /* background image styles */
+/*experiment*/
+.hex-menu {
+  display: block;
+}
+
+.hex {
+    width: 100px;
+    height: 50px;
+    background: #671CAF;
+    position: relative;
+    margin: 40px 1em;
+    display: table
+
+}
+
+.hex:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -25px;
+    left: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid #671CAF;
+
+}
+
+.hex:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid #671CAF;
+
+
+}
+.hex {
+  display: table-cell;
+  text-align: center;
+  padding-top: 20px;
+
+  vertical-align: center;
+  color: #FFF9F8;
+  margin-right: 2em;
+}
+p.hex-text {
+  text-align: center;
+}
+/*end experiment*/
+
+
 body.front {
 
    color: #333;
@@ -303,13 +359,22 @@ h1.case-name {
 }
 
 
-/*about */
-/*img.mypic {
-max-width: 30%;
-}*/
-
-/* end about */
-
+/*mobile nav*/
+@media (max-width: 750px) {
+    /*Make dropdown links appear inline*/
+    #menu ul {
+           position: static;
+           display: none;
+       }
+    /*Create vertical spacing*/
+    #menu li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    #menu ul li, #menu li a {
+        width: 100%;
+    }
+}
 
 /*responsive */
 @media (min-width: 550px) {
@@ -369,6 +434,70 @@ footer ul.socials {
   h3 {
     font-size: 2.9rem;
   }
+  /*nav styles*/
+  /*Strip the ul of padding and list styling*/
+ #menu ul {
+     list-style-type:none;
+     margin:0;
+     padding:0;
+     position: absolute;
+ }
+ /*Create a horizontal list with spacing*/
+ #menu li {
+     display:inline-block;
+     float: left;
+     margin-right: 1px;
+ }
+
+ /*Style for menu links*/
+ #menu li a {
+     display:block;
+     min-width:140px;
+     height: 50px;
+     text-align: center;
+     line-height: 50px;
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+     color: #fff;
+     background: #671caf;
+     text-decoration: none;
+ }
+ /*Hover state for top level links*/
+ li:hover a {
+     background: #333333;
+
+ }
+ /*Style for dropdown links*/
+ li:hover ul a {
+     background: #9B7EFF;
+     color: #fff;
+     height: 40px;
+     line-height: 40px;
+ }
+ /*Hover state for dropdown links*/
+ li:hover ul a:hover {
+     background: #333333;
+     color: #000;
+ }
+ /*Hide dropdown links until they are needed*/
+ li ul {
+     display: none;
+ }
+ /*Make dropdown links vertical*/
+ li ul li {
+     display: block;
+     float: none;
+ }
+ /*Prevent text wrapping*/
+ li ul li a {
+     width: auto;
+     min-width: 100px;
+     padding: 0 20px;
+ }
+ /*Display the dropdown on hover*/
+ ul li a:hover + .hidden, .hidden:hover {
+     display: block;
+ }
+ /*end nav styles */
 }
 
 @media (min-width: 1000px) {
@@ -380,6 +509,7 @@ footer ul.socials {
    display: block;
    margin-left: 0;
  }
+
 }
 
 
