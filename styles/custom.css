@@ -522,14 +522,11 @@ footer ul.socials {
      background: #671CAF;
      position: relative;
      margin: 1em auto;
-
      display: table-cell;
-
-     /*padding-top: 20px;*/
-
      color: #FFF9F8;
-
-
+ }
+ .hex:hover {
+  background-color: #fff;
  }
 
  .hex:before {
@@ -564,7 +561,7 @@ footer ul.socials {
 
  }
 .hex a:hover {
-  color: #C6FF88;
+  color: #333;
 }
 
  /*end experiment*/
