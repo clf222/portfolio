@@ -5,25 +5,21 @@
     <title>Cindy L Francies | Design and Code</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- infinite scroll -->
+    <link href="../styles/normalize.css" type="text/css" rel="stylesheet">
+    <link href="../styles/skeleton.css" type="text/css" rel="stylesheet">
+    <!--  custom css -->
+    <link rel="stylesheet" href="../styles/custom.css" type="text/css">
     <script
         src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous">
     </script>
-    <script src = "../scripts/jquery.onepage-scroll.min.js"></script>
-    <link rel = "stylesheet" type = "text/css" href = "../styles/onepage-scroll.css">
-
-
     <script src="https://use.fontawesome.com/b4e85da016.js"></script>
-    <link href="../styles/normalize.css" type="text/css" rel="stylesheet">
-    <link href="../styles/skeleton.css" type="text/css" rel="stylesheet">
-    <!--  custom css -->
-    <link rel="stylesheet" href="../styles/custom.css" type="text/css">
+
 
   </head>
   <body>
-    <div class = "main"> <!-- required for scrolling -->
+
   <!-- nav and logo -->
 
         <div class="container">
@@ -40,6 +36,14 @@
               </ul>
           </nav>
   <!-- end nav and logo -->
+  <!-- sidebar -->
+  <div class="sidebar">
+    <ul>
+      <li><a href="#sum">Summary</a></li>
+      <li><a href ="#exp">Explanation</a></li>
+    </ul>
+  </div>
+<!-- end sidebar -->
 
         <!--cases -->
 
@@ -55,7 +59,7 @@
               </div>
             </div>
 
-<!-- start TOC -- >
+<!-- start TOC -->
               <div class = "row header-row u-full-width">
                 <div class = "three columns header-left">
                   <h3 class = "text-left">Case Guide</h3>
@@ -81,7 +85,7 @@
 <!-- end TOC -->
 <!-- start summary text container -->
 
-            <section class ="text-container" id="sum">
+            <div class ="text-container" id="sum">
 
             <div class = "row">
 
@@ -115,14 +119,14 @@
 
 
             </div> <!-- close row -->
-        </section>
+
 
 
 
 
           <!-- end sum container -->
           <!-- Explanation container -->
-  <section>
+
             <div class ="text-container" id="exp">
               <div class = "row">
 
@@ -145,11 +149,11 @@
             </div> <!-- close row -->
 
             </div>
-  </section>
+
 
         <!-- end explanation -->
         <!-- Problem container -->
-  <section>
+
         <div class ="text-container" id="prob">
           <div class = "row">
 
@@ -172,14 +176,14 @@
            </div> <!-- close row -->
 
          </div>
-</section><!-- close section -->
+
         <!-- end problem  -->
 
         <!-- Research container -->
 
           <div class ="text-container" id="res">
             <div class = "row">
-                <section>
+
               <div class = "eight columns">
                 <h4 class = "text-left header">Research</h4>
               </div>
@@ -199,13 +203,13 @@
                   <p>some kind of graphic</p>
                 </div> <!-- close column -->
               </div> <!-- close row -->
-          </section>
+
             </div>
 
         <!-- end problem  -->
 
         <!-- solution container -->
-        <section>
+
         <div class ="text-container" id="sol">
           <div class = "row">
             <div class = "twelve columns">
@@ -227,11 +231,11 @@
             </div> <!-- close column -->
           </div> <!--close row -->
         </div>
-        </section>
+
         <!-- end solution  -->
 
         <!-- result container -->
-        <section>
+
         <div class ="text-container" id="result">
           <div class = "row">
             <div class = "twelve columns">
@@ -253,11 +257,11 @@
             </div> <!-- close column -->
           </div> <!--close row -->
         </div>
-        </section>
+
 
         <!-- end results container -->
         <!-- conclusions container -->
-        <section>
+
         <div class ="text-container" id="conc">
           <div class = "row">
             <div class = "twelve columns">
@@ -279,7 +283,7 @@
         </div> <!-- close row -->
         </div>
         <!-- end conclusions -->
-        </section>
+
         <!-- end projects-->
 
         <!-- navigation controls -->
@@ -319,7 +323,8 @@
               </div>
         </footer>
         <!-- end footer-->
-      </div> <!-- close container -->
+      </div>
+    </div>
 
 
               <!-- google analytics -->
@@ -333,12 +338,14 @@
                 ga('send', 'pageview');
 
               </script>
-              <script>
 
-                $(".main").onepage_scroll({
-                      });
+              <script
+                  src="https://code.jquery.com/jquery-3.2.1.min.js"
+                  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                  crossorigin="anonymous">
               </script>
-    </div> <!-- close main div needed for scrolling -->
+              <script src="https://use.fontawesome.com/b4e85da016.js"></script>
+              <!-- <script src="../scripts/custom.js"></script> -->
 
   </body>
 </html>
