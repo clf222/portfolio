@@ -1,90 +1,678 @@
-body {
-    font-family: 'Raleway', sans-serif;
-    color: #333;
-    background-image: url("../img/wrench.jpeg");
-    /*background-size: 0 0;*/
-    background-size: cover;
-    margin: auto 0 auto 30%;
-    max-height: 70%;
+/*alternate nav bar concept */
+
+
+/*logo at narrow widths*/
+
+.narrow-logo {
+  display: block;
+  margin: 1em auto 1em auto;
+
 }
 
-.jumbotron-fluid {
-  /*background-image: url("../img/wrench.jpeg");*/
-  color:#333;
-  max-width:70%;
+.hex {
+  background-color: #671CAF;
+  margin: 0 auto;
 
-  display:block;
-  height: auto;
-  /*background-size: 0 0;
-  background-size: cover;*/
-  margin: auto;
-  padding-top: 1em;
+}
+.hex a {
+  color: #fff;
+  text-decoration: none;
+
+}
+.hex a:hover {
+ color: #333;
+}
+.hex p {
+  margin-bottom: .5em;
 }
 
-h1, h2 {
+  /*.hex-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5em
+  }
+
+p.hex-text {
+  font-size: 1em;
+
+}*/
+
+
+/**/
+
+/* background image styles */
+
+
+
+body.front {
+
+   color: #333;
+
+   background: #ffffff url("../images/wrench.jpeg") no-repeat right;
+
+   background-size: 30%;
+
+}
+/* end background image styles */
+
+.case-container {
+  max-width: 275px;
+  margin: 0 auto 1em auto;
+
+}
+
+.case-container-text {
+  font-size: 1em;
+  color: #FFFFFF;
+  background-color: #333;
+  padding: .1em;
+  box-sizing: border-box;
+  min-height:120px;
+  margin-top: 0;
+}
+.case-container.box-right {
+  margin 0;
+}
+/*text styles*/
+.text-box {
+  max-width: 275px;
+  color: #FFFFFF;
+  background-color: #333333;
+  padding: .1em;
+  box-sizing: border-box;
+  min-height: 80px;
+
+}
+strong {
+  color: #671CAF;
   font-weight: 700;
 }
-.headline {
-  font-size: 3em;
+
+a, .fa {
+  color: #671CAF;
 }
+
 li {
-  list-style: none;
-  display: inline;
-  margin-right: 2em;
-  padding-left: 0;
-}
-#right-header {
-padding-top: 10em;
-text-align: center;
-}
+    list-style: none;
+    display: inline-block;
+    margin-right: 2em;
+    padding-left: 0;
 
-
-footer {
-  margin: 0 auto;
-  padding-top: 25px;
-
-
-}
-/*responsive */
-@media (min-width: 850px) and (max-width: 939px) {
-  .jumbotron-fluid {
-    background-size: cover;
-    max-width: 60%;
-    height: 640px;
   }
-  #right-header {
-  padding-top: 10em;
-  text-align: left;
-  }
-}
-@media (min-width: 940px) {
-  .jumbotron-fluid {
-    background-size: cover;
 
-    max-width: 70%;
-    height: 570px;
-  }
-  #right-header {
-  padding-top: 10em;
-  text-align: right;
-  }
+h1, h2, h3,h4, h6, p {
+  text-align: center;
 }
-  /*@media (min-width: 1120px) {
 
-  }*/
-@media (max-width: 1275px) {
-h1, h2, h3 {
-  text-align: left;
+p.name {
+  padding-left: 0;s
+  margin-left: 0;
+  text-align: center;
 }
-h1.display-1{
-  font-size: 2em;
-  padding-left: 0;
-  }
+h2, h3, h6 {
+  font-weight: 400;
+}
+h1 {
+  margin-top: .3em auto;
+  font-weight: 700;
+}
 h2 {
-  font-size: 1.5em;
+  margin-top: .1em auto;
+}
+h3.text-left {
+  margin-bottom: .5rem;
+}
+
+/* end base text style */
+/*hero styles */
+
+.right-header {
+  margin-top: 7em;
+  text-align: right;
+}
+/*end hero*/
+
+/*image styles*/
+
+/*end image styles*/
+
+
+/*utilities*/
+.row {
+  position: relative;
+}
+.topnav {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.seven.columns {
+  position: relative;
+}
+.align-left {
+  text-align: left;
+}
+
+.centered {
+  display: block;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.center {
+  margin 0 auto;
+}
+.text-left {
+text-align: left;
+}
+.text-right {
+  text-align: right;
+  margin-right: 0;
+  padding-right: 0;
+}
+.slug {
+  text-align: center;
+}
+
+four.columns.right {
+  margin-right: 0;
+  padding:0;
+  max-width: 275px;
+}
+
+ul.socials li {
+  text-align: right;
+}
+ li.last {
+  margin-right: 0;
+}
+
+
+
+footer p {
+  margin-bottom: 1.3em;
+}
+nav {
+  margin: 1em auto;
+}
+.active {
+  text-decoration: none;
+}
+
+/*form styles*/
+input, textarea {
+  min-width: 90%;
+}
+
+
+/*case styles*/
+ul.toc  {
+  list-style-type: none;
+  /*display: block'*/
+  padding: 0;
+  /*overflow: hidden;*/
+  background-color: #F1F1F1;
+}
+ul.toc li {
+  display: inline;
+}
+.toc a{
+  display: block;
+margin: .5em .5em;
+  color: #000;
+  /*padding: .5em 1em;*/
+  text-decoration: none;
+}
+.toc a:hover {
+    background-color: #555;
+    color: white;
+}
+h4.header {
+  margin-bottom: .5rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  text-decoration-style: solid;
+  text-decoration: underline;
+}
+
+p.text {
+
+  max-width: 75%;
+  padding: .5em;
+  line-height: 1.75em;
+  font-size: 1em;
+}
+/*.text-container {
+  margin: 2em 0;
+  padding: 1em 0;
+  width: 40em;
+}*/
+
+
+img.case {
+  margin-bottom: 0;
+  display: block;
+}
+img.align-center {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+.row.cases {
+  margin-bottom: 1em;
+  display: table;
+  width: 100%;
+
+}
+
+
+#lead-art {
+    margin-top: 20%;
+    display: block;
+    align: center;
+
+}
+
+iframe {
+  margin: 0;
+  padding: 0;
+  border: 1px;
+  background-color: transparent;
+  display: block;
+  margin: 0 auto;
+}
+.row image {
+  max-width: 90%;
+  float: left;
+}
+.case-nav p {
+  padding-left: 1em;
+  display: inline-block;
+}
+.case-nav p.right {
+  padding-left: 0;
+  padding-right: 1em;
+  display: inline-block;
+}
+
+
+#fn1, #fn2 {
+  text-align: left;
+  font-size: .75em;
+}
+hr {
+  margin: .5em auto;
+
+}
+#footnotes p {
+  margin-bottom: .25em;
+}
+h1.case-name {
+  margin-bottom: .25rem;
+}
+
+.center {
+  text-align: center;
+}
+ body.front {
+
+    color: #333;
+
+    background: #ffffff url("../images/wrench.jpeg") no-repeat right;
+
+    background-size: 30%;
+
+}
+
+/*case studies*/
+.row.last {
+  margin-bottom: 2em;
+}
+.header-row {
+  display: table;
+}
+.header-left {
+  display: table-cell;
+  vertical-align: top;
+}
+.header-right {
+  display: table-cell;
+  vertical-align: middle;
+}
+.header-right img {
+  display: block;
+  margin: auto;
+}
+.header-right h4 {
+  text-align: center;
+}
+
+
+/*mobile nav*/
+/*@media (max-width: 750px) {
+    /*Make dropdown links appear inline*/
+    /*#menu ul {
+           position: static;
+           display: none;
+       }
+    /*Create vertical spacing*/
+    /*#menu li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    /*#menu ul li, #menu li a {
+        width: 100%;
+    }*/
+/*}*/
+ /*/
+
+/*responsive */
+@media (min-width: 550px) {
+
+  /*nav styling */
+  .narrow-logo {
+    display: block;
+    margin: 1em auto 1em auto;
+
   }
-h3 {
-  font-size: 1.25em;
+  .hex-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    margin-bottom: 2em;
   }
+
+  .hex {
+      width: 60px;
+      height: 30px;
+      background: #671CAF;
+      position: relative;
+      margin: 1em auto;
+      display: table-cell;
+      color: #FFF9F8;
+  }
+
+  .hex:before {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: -20px;
+      left: 0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-bottom: 20px solid #671CAF;
+
+  }
+
+  .hex:after {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-top: 20px solid #671CAF;
+  }
+  .hex a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .hex a:hover {
+   color: #333;
+  }
+  p.hex-text {
+    /*text-align: center;*/
+    /*display: table-cell;*/
+    vertical-align: middle;
+    text-align: center;
+    font-size: 12px;
+  }
+  /*end nav styling*/
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.85rem;
+  }
+  h3 {
+    font-size: 2.2rem;
+  }
+  p {
+    text-align: center;
+    line-height: 1.75em;
+    margin: auto;
+  }
+  p.name {
+    text-align: left;
+  }
+  nav.six.columns {
+    width: 75%;
+    padding-left: 3em;
+    margin-left: 1em;
+  }
+
+footer p {
+  font-size: .75em;
+}
+.socials li a {
+  font-size: .75em;
+}
+.socials li {
+  margin-right: 1em;
+}
+
+
+  /*home page images*/
+
+
+
+
+footer ul.socials {
+  text-align: right;
+}
+
+  body.front {
+
+     color: #333;
+
+     background: #ffffff url("../images/wrench.jpeg") no-repeat top -20px right;
+
+     background-size: 30%;
+
+ }
+}
+
+
+@media (min-width: 750px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3.8rem;
+  }
+  h3 {
+    font-size: 2.9rem;
+  }
+  /*nav styles*/
+  /*Strip the ul of padding and list styling*/
+  /*experiment*/
+  .hex-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+
+  .hex {
+      width: 70px;
+      height: 35px;
+      background: #671CAF;
+      position: relative;
+      margin: 1em auto;
+      display: table-cell;
+      color: #FFF9F8;
+  }
+
+  .hex:before {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: -20px;
+      left: 0;
+      border-left: 35px solid transparent;
+      border-right: 35px solid transparent;
+      border-bottom: 20px solid #671CAF;
+
+  }
+
+  .hex:after {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      border-left: 35px solid transparent;
+      border-right: 35px solid transparent;
+      border-top: 20px solid #671CAF;
+  }
+  p.hex-text {
+    font-size: 1em;
+  }
+  footer p {
+    font-size: 1em;
+  }
+  .socials li a {
+    font-size: 1em;
+  }
+  /*end experiment*/
+ /*Hover state for top level links*/
+ li:hover a {
+     background: #333333;
+
+ }
+ /*Style for dropdown links*/
+ li:hover ul a {
+     background: #9B7EFF;
+     color: #fff;
+     height: 40px;
+     line-height: 40px;
+ }
+ /*Hover state for dropdown links*/
+ li:hover ul a:hover {
+     background: #333333;
+     color: #000;
+ }
+ /*Hide dropdown links until they are needed*/
+ li ul {
+     display: none;
+ }
+ /*Make dropdown links vertical*/
+ li ul li {
+     display: block;
+     float: none;
+ }
+ /*Prevent text wrapping*/
+ li ul li a {
+     width: auto;
+     min-width: 100px;
+     padding: 0 20px;
+ }
+ /*Display the dropdown on hover*/
+ ul li a:hover + .hidden, .hidden:hover {
+     display: block;
+ }
+ /*end nav styles */
+}
+
+@media (min-width: 1000px) {
+.case-container.box-right {
+  display: block;
+  margin-right: 0;
+ }
+.case-container.box-left {
+   display: block;
+   margin-left: 0;
+ }
+ /*experiment*/
+ nav {
+   display: flex;
+ }
+ .hex-menu {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 2em;
+ }
+
+ .hex {
+     width: 100px;
+     height: 30px;
+     background: #671CAF;
+     position: relative;
+     margin: 1em auto;
+     display: table-cell;
+     color: #FFF9F8;
+ }
+ .hex:hover {
+  background-color: #fff;
+ }
+
+ .hex:before {
+     content: "";
+     width: 0;
+     height: 0;
+     position: absolute;
+     top: -18px;
+     left: 0;
+     border-left: 50px solid transparent;
+     border-right: 50px solid transparent;
+     border-bottom: 18px solid #671CAF;
+
+ }
+
+ .hex:after {
+     content: "";
+     width: 0;
+     height: 0;
+     position: absolute;
+     bottom: -20px;
+     left: 0;
+     border-left: 50px solid transparent;
+     border-right: 50px solid transparent;
+     border-top: 20px solid #671CAF;
+
+
+ }
+ .hex a {
+   color: #fff;
+   text-decoration: none;
+
+ }
+.hex a:hover {
+  color: #333;
+}
+
+ /*end experiment*/
+
+}
+
+
+@media (min-width: 1200px) {}
+
+img.left {
+  margin-left: 0;
+
+}
+img.right {
+  margin-right: 0;
+}
+.four.columns.right {
+  margin-right: 0;
+}
+.box-right {
+  margin-right: 0;
 
 }
