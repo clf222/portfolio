@@ -26,8 +26,8 @@
   height: 200%;
   background: inherit;
   background-attachment: fixed;
-  -webkit-filter: blur(4px);
-  filter: blur(4px);
+  -webkit-filter: blur(12px);
+  filter: blur(12px);
 }
 .module > header::after {
   content: "";
