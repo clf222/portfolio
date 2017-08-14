@@ -3,6 +3,7 @@
 background: url("../images/home-image.jpg") no-repeat;
 
   background-size: cover;
+  min-height: 100%;
 }
 
 h1 {
@@ -67,8 +68,9 @@ nav ul li {
   font-size: 1.3em;
   font-family: 'Lato', sans-serif;
 }
-ul {
+nav ul {
   margin-bottom: .5em;
+  margin-right: 0;
 }
 
 /*end nav text styling*/
@@ -83,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 p, li {
   font-family: 'Lato', sans-serif;
   margin-bottom: .3em;
-  letter-spacing: .2em;
+  letter-spacing: .1em;
 
 
 }
@@ -118,6 +120,9 @@ strong {
 .center {
   margin: auto;
 }
+.text-right {
+  text-align: right;
+}
 /*end utilities*/
 
 
@@ -130,6 +135,10 @@ ul.socials li.last {
   margin-right: 0;
   margin-left: 0;
 }
+ul.socials li.first {
+  margin-right: 0;
+  margin-left: 0;
+}
 ul.socials li {
   margin-right: 1.33em;
   margin-left: 1.33em;
@@ -138,7 +147,7 @@ a span.fa:hover {
   color: #E70633;
 }
 ul.socials {
-  display: table-row;
+
   text-align: center;
 }
 /*contact styles*/
@@ -146,6 +155,8 @@ ul.socials {
   background-color: #FFFAF0;
   padding: 1em 2em;
   min-height: 100%;
+
 }
+
 
 /*end contact styles*/
