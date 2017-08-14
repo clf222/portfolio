@@ -1,0 +1,148 @@
+/*home page styles*/
+#front {
+background: url("../images/home-image.jpg") no-repeat;
+
+  background-size: cover;
+}
+
+h1 {
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+  line-height: 1.5em;
+  font-family: 'Merriweather', serif;
+}
+
+.hero {
+  display: table;
+}
+h1 {
+  display: table-cell;
+  vertical-align: middle;
+}
+.description {
+  font-size: 1.33em;
+}
+
+.important {
+  font-size: 1.66em;
+  font-weight: bold;
+}
+
+.medium {
+  font-size: 1.33em;
+  font-family: 'Merriweather', serif;
+}
+.normal {
+  font-size: 1.2em;
+  font-family: 'Merriweater', serif;
+  font-style: italic;
+}
+
+
+
+ul li {
+  display: inline;
+}
+span.fa {
+  color: #FFFAF0;
+}
+
+ul.tools li {
+  display: inline;
+  font-family: 'Merriweather', serif;
+  font-size: 1.33em;
+  /*margin-right: 1.33em;*/
+}
+li.first {
+  padding-left: 0;
+  margin-right: 1.33em;
+  }
+li.last {
+  padding-right: 0;
+  margin-left: 1.33em;
+  }
+}
+
+/*nav text styling*/
+nav ul li {
+  font-size: 1.3em;
+  font-family: 'Lato', sans-serif;
+}
+ul {
+  margin-bottom: .5em;
+}
+
+/*end nav text styling*/
+
+/*end home page styles */
+
+/*default text styles*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+}
+
+p, li {
+  font-family: 'Lato', sans-serif;
+  margin-bottom: .3em;
+  letter-spacing: .2em;
+
+
+}
+p {
+  line-height: 1.3em;
+
+
+}
+.dark {
+  color: #151515;
+}
+
+p.light a, .light {
+  color: #FFFAF0;
+}
+a {
+  text-decoration: none;
+}
+p.light a:hover {
+  color: #E70633;
+}
+strong {
+  font-weight: 700;
+}
+
+/*end default text styles*/
+
+/*utilities*/
+.text-center {
+  text-align: center;
+}
+.center {
+  margin: auto;
+}
+/*end utilities*/
+
+
+/*global styles*/
+nav ul li {
+  display: inline;
+
+}
+ul.socials li.last {
+  margin-right: 0;
+  margin-left: 0;
+}
+ul.socials li {
+  margin-right: 1.33em;
+  margin-left: 1.33em;
+}
+a span.fa:hover {
+  color: #E70633;
+}
+ul.socials {
+  display: table-row;
+  text-align: center;
+}
+/*ul.socials li {
+  display: table-cell;
+
+}*/
+/*end global styles*/
