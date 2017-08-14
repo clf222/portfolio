@@ -141,8 +141,11 @@ ul.socials {
   display: table-row;
   text-align: center;
 }
-/*ul.socials li {
-  display: table-cell;
+/*contact styles*/
+.content {
+  background-color: #FFFAF0;
+  padding: 1em 2em;
+  min-height: 100%;
+}
 
-}*/
-/*end global styles*/
+/*end contact styles*/
