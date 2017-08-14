@@ -1,7 +1,10 @@
 /*home page styles*/
+body {
+  height: 100%;
+}
 #front {
 background: url("../images/home-image.jpg") no-repeat;
-
+  background-attachment: fixed;
   background-size: cover;
   min-height: 100%;
 }
