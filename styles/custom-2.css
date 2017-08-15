@@ -1,10 +1,10 @@
 /*home page styles*/
 body {
-    background: url(http://takeflight.design/images/home-image.jpg) no-repeat top center;
-    background-attachment: fixed;
-    background-size: cover;
-    min-height: 100%;
-    color: #fff;
+    background: #151515;
+}
+h1 {
+  font-family: 'Merriweather', serif;
+  line-height: 1em;
 }
 
 .container-hero {
@@ -21,7 +21,7 @@ body {
 
 h1 {
   text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
-  line-height: 1.5em;
+  line-height: 1em;
   font-family: 'Merriweather', serif;
 }
 
@@ -33,21 +33,21 @@ h1 {
   vertical-align: middle;
 }*/
 .description {
-  font-size: 1.33em;
+  font-size: .75em;
 }
 
 .important {
-  font-size: 1.66em;
+  font-size: .75em;
   font-weight: bold;
 }
 
 .medium {
-  font-size: 1.33em;
+  font-size: .875em;
   font-family: 'Merriweather', serif;
 }
 .normal {
-  font-size: 1.2em;
-  font-family: 'Merriweater', serif;
+  font-size: .6em;
+  font-family: 'Merriweather', serif;
   font-style: italic;
 }
 
@@ -164,11 +164,14 @@ ul.socials li {
 a span.fa:hover {
   color: #1EAEDB;
 }
+a span.dark-icon.fa {
+  color: #151515;
+}
 
 .made-in {
   font-size: .8em;
 }
-/*contact styles*/
+/*contact and about styles*/
 
 
 /*.container-inside {
@@ -186,4 +189,45 @@ a span.fa:hover {
 }
 
 
-/*end contact styles*/
+/*end contact and about styles*/
+
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  /*home page styles*/
+  body {
+      background: url(http://takeflight.design/images/home-image.jpg) no-repeat top center;
+      background-attachment: fixed;
+      background-size: cover;
+      min-height: 100%;
+
+  }
+
+  .container-hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    text-align: center;
+  }
+
+  .content {
+    margin-bottom: 1em
+  }
+  h1 {
+    line-height: 1.5em;
+  }
+  .important {
+    font-size: 1.66em;
+  }
+  .description, .medum {
+    font-size: 1.33em;
+  }
+  .normal {
+    font-size: 1.2em;
+  }
+  p {
+    margin-bottom: .5em;
+  }
+
+}
