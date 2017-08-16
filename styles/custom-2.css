@@ -188,6 +188,11 @@ a span.dark-icon.fa {
 
 }
 
+.right{
+  padding-right: 0;
+  margin-right: 0;
+}
+
 
 /*end contact and about styles*/
 
@@ -210,6 +215,18 @@ a span.dark-icon.fa {
     height: 100vh;
     text-align: center;
   }
+
+  /* new stuff */
+
+ul.light.text-center {
+  display: table;
+  width: 100%;
+}
+
+ul.light.text-center li {
+  display: table-cell;
+  width: 33.3%;
+}
 
   .content {
     margin-bottom: 1em
