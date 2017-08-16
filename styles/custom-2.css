@@ -183,6 +183,7 @@ a span.dark-icon.fa {
 }*/
 .content-inside {
   background-color: #FFFAF0;
+
   padding: 1em 2em;
   height: 100vh;
 
@@ -201,8 +202,12 @@ a span.dark-icon.fa {
 @media (min-width: 550px) {
   /*home page styles*/
   body {
-      background: url(http://takeflight.design/images/home-image.jpg) no-repeat top center;
+      background: url(http://takeflight.design/images/home-image.jpg) no-repeat top center,
+       linear-gradient(#151515 0%, #EEDD94 95%);
+       opacity: 90%;
       background-attachment: fixed;
+       background-blend-mode: screen, luminosity, lighten;
+
       background-size: cover;
       min-height: 100%;
 
