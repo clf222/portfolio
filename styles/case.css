@@ -44,7 +44,7 @@ a {
 }
 p.prototype a:hover {
   color: #8FBC8F;
-  text-decoration: underline;
+
 }
 li {
   font-size: 1.1em;
@@ -89,7 +89,7 @@ li {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 1em 2em;
+   padding: 1em 0;
  }
 .case-logo {
   display: flex;
@@ -125,8 +125,7 @@ li {
   flex: 60%;
   align-self: flex-start;
   margin-right: 1em;
-  padding-right: 1em;
-  padding-top: 0;
+  padding: 0 2em;
 }
 .methodology-img {
   display: flex;
@@ -137,7 +136,22 @@ li {
 .methodology p, .methodology h4, .methodology h5, .methodology h6, .methodology li {
   color: #FFFAF0;
 }
-
+.research {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.research-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 2em;
+}
+.research-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 
 
