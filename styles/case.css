@@ -130,6 +130,7 @@ li {
 .methodology-img {
   display: flex;
   flex-direction: column;
+  padding-left: 1em;
   justify-content: center;
   width: 40%;
 }
