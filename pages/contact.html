@@ -13,73 +13,58 @@
     <link href="../styles/skeleton.css" type="text/css" rel="stylesheet">
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
     <!--  custom css -->
-    <link rel="stylesheet" href="../styles/custom-2.css" type="text/css">
+    <link rel="stylesheet" href="../styles/inside.css" type="text/css">
 
   </head>
-  <body class="inside">
-<div class="container content-inside">
+  <body>
 
-  <!-- contact -->
-
-    <div class = "row">
-      <div class = "seven columns">
+  <!-- nav and logo -->
+  <nav>
+    <div class="logo">
+      <h3 class="logo-text light">Cindy Francies | Design &amp; Code</h3>
+    </div>
+    <div class="links">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="active">Contact Me</li>
+      </ul>
+    </div>
+  </nav>
+  <div class="wrapper">
+  <div class ="container-form">
         <h2 class ="dark">Let's Get To Work</h2>
-      </div>
-      <div class ="five columns u-pull-right">
-        <nav>
-          <ul class = "dark text-right">
-            <li class ="first">Home</li>
-            <li class="middle"><a href="about.html">About</a></li>
-            <li class ="last">Contact Me</li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <div  class = "row">
-      <p class = "six columns dark">Need design or coding work done (or maybe both)?
+
+
+      <p class = "dark">Need design or coding work done (or maybe both)?
         Please contact me via this form and I'll be in touch.</p>
-    </div>
+
 
         <form action="https://formspree.io/clfrancies@comcast.net"
       method="POST">
-            <div class="row">
-              <div class =  "four columns">
+
                 <label for="name" class="dark">Name:</label>
-                <input type = "text" id="name" name="name">
-              </div>
-            </div>
-            <div class="row">
-              <div class = "four columns">
+                <input type = "text" id="name" name="name" placeholder="Name">
+
+
                 <label for = "email" class="dark">E-mail:</label>
-                <input type = "email" class="form-control dark" id="email" name="email">
-              </div>
-          </div>
-            <div class="row">
-              <div class = "four columns">
+                <input type = "email" class="form-control dark" id="email" name="email" placeholder="Email Address">
+
                 <label for = "telephone" class="dark">Telephone:</label>
-                <input type = "tel" id="telephone" name="phone">
-              </div>
-          </div>
-            <div class="row">
-              <div class = "six columns">
+                <input type = "tel" id="telephone" name="phone" placeholder="Phone number">
                 <label for = "comments" class="dark">Comments:</label>
-                <textarea rows="4" id="comments" name="comments"></textarea>
-              </div>
-            </div>
-            <div class="row">
+                <textarea rows="4" cols="50" id="comments" name="comments" placeholder="Tell me more about how I can help!"></textarea>
+
+
+
               <button class="button-primary">Submit</button>
 
-           </div>
         </form>
-
-
-
-      <!--  end contact-->
-      <!-- footer -->
+      </div>
       <footer>
             <p class="dark text-center" ><a href="mailto:clfrancies@comcast.net">Cindy Francies</a></p>
-            <div class ="four columns offset-by-four">
             <p class = "dark text-center made-in">Made in Baltimore, Maryland</p>
                   <ul class="socials text-center">
                     <li class = "first"><a href="https://www.facebook.com/cindy.francies"><span class = "dark-icon fa fa-facebook-official"></span></a></li>
@@ -87,9 +72,8 @@
                     <li class="middle"><a href="https://twitter.com/clf222"><span class = "dark-icon fa fa-twitter"></span></a></li>
                     <li class = "last"><a href="https://www.linkedin.com/in/clfrancies/"><span class = "dark-icon fa fa-linkedin-square"></span></a></li>
                   </ul>
-            </div>
       </footer>
-</div>
+    </div>
       <!-- end footer-->
 
     <!-- google analytics -->
