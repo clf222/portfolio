@@ -21,9 +21,11 @@ nav {
 .container-content{
   display: flex;
   flex-wrap: wrap;
-
+  margin-bottom: 1em;
+  height: 100vh;
   padding: 1em;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .about-text {
@@ -223,9 +225,13 @@ a span.dark-icon.fa {
 
 
 footer {
-
-  position: sticky;
-  bottom: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-end;
+  margin-bottom: 4em;
+  text-align: center;
 }
 
 .right{
@@ -261,10 +267,12 @@ footer {
   }
   .links {
     align-items: center;
+    display: flex;
   }
-  .links ul {
-    margin:0;
+  nav .links ul {
+    align-self: center;
     padding: 0 1em;
+    margin-bottom: 0;
   }
 
   /* new stuff */
