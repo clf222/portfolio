@@ -1,6 +1,8 @@
 /*home page styles*/
-body {
-    background: #151515;
+html {
+    background-image: url('../images/home-image-small.jpg');
+    background-repeat: repeat;
+    background-color: #151515;
 }
 
 
@@ -15,6 +17,7 @@ body {
   height: 100vh;
   text-align: center;
 }
+
 h1 {
   font-family: 'Merriweather', serif;
   line-height: 1em;
