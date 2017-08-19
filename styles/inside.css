@@ -243,6 +243,12 @@ input[type=text], textarea{
 }
 button {
 margin: 1em;
+width:120px;
+}
+.comments-submit {
+  display: flex;
+  flex-flow: column wrap;
+  /*flex-basis: 20%;*/
 }
 footer {
   display: flex;
@@ -250,7 +256,7 @@ footer {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  position: sticky;
+  /*position: sticky;*/
   bottom: 1em;
   /*margin-bottom: 1em;*/
   text-align: center;
