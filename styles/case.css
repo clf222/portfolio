@@ -106,33 +106,43 @@ li {
 .background2 {
   display: inline-flex;
   justify-content: flex-start;
+  align-items: flex-start;
 
   flex-wrap: wrap;
   padding: 0 2em;
 }
-
+ .columns {
+   display: flex;
+   flex-wrap: wrap;
+ }
 .methodology {
   display: flex;
   flex-wrap: wrap;
   padding: .5em 2em;
-  justify-content: space-evenly;
+  flex-shrink: 1;
+  justify-content: space-between;
   align-items: flex-start;
   background-color: #151515;
 }
 .methodology-text {
   display: flex;
   flex-direction: column;
-  flex: 60%;
-  align-self: flex-start;
+  flex-basis: 35%;
+  align-items: flex-start;
   margin-right: 1em;
   padding: 0 2em;
+  align-items: flex-start;
+}
+.methodology p {
+  margin-bottom: .25em;
 }
 .methodology-img {
   display: flex;
   flex-direction: column;
   padding-left: 1em;
+  align-items: center;
   justify-content: center;
-  width: 40%;
+  flex-shrink: 0;
 }
 .methodology p, .methodology h4, .methodology h5, .methodology h6, .methodology li {
   color: #FFFAF0;

@@ -2,6 +2,15 @@
 body {
     background: #151515;
 }
+
+
+h3.logo-text {
+  font-family: 'Special Elite', cursive;
+  font-size: 1em;
+  letter-spacing: .1px;
+  color: #FFFAF0;
+  padding: 1em;
+}
 h1 {
   font-family: 'Merriweather', serif;
   line-height: 1em;
@@ -94,7 +103,7 @@ nav ul {
 /*end home page styles */
 
 /*default text styles*/
-h1, h2, h3, h4, h5, h6 {
+h1, h2,h5, h6 {
   font-family: 'Merriweather', serif;
 }
 
@@ -202,11 +211,13 @@ a span.dark-icon.fa {
 @media (min-width: 550px) {
   /*home page styles*/
   body {
-      background: url(http://takeflight.design/images/home-image.jpg) no-repeat top center,
-       linear-gradient(#151515 0%, #EEDD94 95%);
-       opacity: 90%;
+      background: url(http://takeflight.design/images/home-image.jpg) no-repeat top center;
+       /*linear-gradient(#151515 0%, #EEDD94 95%);
+       background-color: #F6F6F6;
+       background-blend-mode: luminosity;*/
+       /*opacity: 90%;
       background-attachment: fixed;
-       background-blend-mode: screen, luminosity, lighten;
+       background-blend-mode: screen, luminosity, lighten;*/
 
       background-size: cover;
       min-height: 100%;
