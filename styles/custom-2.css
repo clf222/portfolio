@@ -137,7 +137,7 @@ a {
   text-decoration: none;
 }
 p.light a:hover {
-  color: #1EAEDB;
+  color: #DAE4E6;
 }
 strong {
   font-weight: 700;
@@ -165,6 +165,12 @@ nav ul li {
   display: inline;
 
 }
+nav ul li a {
+  color: #FFEFD5;
+}
+nav ul li a:hover {
+  color: #DAE4E6;
+}
 ul.socials li.last {
   margin-right: 0;
   margin-left: 0;
@@ -177,10 +183,12 @@ ul.socials li {
   margin-right: 1em;
   margin-left: 0;
 }
-
-a span.dark-icon.fa {
-  color: #151515;
+a span.fa:hover {
+  color: green;
 }
+/*a span.dark-icon.fa:hover {
+  color: #DAE4E6;
+}*/
 
 .made-in {
   font-size: .8em;
@@ -267,7 +275,7 @@ ul.light.text-center li {
   .important {
     font-size: 1.66em;
   }
-  .description, .medum {
+  .description, .medium {
     font-size: 1.33em;
   }
   .normal {
