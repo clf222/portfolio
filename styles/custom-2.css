@@ -7,18 +7,26 @@ body {
 .logo {
     opacity: 0;
 }
+
+.container-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
 h1 {
   font-family: 'Merriweather', serif;
   line-height: 1em;
 }
 
-.container-hero {
+/*.container-hero {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   height: 100vh;
   text-align: center;
-}
+}*/
 
 .content {
   margin-bottom: 1em
