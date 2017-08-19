@@ -4,12 +4,8 @@ body {
 }
 
 
-h3.logo-text {
-  font-family: 'Special Elite', cursive;
-  font-size: 1em;
-  letter-spacing: .1px;
-  color: #FFFAF0;
-  padding: 1em;
+.logo {
+    opacity: 0;
 }
 h1 {
   font-family: 'Merriweather', serif;
@@ -231,7 +227,16 @@ a span.dark-icon.fa {
     height: 100vh;
     text-align: center;
   }
-
+  .logo {
+    opacity: 1;
+  }
+  h3.logo-text {
+    font-family: 'Special Elite', cursive;
+    font-size: 1em;
+    letter-spacing: .1px;
+    color: #FFFAF0;
+    padding: 1em;
+  }
   /* new stuff */
 
 ul.light.text-center {
