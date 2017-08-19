@@ -25,7 +25,7 @@ wrapper {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1em;
-  max-height: 100vh;
+  height: 100vh;
   padding: 1em;
   justify-content: flex-start;
   align-items: flex-start;
