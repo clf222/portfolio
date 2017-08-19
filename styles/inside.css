@@ -36,14 +36,13 @@ nav {
 
 }
 .about-img {
-
-
- justify-content: flex-end;
-
+display: flex;
+ justify-content: space-around;
   padding: 0;
   flex: 1;
-
-
+}
+img {
+  justify-content: flex-end;
 }
 
 h1 {
