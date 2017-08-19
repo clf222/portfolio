@@ -147,13 +147,6 @@ nav ul{
 }
 /*end nav text styling*/
 
-/*end home page styles */
-
-/*default text styles*/
-/*h1, h2,h5, h6 {
-  font-family: 'Merriweather', serif;
-}*/
-
 p, li {
   font-family: 'Lato', sans-serif;
   margin-bottom: .3em;
@@ -217,7 +210,7 @@ ul.socials li {
   margin-left: 0;
 }
 a span.fa:hover {
-  color: #1EAEDB;
+  color: blue;
 }
 a span.dark-icon.fa {
   color: #151515;
@@ -229,20 +222,11 @@ a span.dark-icon.fa {
 /*contact and about styles*/
 
 
-/*.container-inside {
-  /*display: flex;
-  justify-content: center;
-  align-items: flex-end;*/
-  /*height: 100vh;
-  text-align: center;
-}*/
-/*.content-inside {
-  background-color: #FFFAF0;
+footer {
 
-  padding: 1em 2em;
-  height: 100vh;
-
-}*/
+  position: sticky;
+  bottom: 1em;
+}
 
 .right{
   padding-right: 0;
@@ -256,19 +240,7 @@ a span.dark-icon.fa {
 /* Larger than phablet */
 /*@media (min-width: 550px) {
   /*home page styles*/
-  /*body {
-      background: url(http://takeflight.design/images/home-image.jpg) no-repeat top center;
-       /*linear-gradient(#151515 0%, #EEDD94 95%);
-       background-color: #F6F6F6;
-       background-blend-mode: luminosity;*/
-       /*opacity: 90%;
-      background-attachment: fixed;
-       background-blend-mode: screen, luminosity, lighten;*/
-/*
-      background-size: cover;
-      min-height: 100%;*/
 
-  /*}*/
 
   /*.container-hero {
     display: flex;
@@ -290,6 +262,11 @@ a span.dark-icon.fa {
   .links {
     align-items: center;
   }
+  .links ul {
+    margin:0;
+    padding: 0 1em;
+  }
+
   /* new stuff */
 
 /*ul.light.text-center {
@@ -308,15 +285,7 @@ ul.light.text-center li {
   h1 {
     line-height: 1.5em;
   }
-  .important {
-    font-size: 1.66em;
-  }
-  .description, .medum {
-    font-size: 1.33em;
-  }
-  .normal {
-    font-size: 1.2em;
-  }
+
   p {
     margin-bottom: 1em;
   }
