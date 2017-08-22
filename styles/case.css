@@ -149,6 +149,11 @@ li {
   margin-right: 1em;
   padding: 0 2em;
 }
+ul {
+  padding-left: 40px;
+  list-style-position: outside;
+}
+
 .methodology-text ul {
   flex-flow: column;
   flex-basis: 40%;
@@ -196,11 +201,11 @@ caption {
   flex-wrap: wrap;
   padding-right: 1em;
 }
-ul {
+/*ul {
   list-style-position: inside;
   text-indent: -1em;
   padding-left: 1em;
-}
+}*/
 
 .research-img {
   display: flex;
