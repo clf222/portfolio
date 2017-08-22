@@ -84,6 +84,8 @@ li.middle {
 wrapper {
   display: flex;
   height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
 }
 .container-content{
   display: flex;
