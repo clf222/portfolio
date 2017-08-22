@@ -91,9 +91,9 @@ wrapper {
 }
 .text-head {
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   justify-content: space-between;
-  align-content: center;
+  align-content: space-between;
 }
 div.text-head h3 {
   flex-grow: 1;
@@ -301,7 +301,7 @@ a span.dark-icon.fa:hover {
 }
 /*contact and about styles*/
 /*form styles*/
-input[type=text], textarea{
+input[type=text], input[type=email], input[type=tel], textarea{
   border-radius:10px;
 }
 
