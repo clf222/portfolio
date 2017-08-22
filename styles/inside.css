@@ -103,6 +103,12 @@ wrapper {
   justify-content: space-between;
   align-content: center;
 }
+div.text-head h3 {
+  flex-grow: 1;
+}
+div.text-head h4 {
+  align-self: flex-end;
+}
 
 .about-text {
   display: flex;
