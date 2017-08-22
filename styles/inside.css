@@ -8,16 +8,43 @@ html {
 
 nav {
   background-color: #151515;
-  height: 50px;
+  /*height: 50px;*/
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
   flex-wrap: wrap;
 }
-
-.logo {
-    opacity: 0;
+h3.logo-text {
+  font-family: 'Special Elite', cursive;
+  font-size: 1em;
+  letter-spacing: .15px;
+  color: #FFFAF0;
+  padding: .5em;
+  margin-bottom: 0;
 }
+.links {
+  align-items: center;
+  display: flex;
+}
+nav .links ul {
+  /*align-self: center;*/
+  padding: 0 1em;
+  margin-bottom: 0;
+}
+nav .links ul li.last a{
+  padding-left: 1em;
+  padding-right: 0;
+}
+nav .links ul li.middle a{
+  padding-left: 0;
+  padding-right: 0;
+}
+li.middle {
+  margin: 0;
+  padding:0;
+}
+
+
 wrapper {
   display: flex;
   height: 100vh;
@@ -41,12 +68,14 @@ wrapper {
 }
 .about-img {
 display: flex;
- justify-content: flex-end;
-  padding-right: 1em;
-  flex: 1;
+ flex-flow: row wrap;
+  padding: .5em;
+  justify-content: center;
 }
 img {
-  justify-content: flex-end;
+  max-width: 345px;
+  height: auto;
+
 }
 
 h1, h2 {
@@ -115,10 +144,7 @@ ul.tools li {
 li.first {
   margin-right: 1.33em;
   }
-li.middle {
-  margin-left: 0;
-  margin-right: 1.33em;
-}
+
 li.last {
   margin-left: 0;
   }
@@ -131,6 +157,10 @@ nav ul li a{
   color: #FFFAF0;
   margin-right: 1em;
 
+}
+nav ul li a.last{
+  margin: 0;
+  padding: 0;
 }
 /*nav ul {
   margin-bottom: .5em;
@@ -148,7 +178,7 @@ nav ul{
 }
 .active {
   color: #12F3ED;
-  padding-right: 1em;
+
 }
 /*end nav text styling*/
 
@@ -268,24 +298,23 @@ footer {
 }
 
 
-/*end contact and about styles*/
+
 
 
 /* Larger than phablet */
-/*@media (min-width: 550px) {
+@media (min-width: 550px) {
   /*home page styles*/
 
-
-  /*.container-hero {
+  nav {
+    background-color: #151515;
+    height: 50px;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 100vh;
-    text-align: center;
-  }*/
-  .logo {
-    opacity: 1;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
   }
+
+
   h3.logo-text {
     font-family: 'Special Elite', cursive;
     font-size: 1em;
@@ -303,18 +332,6 @@ footer {
     margin-bottom: 0;
   }
 
-  /* new stuff */
-
-/*ul.light.text-center {
-  display: table;
-  width: 100%;
-}*/
-
-ul.light.text-center li {
-  display: table-cell;
-  width: 33.3%;
-}
-
   .content {
     margin-bottom: 1em
   }
@@ -324,6 +341,23 @@ ul.light.text-center li {
 
   p {
     margin-bottom: 1em;
+  }
+  .about-text {
+    justify-content: flex-start;
+    margin-right: 1em;
+    flex: 2;
+
+
+  }
+  .about-img {
+  display: flex;
+   justify-content: flex-end;
+    padding-right: 1em;
+    flex: 1;
+  }
+  img {
+    max-width: 345px;
+    height: auto;
   }
 
 }
