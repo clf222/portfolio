@@ -137,11 +137,15 @@ li {
 .methodology-text {
   display: flex;
   flex-direction: column;
-  flex-basis: 35%;
-  align-items: flex-start;
+  flex-basis: 40%;
+  align-content: flex-start;
+  justify-content: flex-start;
   margin-right: 1em;
   padding: 0 2em;
-  align-items: flex-start;
+}
+.methodology-text ul {
+  flex-flow: column;
+  flex-basis: 40%;
 }
 .methodology p {
   margin-bottom: .25em;
@@ -152,6 +156,7 @@ li {
   padding-left: 1em;
   align-items: center;
   justify-content: center;
+  flex: 2;
   flex-shrink: 0;
 }
 .methodology p, .methodology h4, .methodology h5, .methodology h6, .methodology li {
