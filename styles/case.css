@@ -95,6 +95,9 @@ li {
     background-blend-mode: screen luminosity lighten;
     padding: 1em;
  }
+ .methodology, .research, .design, .user-heading, .user-columns{
+   padding: 1em;
+ }
  .columns {
    display: flex;
    flex-flow: column wrap;
@@ -186,7 +189,7 @@ caption {
   flex-direction: column;
   justify-content: flex-start;
   padding: 0 2em;
-  flex-basis: 50%;
+  flex-basis: 40%;
 }
 .research-data ul {
   display: flex;
@@ -203,17 +206,60 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-basis: 50%;
+  flex-basis: 40%;
 }
 .research-img img {
   max-width: 40%;
 }
+.design {
+  background-color: #151515;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
+}
+.design-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  /*flex-flow: column;*/
+  justify-content: space-between;
+}
+.left-body {
+  display: flex;
+}
+.design-left {
+  flex-basis: 30%;
+  /*display: flex;*/
+  flex-flow: column wrap;
+  align-content:  center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.img-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.design-left img {
+  max-width: 195px;
+}
+.design-center {
+  flex-basis: 30%;
 
+}
+.design-right {
+  flex-basis: 30%;
+  padding-right: 1em;
+  padding-left: 1em;
+}
 
 .user-heading {
-  height: 100px;
-  background-color: #151515;
+  /*height: 100px;*/
+  background-color: rgba(255, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 h4.light {
   color: #FFFAF0;
