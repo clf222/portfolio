@@ -1,6 +1,8 @@
 /*default text styles*/
 html {
-  height: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
 }
 body {
   font-family: 'Lato', sans-serif;
@@ -78,6 +80,7 @@ li {
    justify-content: center;
    align-content: center;
    background-color: #151515;
+   padding: 1em;
  }
 
  .intro {
@@ -87,6 +90,7 @@ li {
    background-image: url("../images/yummeatsbackground.png");
     background: rgba(255,0,0,0.9);
     background-blend-mode: screen luminosity lighten;
+    padding: 1em;
  }
  .columns {
    display: flex;
@@ -97,7 +101,7 @@ li {
 .case-logo {
   display: flex;
   flex-direction: column;
-  align-self: center;
+  flex: 1;
 }
 .design-statement {
   display: flex;
@@ -105,6 +109,7 @@ li {
   justify-content: space-between;
   align-items: center;
   padding: 1em;
+  flex: 4;
 }
 .background2 {
   display: inline-flex;
@@ -160,11 +165,27 @@ li {
   flex-direction: column;
   justify-content: flex-start;
   padding: 0 2em;
+  flex-basis: 50%;
 }
+.research-data ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 1em;
+}
+ul {
+  list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em;
+}
+
 .research-img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-basis: 50%;
+}
+.research-img img {
+  max-width: 40%;
 }
 
 
