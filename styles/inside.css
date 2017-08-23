@@ -19,16 +19,20 @@ nav {
   flex-wrap: wrap;
 }
 footer {
+  flex-direction: column;
   background-color: #151515;
-  position: sticky;
+  position: absolute;
+  height: 75px;
+  width: 100%;
+  bottom: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 1em;
-  flex-flow: column wrap;
+
 
 }
-footer p.dark.text-center a, p.dark.text-center.made-in, ul.socials.text-center li a{
+footer p a, p.made-in, ul.socials li a{
   color: #FFFAF0;
   margin-bottom: 0;
 }
@@ -36,10 +40,15 @@ p.dark.text-center, .made-in {
   margin-bottom: 0;
 
 }
-
+ul.socials {
+  padding-bottom: 0;
+  display: flex;
+  align-items: flex-start;
+}
 ul.socials.text-center  {
   color: #FFFAF0;
   margin-bottom: 0;
+
 }
 
 h3.logo-text {
@@ -70,6 +79,9 @@ nav .links ul li.middle a{
 li.middle {
   margin: 0;
   padding:0;
+}
+li {
+  margin-bottom: 0;
 }
 
 
@@ -231,7 +243,7 @@ nav ul{
 
 p, li {
   font-family: 'Lato', sans-serif;
-  margin-bottom: .3em;
+
 }
 p {
   line-height: 1.5em;
@@ -286,6 +298,7 @@ ul.socials li.last {
 ul.socials li.first {
   margin-right: 1em;
   margin-left: 0;
+
 }
 ul.socials li {
   margin-right: 1em;
@@ -406,15 +419,19 @@ width:120px;
   }
 footer {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  height: 100px;
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 footer ul {
   display: flex;
   flex-flow: row wrap;
 }
 footer ul li {
-  align-content: center;
+  align-content: flex-start;
 }
 
 
