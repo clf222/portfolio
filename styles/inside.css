@@ -457,6 +457,8 @@ footer {
   width: 100%;
   position: absolute;
   bottom: 0;
+  margin: 0;
+  padding: 0 1em;
 }
 footer ul {
   display: flex;
