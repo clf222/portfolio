@@ -6,6 +6,9 @@ html {
     font-family: 'Lato', sans-serif;
     height: 100vh;
 }
+.wrapper {
+  padding: .5em 1em;
+}
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
 }
@@ -15,8 +18,9 @@ nav {
   /*height: 50px;*/
   display: flex;
   justify-content: center;
-
   flex-wrap: wrap;
+  padding-bottom: .5em;
+  margin-bottom: 1em;
 }
 footer {
   flex-direction: column;
@@ -354,8 +358,12 @@ width:120px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
   }
-
+  .wrapper {
+    padding: 1em 2em;
+  }
 
   h3.logo-text {
     font-family: 'Special Elite', cursive;
