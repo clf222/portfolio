@@ -144,11 +144,20 @@ div.text-head h4 {
  /*flex-flow: row wrap;*/
   padding: .5em;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  flex-flow: row nowrap;;
+  display: flex;
+  flex-basis: 360px;
 }
 img {
-  max-width: 345px;
-  height: auto;
+  display: flex;
+   flex-flow: row nowrap;
+   justify-content: flex-start;
+   align-items: center;
+
+   flex-basis: 50%;
+   flex-grow: 0;
+
 
 }
 
@@ -263,9 +272,9 @@ p, li {
 p {
   line-height: 1.5em;
 }
-div.container-content h3 {
+/*div.container-content h3 {
   margin-bottom: 0;
-}
+}*/
 .dark {
   color: #151515;
 }
@@ -377,14 +386,33 @@ flex-basis: 80%;
   flex-wrap: wrap;
 
 }
+@@media (min-width: 750px) {
+  .text-head {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+    /*flex-wrap: wrap;*/
+  }
+  .text-head h3 {
+    font-size: 1.75em;
+    flex-basis: 60%;
+    flex-grow: 1;
 
+  }
+  .text-head h4 {
+    font-size: 1.5em;
+    flex-basis: 40%;
+
+  }
+}
 
 
 
 
 
 /* Larger than phablet */
-@media (min-width: 550px) {
+@media (min-width: 1000px) {
   /*home page styles*/
 
   nav {
@@ -397,14 +425,17 @@ flex-basis: 80%;
     margin-bottom: 2em;
   }
   .wrapper {
-    padding: 1em 2em;
-    flex-grow: 1;
+    padding: 1em 0;
+    /*flex-grow: 1;*/
+    flex-shrink: 1;
+    display: flex;
+    s
   }
   .container-content{
     display: flex;
     flex-wrap: wrap;
     /*margin-bottom: 1em;*/
-    min-height: 100%;
+    /*min-height: 100%;*/
     padding-left: 1em;
     padding-right: 1em;
     justify-content: space-between;
@@ -439,17 +470,21 @@ flex-basis: 80%;
     margin-bottom: 1em;
   }
   .about-text {
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-shrink: 1;
+    flex-wrap: wrap;
     /*margin-right: 1em;*/
     flex: 2;
   }
   .text-head {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: center;
     padding: 0;
   }
+  
   /*.about-text h4 {
     align-self: flex-end;
   }*/
@@ -465,26 +500,28 @@ flex-basis: 80%;
     height: auto;
 
   }
-  .text-head h3 {
+  /*.text-head h3 {
     margin-right: 2em;
   }
   .text-head h4 {
     margin-left: 2em;
-  }
+  }*/
 footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 60px;
-  width: 100%;
-  padding: 0 2em;
-  position: static;
+  /*height: 60px;*/
+  /*width: 100vw;*/
+  /*padding: 1em 2em;*/
+  position: absolute;
   align-items: center;
   bottom: 0;
   margin-bottom: 0;
+}
 
-
-  /*padding: 0 -1.5em;*/
+footer p a {
+  margin-left: 1em;
+  padding-left: 1em;
 }
 footer ul {
   display: flex;
