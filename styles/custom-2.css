@@ -1,5 +1,5 @@
 /*home page styles*/
-html {
+body {
     background-image: url('../images/home-image-small.jpg');
     background-repeat: repeat;
     background-color: #151515;
@@ -235,9 +235,9 @@ a span.fa:hover {
 
 
 /* Larger than phablet */
-@media (min-width: 550px) {
+@media (min-width: 768px) {
   /*home page styles*/
-  html {
+body {
       background: url(http://takeflight.design/images/home-image.jpg) no-repeat top center;
        /*linear-gradient(#151515 0%, #EEDD94 95%);
        background-color: #F6F6F6;
@@ -247,7 +247,8 @@ a span.fa:hover {
        background-blend-mode: screen, luminosity, lighten;*/
 
       background-size: cover;
-      min-height: 100%;
+      overflow-x: hidden;
+      overflow-y: hidden;
 
   }
 
@@ -258,9 +259,7 @@ a span.fa:hover {
     height: 100vh;
     text-align: center;
   }
-  .logo {
-    opacity: 1;
-  }
+
   h3.logo-text {
     font-family: 'Special Elite', cursive;
     font-size: 1em;
@@ -270,8 +269,11 @@ a span.fa:hover {
     padding-bottom: 0;
   }
   /* new stuff */
-
-ul.light.text-center {
+nav ul {
+  display: inline-flex;
+  align-items: center;
+}
+/*ul.light.text-center {
   display: table;
   width: 100%;
 }
@@ -279,7 +281,7 @@ ul.light.text-center {
 ul.light.text-center li {
   display: table-cell;
   width: 33.3%;
-}
+}*/
 
   .content {
     margin-bottom: 2em;
