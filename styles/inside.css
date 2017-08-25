@@ -13,7 +13,8 @@ html {
 }*/
 .wrapper {
   padding: 0 1em;
-  flex-grow: 1;
+
+  /*flex-grow: 1;*/
 }
 h1,h2,h3,h4,h5,h6 {
   margin: 0 0 .5em 0;
@@ -37,7 +38,7 @@ footer {
   flex-direction: column;
   background-color: #151515;
   position: fixed;
-  height: 75px;
+  height: 40px;
   width: 100%;
   bottom: 0;
   right: 0;
@@ -106,16 +107,16 @@ wrapper {
   display: flex;
   flex-wrap: wrap;
 }
-.container-content{
-  display: flex;
-  flex-wrap: wrap;
+/*.container-content{
+  flex-flow: column wrap;
+
   margin-bottom: 1em;
   min-height: 100%;
   padding-left: 1em;
   padding-right: 1em;
   justify-content: space-between;
-  align-items: space-between;
-}
+  align-items: center;
+}*/
 .text-head {
   display: flex;
   /*flex-wrap: wrap;*/
@@ -134,7 +135,7 @@ div.text-head h4 {
   flex-wrap: wrap;
   justify-content: space-between;
   /*margin-right: 1em;*/
-  flex: 2;
+  /*flex: 2;*/
   flex-shrink: 0;
 
 
@@ -144,19 +145,21 @@ div.text-head h4 {
  /*flex-flow: row wrap;*/
   padding: .5em;
   justify-content: center;
-  align-items: center;
-  flex-flow: row nowrap;;
+  align-items: flex-start;
+  flex-flow: row nowrap;
   display: flex;
-  flex-basis: 360px;
+  visibility: hidden;
+
 }
 img {
   display: flex;
    flex-flow: row nowrap;
    justify-content: flex-start;
    align-items: center;
+   visibility: hidden;
 
    flex-basis: 50%;
-   flex-grow: 0;
+flex-shrink: 1;
 
 
 }
@@ -307,6 +310,9 @@ strong {
 .text-right {
   text-align: right;
 }
+.lastp {
+  margin-bottom: 0;
+}
 /*end utilities*/
 
 
@@ -395,21 +401,33 @@ flex-basis: 80%;
     /*flex-wrap: wrap;*/
   }
   .text-head h3 {
-    font-size: 1.75em;
-    flex-basis: 60%;
-    flex-grow: 1;
-
-  }
+      margin-right: auto;
+    }
   .text-head h4 {
     font-size: 1.5em;
     flex-basis: 40%;
+    margin-bottom: 0;
 
   }
 }
 
 
+ .about-img {
+display: flex;
+ justify-content: center;
+  padding-right: 1em;
+  padding-top: 2em;
+  align-items: flex-start;
+  visibility: visible;
 
+}
+ img {
+  max-width: 273px;
+  display: flex;
+  height: auto;
+  visibility: visible;
 
+}
 
 /* Larger than phablet */
 @media (min-width: 1000px) {
@@ -422,25 +440,33 @@ flex-basis: 80%;
     justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
     margin-bottom: 2em;
   }
+  nav .logo-text {
+    margin-right:auto;
+  }
   .wrapper {
-    padding: 1em 0;
+    padding: 1em 2em;
     /*flex-grow: 1;*/
     flex-shrink: 1;
     display: flex;
-    s
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
   }
-  .container-content{
+  /*.container-content{
     display: flex;
     flex-wrap: wrap;
     /*margin-bottom: 1em;*/
     /*min-height: 100%;*/
-    padding-left: 1em;
+    /*padding-left: 1em;
     padding-right: 1em;
     justify-content: space-between;
-    align-items: space-between;
-  }
+    align-content: : space-between;
+  }*/
 
   h3.logo-text {
     font-family: 'Special Elite', cursive;
@@ -471,20 +497,22 @@ flex-basis: 80%;
   }
   .about-text {
     justify-content: flex-start;
-    flex-shrink: 1;
     flex-wrap: wrap;
-    /*margin-right: 1em;*/
-    flex: 2;
+    margin-right: 1em;
+    flex-basis: 60%;
+    /*padding-bottom: 14em;*/
+    align-items: flex-start;
   }
   .text-head {
     display: flex;
-    flex-direction: row;
+
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
-    padding: 0;
+    align-content: flex-start;
+    padding-bottom: 0;
+
   }
-  
+
   /*.about-text h4 {
     align-self: flex-end;
   }*/
@@ -492,36 +520,37 @@ flex-basis: 80%;
   display: flex;
    justify-content: flex-end;
     padding-right: 1em;
-    align-items: center;
+    align-items: flex-start;
     /*flex: 1;*/
   }
   img {
     max-width: 345px;
+    display: flex;
     height: auto;
 
   }
-  /*.text-head h3 {
-    margin-right: 2em;
-  }
+
   .text-head h4 {
     margin-left: 2em;
-  }*/
+  }
 footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /*height: 60px;*/
-  /*width: 100vw;*/
+  height: 40px;
+
   /*padding: 1em 2em;*/
-  position: absolute;
+  position:absolute;
   align-items: center;
   bottom: 0;
   margin-bottom: 0;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 footer p a {
-  margin-left: 1em;
-  padding-left: 1em;
+  /*margin-left: 1em;*/
+  /*padding-left: 1em;*/
 }
 footer ul {
   display: flex;
