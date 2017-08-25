@@ -6,8 +6,9 @@ html {
 }
 
 
-.logo {
-    opacity: 0;
+.header{
+    display: flex;
+    justify-content: space-between;
 }
 
 .container-hero {
@@ -94,14 +95,18 @@ li.last {
 
 
 /*nav text styling*/
-nav ul li {
+nav ul li a{
   font-size: 1.3em;
   font-family: 'Lato', sans-serif;
+  color: #FFFAF0;
+  display: flex;
+  align-items: center;
+
 
 }
 nav ul {
-  margin-bottom: .5em;
-  margin-right: auto;
+  align-items: center;
+  padding-right: 2em;
   margin-left: auto;
 }
 
