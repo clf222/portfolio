@@ -365,22 +365,22 @@ input[type=text]:hover,  input[type=email]:hover, input[type=tel]:hover, textare
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  flex-basis: 40%;
+  flex-basis: 50%;
 
 }
 label {
   justify-content: flex-start;
-  flex-basis: 7em;
+  flex-basis: 10em;
 }
 textarea, input {
   align-items: flex-start;
   /*margin-left: 1em;*/
-  flex-basis: 60%;
+  flex-basis: 65%;
 }
 button {
 margin: 1em 0;
 width:200px;
-flex-basis: 80%;
+flex-basis: 70%;
 }
 .button, button, input[type="submit"], input[type="reset"], input[type="button"] {
   text-transform: inherit;
