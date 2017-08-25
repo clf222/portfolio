@@ -237,7 +237,7 @@ a span.fa:hover {
 /* Larger than phablet */
 @media (min-width: 550px) {
   /*home page styles*/
-  body {
+  html {
       background: url(http://takeflight.design/images/home-image.jpg) no-repeat top center;
        /*linear-gradient(#151515 0%, #EEDD94 95%);
        background-color: #F6F6F6;
