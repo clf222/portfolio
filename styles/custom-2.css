@@ -9,6 +9,12 @@ html {
 .header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: rgba(21,21,21,.8);
+
+}
+ul {
+  margin-bottom: 0;
 }
 
 .container-hero {
@@ -33,7 +39,7 @@ h1 {
 }*/
 
 .content {
-  margin-bottom: 1em
+  margin-bottom: 1em;
 }
 
 h1 {
@@ -81,6 +87,9 @@ ul.tools li {
   font-family: 'Merriweather', serif;
   font-size: 1.33em;
   /*margin-right: 1.33em;*/
+}
+ul.tools {
+  margin-bottom: .75em;
 }
 li.first {
   margin-right: 1.33em;
@@ -258,6 +267,7 @@ a span.fa:hover {
     letter-spacing: .1px;
     color: #FFFAF0;
     padding: 1em;
+    padding-bottom: 0;
   }
   /* new stuff */
 
@@ -272,7 +282,7 @@ ul.light.text-center li {
 }
 
   .content {
-    margin-bottom: 1em
+    margin-bottom: 2em;
   }
   h1 {
     line-height: 1.5em;
