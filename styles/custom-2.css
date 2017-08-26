@@ -234,13 +234,13 @@ a span.fa:hover {
   /*height: 100vh;
   text-align: center;
 }*/
-.content-inside {
+/*.content-inside {
   background-color: #FFFAF0;
 
   padding: 1em 2em;
   height: 100vh;
 
-}
+}*/
 
 .right{
   padding-right: 0;
@@ -293,18 +293,17 @@ body {
     padding-bottom: 0;
   }
   .container-hero {
+    flex-direction: column;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     height: 100vh;
+    margin-top: 16vh;
     text-align: center;
     margin-bottom: 0;
   }
 
-  .container-hero .content {
-      margin-top: 30vh;
 
-  }
 
   h3.logo-text {
     font-family: 'Special Elite', cursive;
