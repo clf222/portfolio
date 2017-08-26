@@ -56,6 +56,9 @@ p.dark.text-center, .made-in {
   margin-bottom: 0;
 
 }
+nav ul li {
+  padding-right: 1em;
+}
 
 ul.socials {
   padding-bottom: 0;
@@ -264,7 +267,7 @@ nav ul{
   align-items: center;
   padding-right: 1em;
   padding-top: 1em;
-  justify-content: space-around;
+  justify-content: space-between;
 
 
   /*justify-content: center;*/
