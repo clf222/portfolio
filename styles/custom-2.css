@@ -8,10 +8,23 @@ body {
 
 .header{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: rgba(21,21,21,.8);
 
+}
+h3.logo-text {
+  font-family: 'Special Elite', cursive;
+  font-size: 1em;
+  letter-spacing: .1px;
+  color: #FFFAF0;
+  padding: 1em;
+  padding-bottom: 0;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
 }
 ul {
   margin-bottom: 0;
@@ -113,11 +126,11 @@ nav ul li a{
 
 
 }
-nav ul {
+/*nav ul {
   align-items: center;
-  padding-right: 2em;
+  padding-right:0
   margin-left: auto;
-}
+}*/
 
 /*end nav text styling*/
 
@@ -198,7 +211,7 @@ ul.socials li {
   margin-left: 0;
 }
 a span.fa:hover {
-  color: green;
+  color: #DAE4E6;
 }
 /*a span.dark-icon.fa:hover {
   color: #DAE4E6;
@@ -229,7 +242,13 @@ a span.fa:hover {
   padding-right: 0;
   margin-right: 0;
 }
+footer  {
+flex-flow: column;
+justify-content: center;
+align-items: center;
 
+
+}
 
 /*end contact and about styles*/
 
@@ -251,13 +270,36 @@ body {
       overflow-y: hidden;
 
   }
+  .header{
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(21,21,21,.8);
 
+  }
+  nav ul {
+    margin-right: 1em;
+  }
+  h3.logo-text {
+    font-family: 'Special Elite', cursive;
+    font-size: 1em;
+    letter-spacing: .1px;
+    color: #FFFAF0;
+    padding: 1em;
+    padding-bottom: 0;
+  }
   .container-hero {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     height: 100vh;
     text-align: center;
+    margin-bottom: 0;
+  }
+
+  .container-hero .content {
+      margin-top: 30vh;
+
   }
 
   h3.logo-text {
@@ -272,6 +314,7 @@ body {
 nav ul {
   display: inline-flex;
   align-items: center;
+  font-size: 1em;
 }
 /*ul.light.text-center {
   display: table;
@@ -283,10 +326,10 @@ ul.light.text-center li {
   width: 33.3%;
 }*/
 
-  .content {
+  /*.content {
     margin-bottom: 2em;
   }
-  h1 {
+  h1 {*/
     line-height: 1.5em;
   }
   .important {
@@ -300,6 +343,12 @@ ul.light.text-center li {
   }
   p {
     margin-bottom: .5em;
+  }
+  footer  {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   }
 
 }
