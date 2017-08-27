@@ -13,6 +13,7 @@ html {
 }*/
 .wrapper {
   padding: 0 1em;
+  margin-bottom: 6em;
 
   /*flex-grow: 1;*/
 }
@@ -41,7 +42,8 @@ footer {
   min-height: 40px;
   width: 100%;
   bottom: 0;
-  margin-top: 15em;
+  /*margin-top: 15em;
+  padding-top: 15em;*/
   display: flex;
   justify-content: space-around;
   align-items: center;
