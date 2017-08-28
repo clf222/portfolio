@@ -92,19 +92,7 @@ h3.logo-text {
   justify-content: space-between;
   flex-basis: 50%;
 }
-/*nav .links ul {
-  /*align-self: center;*/
-  /*padding: 0 1em;
-  margin-bottom: 0;*/
-}
-/*nav .links ul li.last a{
-  padding-left: 1em;
-  padding-right: 0;
-}
-nav .links ul li.middle a{
-  padding-left: 0;
-  padding-right: 0;
-}*/
+
 li.middle {
   margin: 0;
   padding:0;
@@ -155,6 +143,7 @@ max-width: 173px;
 height: auto;
 opacity: 0;
 }
+
 
 h1, h2, .text-head h3 {
   font-family: 'Merriweather', serif;
@@ -404,6 +393,11 @@ links {
   flex-basis: 20%;
   }
 
+}
+@media (max-width: 666px) {
+  img {
+     opacity : 0; transition:opacity ease-in-out .25s;
+   }
 }
 @media (min-width: 667px){
   img {
