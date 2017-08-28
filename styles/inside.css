@@ -42,22 +42,23 @@ footer {
   min-height: 40px;
   width: 100%;
   bottom: 0;
-  /*margin-top: 15em;
-  padding-top: 15em;*/
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 0;
+  padding: .5em 0 0 0;
   flex-grow: 0;
+}
+.name {
+  margin-bottom:0;
 }
   p a, p.made-in, a{
   color: #FFFAF0;
   margin-bottom: 0;
+
 }
 
 p.dark.text-center, .made-in {
   margin-bottom: 0;
-
 }
 /*nav ul li {
   padding-right: 1em;
@@ -401,6 +402,7 @@ button.button-primary:hover {
 links {
   flex-basis: 20%;
   }
+
 }
 
 @media (min-width: 750px) {
@@ -426,19 +428,21 @@ links {
 
 
   footer {
-    flex-direction: column;
-    background-color: #151515;
-    position: fixed;
-    min-height: 40px;
-    width: 100%;
-    bottom: 0;
-    margin-top: 15em;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1em 0;
-    flex-grow: 0;
-  }
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ min-height: 40px;
+ width: 100vw;
+ position:fixed;
+ align-items: center;
+ bottom: 0;
+ margin-bottom: 0;
+ padding-left: 2em;
+ padding-right: 2em;
+}
+.socials {
+  margin-right: 4em;
+}
 
   .text-head {
     display: flex;
@@ -446,15 +450,6 @@ links {
     flex-grow: 1;
     align-items: baseline;
   }
-  /*.text-head h3 {
-      margin-right: auto;
-    }
-  .text-head h4 {
-    font-size: 1.5em;
-    flex-basis: 40%;
-    margin-bottom: 0;
-  }*/
-
 
 
  .about-img {
@@ -464,10 +459,7 @@ links {
   padding-top: 2em;
   align-items: center;
 }
- img {
-  max-width: 273px;
-  height: auto;
-  }
+
 }
 
 @media (min-width: 1000px) {
@@ -560,7 +552,6 @@ links {
   justify-content: space-between;
   min-height: 40px;
   width: 100vw;
-  /*padding: 1em 2em;*/
   position:fixed;
   align-items: center;
   bottom: 0;
@@ -578,9 +569,6 @@ links {
   align-content: flex-start;
 }
 .socials {
-  /*display: flex;
-  justify-content: center;
-  align-items: center;*/
   margin-right: 4em;
 }
 
