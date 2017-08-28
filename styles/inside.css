@@ -69,9 +69,11 @@ p.dark.text-center, .made-in {
   justify-content: center;
   align-items: center;
   margin-right: 0;
+  padding-bottom: .5em;
 }
 .socials p {
   padding-right: 1em;
+  margin-bottom: 0;
 }
 p.last-social {
   padding-right: 0;
