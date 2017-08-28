@@ -153,6 +153,7 @@ p {
 img {
 max-width: 173px;
 height: auto;
+opacity: 0;
 }
 
 h1, h2, .text-head h3 {
@@ -404,6 +405,11 @@ links {
   }
 
 }
+@media (min-width: 667px){
+  img {
+     opacity : 1; transition:opacity ease-in-out .25s;
+   }
+}
 
 @media (min-width: 750px) {
   nav {
@@ -460,7 +466,6 @@ links {
   align-items: center;
 }
 
-}
 
 @media (min-width: 1000px) {
 
