@@ -32,6 +32,10 @@ h4 {
   font-size: 1.875em;
   margin-bottom: .5em;
 }
+h5 {
+  font-size: 1.5em;
+  margin-bottom: .5em;
+}
 p, a {
   font-size: 1.25em;
 }
@@ -87,67 +91,54 @@ li {
  }
 
  .intro {
-
    display: flex;
    flex-wrap: wrap;
-   background-image: url("../images/yummeatsbackground.png");
-    background: rgba(255,0,0,0.9);
-    background-blend-mode: screen luminosity lighten;
-    padding: 1em;
+   justify-content: center;
+   background-image: url(../images/yummeatsbackground.png);
+   background-color: #4B0082;
+   background-blend-mode: multiply;
+   background-size: cover;
+ }
+ .intro h2, .intro h3, h4, .intro p {
+   color: white;
  }
  .methodology, .research, .design, .user-heading, .user-columns{
    padding: 1em;
  }
- .columns {
-   display: flex;
-   flex-flow: column wrap;
-   justify-content: space-between;
-   align-content: center;
 
-   padding: 1em 0;
- }
 .case-logo {
-  display: flex;
-  /*flex-direction: column;*/
-  justify-content: center;
+
   flex-shrink: 1;
   /*max-width: 60%;*/
-  align-items: center;
-}
-.design-statement {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  /*align-items: center;*/
   padding: 1em;
-  flex: 4;
+}
+
+.design-statement {
+  padding: 1em 1em 0 1em;
+  flex-basis: 100%;
+}
+p.prototype {
+  display: flex;
+  justify-content: center;
+
 }
 .background2 {
   display: inline-flex;
   justify-content: flex-start;
-  align-items: flex-start;
-
+  align-items: center;
   flex-wrap: wrap;
-  padding: 0 2em;
+  padding: 1em;
 }
 
 .methodology {
   display: flex;
   flex-wrap: wrap;
-  padding: .5em 2em;
-  flex-shrink: 1;
-  justify-content: space-between;
-  align-items: flex-start;
-  background-color: #151515;
+  justify-content: flex-start;
+  background-color: #000000;
 }
 .methodology-text {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 40%;
-  align-content: flex-start;
-  justify-content: flex-start;
-  margin-right: 1em;
-  padding: 0 2em;
+
 }
 ul {
   padding-left: 40px;
@@ -187,48 +178,44 @@ caption {
 .research {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .research-data {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 0 2em;
-  flex-basis: 40%;
+  padding: 0 1em;
 }
 .research-data ul {
   display: flex;
   flex-wrap: wrap;
   padding-right: 1em;
 }
-/*ul {
-  list-style-position: inside;
-  text-indent: -1em;
-  padding-left: 1em;
-}*/
 
-.research-img {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-basis: 40%;
-}
+
 .research-img img {
-  max-width: 40%;
+  max-width: 100%;
+  padding: 0 1em;
 }
 .design {
   background-color: #151515;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-
 }
-.design-content {
+.design h4 {
+  flex-basis: 100%;
+}
+.case {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+}
+
+.img-flex {
+  display: flex;
+}
+/*.design-content {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  /*flex-flow: column;*/
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .left-body {
   display: flex;
@@ -236,7 +223,7 @@ caption {
 .design-left {
   flex-basis: 30%;
   /*display: flex;*/
-  flex-flow: column wrap;
+  /*flex-flow: column wrap;
   align-content:  center;
   padding-left: 1em;
   padding-right: 1em;
@@ -245,19 +232,8 @@ caption {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.design-left img {
-  max-width: 195px;
-}
-.design-center {
-  flex-basis: 30%;
+}*/
 
-}
-.design-right {
-  flex-basis: 30%;
-  padding-right: 1em;
-  padding-left: 1em;
-}
 
 .user-heading {
   /*height: 100px;*/
@@ -293,15 +269,7 @@ footer ul li {
 
 /*bigger than 550*/
 @media (min-width: 550px) {
-  .intro {
 
-    display: flex;
-    flex-wrap: wrap;
-    background-image: url("../images/yummeatsbackground.png");
-     background: rgba(255,0,0,0.9);
-     background-blend-mode: screen luminosity lighten;
-     padding: 1em;
-  }
   .columns {
     flex-flow: wrap;
     justify-content: space-between;
