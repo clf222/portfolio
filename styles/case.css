@@ -40,7 +40,7 @@ p, a {
   font-size: 1.25em;
 }
 p {
-  margin-bottom: 1em;
+  margin-bottom: .5em;
   line-height: 1.5em;
 }
 sup a{
@@ -200,16 +200,22 @@ caption {
   flex-wrap: wrap;
 }
 .design h4 {
-  flex-basis: 100%;
+  flex-basis: 90%;
 }
 .case {
   display: flex;
   flex-wrap: wrap;
   padding: 1em;
 }
+.case p {
+  flex-basis: 90%;
+}
 
 .img-flex {
   display: flex;
+}
+.img-flex img {
+  flex-basis: 90%;
 }
 /*.design-content {
   display: flex;

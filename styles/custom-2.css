@@ -6,7 +6,7 @@ body {
 }
 
 
-.header{
+/*.header{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,20 +15,64 @@ body {
     position: fixed
     height: 50px;
     width: 100vw;
+}*/
+  /*#home-nav {
 
+    background-color: rgba(21,21,21,.8);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: .5em;
+    margin-bottom: 1em;
 
+}*/
+.nav-home {
+  background-color: rgba(21,21,21,.8);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: .5em;
+  margin-bottom: 1em;
 }
+.active {
+  color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+a:hover {
+    color: #DAE4E6;
+}
+p a, p.made-in, a {
+    color: #FFFAF0;
+    margin-bottom: 0;
+}
+/*nav {
+  background-color: #151515;
+  /*height: 50px;*/
+  /*display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: .5em;
+  margin-bottom: 1em;
+}*/
+
 h3.logo-text {
   font-family: 'Special Elite', cursive;
   font-size: 1em;
-  letter-spacing: .1px;
+  flex-basis: 70%;
+  letter-spacing: .15px;
   color: #FFFAF0;
-  padding: 1em;
-  padding-bottom: 0;
+  padding: .5em;
+  margin-bottom: 0;
 }
-nav ul {
+/*nav ul {
   display: flex;
   justify-content: center;
+}*/
+.links {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 70%;
 }
 ul {
   margin-bottom: 0;
@@ -279,16 +323,35 @@ body {
       overflow-y: hidden;
 
   }
-  .header{
+  /*.header{
       flex-flow: row;
       justify-content: space-between;
       align-items: center;
       background-color: rgba(21,21,21,.8);
 
+  }*/
+
+  .nav-home {
+
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-bottom: 2em;
   }
-  nav ul {
+  .links {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 37%;
+
+  }
+  /*nav ul {
     margin-right: 1em;
-  }
+  }*/
   h3.logo-text {
     font-family: 'Special Elite', cursive;
     font-size: 1em;
@@ -319,10 +382,10 @@ body {
     padding-bottom: 0;
   }
   /* new stuff */
-nav ul {
+/*nav ul {
   display: inline-flex;
   align-items: center;
-  font-size: 1em;
+  font-size: 1em;*/
 }
 /*ul.light.text-center {
   display: table;
@@ -349,9 +412,9 @@ ul.light.text-center li {
   .normal {
     font-size: 1.2em;
   }
-  p {
+  /*p {
     margin-bottom: .5em;
-  }
+  }*/
   footer  {
     display: flex;
   justify-content: space-between;
