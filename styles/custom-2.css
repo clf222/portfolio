@@ -21,35 +21,7 @@ p a, p.made-in, a {
     color: #FFFAF0;
     margin-bottom: 0;
 }
-/*nav {
-  background-color: #151515;
-  /*height: 50px;*/
-  /*display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-bottom: .5em;
-  margin-bottom: 1em;
-}*/
 
-/*h3.logo-text {
-  font-family: 'Special Elite', cursive;
-  font-size: 1em;
-  flex-basis: 70%;
-  letter-spacing: .15px;
-  color: #FFFAF0;
-  padding: .5em;
-  margin-bottom: 0;
-}*/
-/*nav ul {
-  display: flex;
-  justify-content: center;
-}*/
-/*.links {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  flex-basis: 70%;
-}*/
 ul {
   margin-bottom: 0;
 }
@@ -195,7 +167,7 @@ strong {
 
 
 /*global styles*/
-nav ul li {
+/*nav ul li {
   display: inline;
 
 }
@@ -204,7 +176,7 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #DAE4E6;
-}
+}*/
 ul.socials li.last {
   margin-right: 0;
   margin-left: 0;
@@ -272,32 +244,7 @@ body {
   }
 
 
-  /*.nav-home {
 
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-bottom: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
-    margin-bottom: 2em;
-  }
-  .links {
-    align-items: flex-end;
-    display: flex;
-    justify-content: space-between;
-    flex-basis: 37%;
-
-  }*/
-
-  h3.logo-text {
-    font-family: 'Special Elite', cursive;
-    font-size: 1em;
-    letter-spacing: .15px;
-    color: #FFFAF0;
-    padding: 1em;
-    padding-bottom: 0;
-  }
   .container-hero {
     flex-direction: column;
     display: flex;
@@ -316,7 +263,7 @@ body {
     font-size: 1em;
     letter-spacing: .15px;
     color: #FFFAF0;
-    flex-basis: 70%;
+    /*flex-basis: 70%;*/
     padding: 1em;
     padding-bottom: 0;
   }
@@ -351,6 +298,7 @@ ul.light.text-center li {
   .normal {
     font-size: 1.2em;
   }
+
   /*p {
     margin-bottom: .5em;
   }*/
