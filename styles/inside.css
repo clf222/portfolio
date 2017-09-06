@@ -6,19 +6,8 @@ html {
     /*font-family: 'Lato', sans-serif;*/
     height: 100vh;
 }
-/*body {*/
-  /*display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}*/
-/*.wrapper {
-  padding: 0 1em;
-  margin-bottom: 6em;
 
-}*/
-h1,h2,h3,h4,h5,h6 {
-  margin: 0 0 .5em 0;
-}
+
 body {
   display: flex;
   flex-flow: column ;
@@ -192,10 +181,10 @@ a {
 }
 /*end nav text styling*/
 
-p, li {
+/*p, li {
   font-family: 'Lato', sans-serif;
 
-}
+}*/
 /*p {
   line-height: 1.5em;
 }*/
