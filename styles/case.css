@@ -26,10 +26,13 @@ h1 {
   padding: .5em 0;
 }
 h2 {
-  font-size: 3em;
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1em;
 }
 h4 {
-  font-size: 1.875em;
+  font-size: .875em;
   margin-bottom: .5em;
 }
 h5 {
@@ -92,37 +95,48 @@ li {
 
  .intro {
    display: flex;
-   flex-wrap: wrap;
    justify-content: center;
+   align-items: center;
+   flex-flow: column nowrap;
+   background: rgba(197, 145, 145, 0.92);
    background-image: url(../images/yummeatsbackground.png);
-   background-color: #4B0082;
-   background-blend-mode: multiply;
+   background-blend-mode: lighten;
    background-size: cover;
  }
+.logo {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  flex-basis: 30%;
+}
+
  .intro h2, .intro h3, h4, .intro p {
-   color: white;
+   color: #151515;
+ }
+
+ button {
+   border-radius: 2px;
+   background-color: #151515;
+
  }
  .methodology, .research, .design, .user-heading, .user-columns{
    padding: 1em;
  }
 
-.case-logo {
 
-  flex-shrink: 1;
-  /*max-width: 60%;*/
-  /*align-items: center;*/
-  padding: 1em;
-}
 
 .design-statement {
-  padding: 1em 1em 0 1em;
-  flex-basis: 100%;
-}
-p.prototype {
+  padding: 1em;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-
+  flex-wrap: wrap;
 }
+.design-statement h2, .design-statement h3, .design-statement p, .design-statement button {
+  flex-basis: 50%;
+}
+
+
 .background2 {
   display: inline-flex;
   justify-content: flex-start;
@@ -217,28 +231,6 @@ caption {
 .img-flex img {
   flex-basis: 90%;
 }
-/*.design-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: flex-start;
-}
-.left-body {
-  display: flex;
-}
-.design-left {
-  flex-basis: 30%;
-  /*display: flex;*/
-  /*flex-flow: column wrap;
-  align-content:  center;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-.img-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}*/
 
 
 .user-heading {
@@ -274,7 +266,7 @@ footer ul li {
 }
 
 /*bigger than 550*/
-@media (min-width: 550px) {
+/*@media (min-width: 550px) {
 
   .columns {
     flex-flow: wrap;
@@ -308,4 +300,4 @@ footer ul li {
     display: flex;
     flex-wrap: wrap;
   }*/
-}
+/*}*/
