@@ -115,10 +115,28 @@ li {
    justify-content: center;
    align-items: center;
    flex-flow: column nowrap;
-   background: rgba(197, 145, 145, 0.95);
+   /*background: rgba(197, 145, 145, 0.92);
    background-image: url(../images/yummeatsbackground.png);
-   background-blend-mode: lighten;
+   background-blend-mode: lighten;*/
    background-size: cover;
+ }
+ .intro::after {
+   content: "";
+   /*display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-flow: column nowrap;*/
+   background: rgba(197, 145, 145, 0.92);
+   background-image: url(../images/yummeatsbackground.png);
+   opacity: .50;
+   background-blend-mode: lighten;
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background-size: cover;
+   z-index: -1;
  }
 .logo {
   padding-top: 1em;
@@ -219,7 +237,8 @@ caption {
   flex-basis: 60%;
 }
 .research-images {
-  flex-flow: row nowrap;
+  display: flex;
+  flex-flow: column wrap;
   margin: auto;
   justify-content: center;
 }
@@ -227,6 +246,7 @@ caption {
   max-width: 60%;
   max-height: auto;
   margin: 1em auto;
+
 }
 /*End Research*/
 
