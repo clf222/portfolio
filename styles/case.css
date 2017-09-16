@@ -7,10 +7,12 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
+  letter-spacing: 0;
 }
-h1, h2, h3, h4, h5, h6 {
+
+/*h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
-}
+}*/
 .light {
     color: #FFFAF0;
 }
@@ -19,48 +21,62 @@ h1, h2, h3, h4, h5, h6 {
   color: #151515;
 }
 
-h1, h3 {
-  font-size: 2em;
-}
 h1 {
-  padding: .5em 0;
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
 }
+
 h2 {
   font-size: 1.5em;
+  font-weight: 700;
+  text-decoration: underline;
 }
 h3 {
-  font-size: 1em;
+  font-size: 1.25em;
+  font-weight: bold;
+  letter-spacing: normal;
 }
 h4 {
-  font-size: .875em;
+  font-size: 1em;
+  font-weight: 700;
+  text-decoration: underline;
   margin-bottom: .5em;
 }
 h5 {
   font-size: 1.5em;
   margin-bottom: .5em;
 }
-p, a {
-  font-size: 1.25em;
+button {
+  margin: 0;
 }
+
+/*p, a {
+  font-size: 1.25em;
+}*/
 p {
   margin-bottom: .5em;
-  line-height: 1.5em;
+  line-height: 1.25em;
 }
 sup a{
   font-size: .75em;
-  color: #151515;
+  padding-left: .25em;
+  padding-right: .25em;
+  margin: 0 .25em;
+  color: 	#DC143C;
+  background-color: #FFFACD;
+  border-radius: 3px;
+
 }
 sup a:hover {
-  color: #FF0000;
+  color: #FFFACD;
+  background-color: #151515;
 }
 a {
   color: #FFFFFF;
   text-decoration: none;
 }
-p.prototype a:hover {
-  color: #8FBC8F;
 
-}
 li {
   font-size: 1.1em;
 }
@@ -88,9 +104,10 @@ li {
  .case-heading {
    display: flex;
    justify-content: center;
-   align-content: center;
+   align-items: center;
    background-color: #151515;
-   padding: 1em;
+
+   height: 50px;
  }
 
  .intro {
@@ -98,7 +115,7 @@ li {
    justify-content: center;
    align-items: center;
    flex-flow: column nowrap;
-   background: rgba(197, 145, 145, 0.92);
+   background: rgba(197, 145, 145, 0.95);
    background-image: url(../images/yummeatsbackground.png);
    background-blend-mode: lighten;
    background-size: cover;
@@ -186,8 +203,8 @@ caption {
   align-items: center;
   justify-content: space-between;
 }
-.methodology-img caption h5 {
-  margin-bottom: .5em;
+ caption h5 {
+  margin-bottom: 0;
 }
 .research {
   display: flex;
@@ -218,6 +235,8 @@ caption {
 }
 .case {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   padding: 1em;
 }
@@ -225,11 +244,11 @@ caption {
   flex-basis: 90%;
 }
 
-.img-flex {
-  display: flex;
-}
-.img-flex img {
-  flex-basis: 90%;
+
+.design-image {
+  max-width: 60%;
+
+
 }
 
 
@@ -247,23 +266,13 @@ h4.light {
 
 footer {
   display: flex;
+  justify-content: space-between;
   padding: 20px;
   background-color: #151515;
-  flex-shrink: 0;;
-}
-footer ul {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-footer ul li {
-  display: block;
-  list-style-type: none;
-
+  height: 40px;
 
 }
+
 
 /*bigger than 550*/
 /*@media (min-width: 550px) {
