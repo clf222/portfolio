@@ -165,13 +165,6 @@ li {
 }
 
 
-.background2 {
-  display: inline-flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 1em;
-}
 /*Methodology*/
 .methodology {
   flex-flow: column  nowrap;
