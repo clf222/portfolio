@@ -45,7 +45,7 @@ h5 {
   margin-bottom: 0;
 }
 button {
-  margin: 0;
+  margin:  2em 0;
 }
 
 
@@ -101,21 +101,23 @@ li {
    justify-content: center;
    align-items: center;
    background-color: #151515;
-
    height: 50px;
  }
 
  .intro {
    display: flex;
-   justify-content: center;
+   justify-content: flex-end;
    align-items: center;
    flex-flow: column nowrap;
    background-size: cover;
+   background-repeat: repeat;
+   padding: 2em;
  }
  .intro::after {
    content: "";
    background: rgba(197, 145, 145, 0.92);
    background-image: url(../images/yummeatsbackground.png);
+   background-repeat: repeat;
    opacity: .50;
    background-blend-mode: lighten;
    position: absolute;
@@ -123,14 +125,21 @@ li {
    left: 0;
    bottom: 0;
    right: 0;
-   background-size: cover;
+   background-size: contain;
    z-index: -1;
+   padding-bottom: 2em;
  }
+p.last {
+  padding-bottom: 4em;
+  margin-bottom: 2em;
+}
 .logo {
   padding-top: 1em;
   padding-bottom: 1em;
   flex-basis: 30%;
+  background-color: #151515;
 }
+
 
  .intro h2, .intro h3, h4, .intro p {
    color: #151515;
@@ -147,25 +156,11 @@ li {
    padding: 1em;
  }
 
-
-
-.design-statement {
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.design-statement h2, .design-statement h3, .design-statement p, .design-statement button {
-  flex-basis: 50%;
-}
-
-
 /*Methodology*/
 .methodology {
   flex-flow: column  nowrap;
   background-color: #151515;
+  padding-top: 3em;
 }
 .methodology h4 {
   flex-basis: 10%;
