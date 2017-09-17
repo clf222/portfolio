@@ -52,7 +52,8 @@ button {
 
 p {
   margin-bottom: .5em;
-  line-height: 1.25em;
+  line-height: 1.33em;
+  font-size: 1.1em;
 }
 sup a{
   font-size: .75em;
@@ -75,9 +76,7 @@ a {
 
 li {
   font-size: 1.1em;
-}
-li {
-  line-height: 1.25em;
+  line-height: 1.4em;
 }
 
 /*end default text styles*/
@@ -123,7 +122,7 @@ li {
    position: absolute;
    top: 0;
    left: 0;
-   bottom: -4em;
+   bottom: -10em;
    right: 0;
    background-size: cover;
    padding: 1em 1em 0 1em;
@@ -140,10 +139,9 @@ li {
 }
 
 
- .intro h2, .intro h3, h4, .intro p {
-   color: #151515;
- }
-
+p.last {
+  padding-bottom: 1em;
+}
  button {
    border-radius:5px;
    background-color: #151515;
@@ -158,14 +156,15 @@ li {
 /*Methodology*/
 .methodology {
   flex-flow: column  nowrap;
-  background-color: #151515;
-  padding-top: 3em;
+  background-color: #95CED0;
+  padding-top: 1em;
 }
 .methodology h4 {
   flex-basis: 10%;
 }
 .methodology p {
   flex-basis: 40%;
+
 }
 
 ul {
@@ -189,15 +188,33 @@ ul {
 }
 .methodology-img img {
   padding: 1em;
+
 }
-.methodology p, .methodology h4, .methodology h5, .methodology h6, .methodology li {
-  color: #FFFAF0;
+.methodology p, .methodology h4, .methodology h5, .methodology h6, .methodology li, .design p, .design h4, .design h5{
+  color: #151515;
 }
-caption {
+/*caption {
   display: flex;
   justify-content: space-between;
+  border: 2px solid;
+  border-radius: 5px;
+  background-color: #FFFACD;
+}*/
+.sub {
+  border: 1px #FFFACD;
+  border-radius: 5px;
+  box-shadow: 5px 2px 2px #b8b8b8;
+  background-color: #FFFACD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  margin: 0 auto;
+  padding: 0 1em;
 }
-
+.sub h5 {
+  flex-basis: 100%;
+}
 /*end methodology*/
 /*Research*/
 .research {
@@ -229,7 +246,7 @@ caption {
 /*Design*/
 
 .design {
-  background-color: #151515;
+  background-color: #95CED0;
   display: flex;
   flex-wrap: wrap;
 }
