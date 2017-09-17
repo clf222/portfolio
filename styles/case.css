@@ -28,6 +28,7 @@ h2 {
   font-size: 1.5em;
   font-weight: 700;
   text-decoration: underline;
+  padding-top: 1em;
 }
 h3 {
   font-size: 1.25em;
@@ -106,33 +107,31 @@ li {
 
  .intro {
    display: flex;
-   justify-content: flex-end;
+   justify-content: flex-start;
    align-items: center;
    flex-flow: column nowrap;
    background-size: cover;
-   background-repeat: repeat;
-   padding: 2em;
+
+   padding: 1em 1em 0 1em;
  }
  .intro::after {
    content: "";
    background: rgba(197, 145, 145, 0.92);
    background-image: url(../images/yummeatsbackground.png);
-   background-repeat: repeat;
    opacity: .50;
    background-blend-mode: lighten;
    position: absolute;
    top: 0;
    left: 0;
-   bottom: 0;
+   bottom: -4em;
    right: 0;
-   background-size: contain;
+   background-size: cover;
+   padding: 1em 1em 0 1em;
    z-index: -1;
-   padding-bottom: 2em;
+
  }
-p.last {
-  padding-bottom: 4em;
-  margin-bottom: 2em;
-}
+
+
 .logo {
   padding-top: 1em;
   padding-bottom: 1em;
