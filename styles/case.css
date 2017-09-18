@@ -141,6 +141,7 @@ li {
 
 p.last {
   padding-bottom: 1em;
+  align-self: flex-start;
 }
  button {
    border-radius:5px;
@@ -166,27 +167,23 @@ p.last {
 }
 /*Methodology*/
 .methodology {
-  flex-flow: column  nowrap;
+  flex-flow: column  wrap;
   background-color: #95CED0;
   padding-top: 1em;
+
 }
-/*.methodology h4 {
-  flex-basis: 10%;
-}*/
+
 .methodology p {
   flex-basis: 40%;
-
 }
 
-ul {
+ul.list {
   padding-left: 40px;
   list-style-position: outside;
 }
 
-.methodology-text ul {
-  flex-flow: column;
-  flex-basis: 40%;
-}
+
+
 .methodology p {
   margin-bottom: .25em;
 }
@@ -199,6 +196,8 @@ ul {
 }
 .methodology-img img {
   padding: 1em;
+  width: 50%;
+  height: 50%;
 
 }
 .methodology p, .methodology h3, .methodology h5, .methodology h6, .methodology li, .design p, .design h3, .design h5{
@@ -214,12 +213,10 @@ ul {
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
-  margin: 0 auto;
-  padding: 0 1em;
+  margin: 0;
+  padding: 0 .25em;
 }
-.sub h5 {
-  flex-basis: 100%;
-}
+
 /*end methodology*/
 /*Research*/
 .research {
@@ -251,9 +248,9 @@ ul {
 /*Design*/
 
 .design {
-  flex-flow: column  nowrap;
+  flex-flow: column nowrap;
+  padding: 1em;
   background-color: #95CED0;
-  padding-top: 1em;
 }
 .design h4 {
   flex-basis: 90%;
@@ -332,5 +329,47 @@ footer {
   padding: 20px;
   background-color: #151515;
   height: 40px;
+}
+/*Media Queries*/
+@media (min-width: 768px) {
+  img.element {
+    max-width: 40%;
+  }
+  .methodology {
+    display: flex;
+    flex-direction: column wrap;
+  }
+  .method-detail {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2em;
+  }
+   ul.list {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+  }
+  ul.list li {
+    max-width: 24em;
+  }
+
+  .methodology-img {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  flex: 4;
+}
+.methodology-img img {
+  max-width: 150px;
+  height: auto;
+  padding: 0;
+}
+
+
+
+
+
 
 }
+
+/*End Media Queries*/
