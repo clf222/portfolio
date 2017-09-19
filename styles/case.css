@@ -210,6 +210,7 @@ ul.list {
 .design {
   flex-flow: column nowrap;
   padding: 1em;
+  background-color: #F0F8FF;
 }
 .design h4 {
   flex-basis: 90%;
