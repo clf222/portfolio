@@ -93,44 +93,6 @@ li {
  }
 
 
- .intro {
-   display: flex;
-   flex-flow: row wrap;
-   justify-content: center;
-   padding: 1em;
- }
- .text {
-   background-color: #FFFAF0;
-   position: relative;
-
-  margin-top: -1em;
-  margin-bottom: -1em;
- }
- .brand {
-   display: flex;
-   flex-flow: column;
-   justify-content: center;
-   align-content: center;
-   /*background-size: cover;
-   background-repeat: no-repeat;*/
- }
-
- .brand:after {
-   content: "";
-   background: rgba(197, 145, 145, 0.92);
-   background-image: url(../images/side-image.jpg);
-   opacity: .50;
-   background-blend-mode: lighten;
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   background-size:cover;
-   margin-bottom: -10em;
-
-   padding: 1em 20em 0 1em;
-   z-index: -1;
- }
 
 .logo {
   padding-top: 1em;
@@ -170,7 +132,6 @@ p.last {
   flex-flow: column  wrap;
   background-color: #F0F8FF;
   padding-top: 1em;
-
 }
 
 .methodology p {
@@ -249,10 +210,12 @@ ul.list {
 .design {
   flex-flow: column nowrap;
   padding: 1em;
-  background-color: #95CED0;
 }
 .design h4 {
   flex-basis: 90%;
+}
+.cases {
+  background-color:#F0F8FF;
 }
 .case {
   display: flex;
@@ -319,6 +282,7 @@ img.element {
   display:flex;
   flex-flow: column nowrap;
   padding: 1em;
+  background-color: #F0F8FF;
 }
 /*end lessons learned*/
 
@@ -334,28 +298,24 @@ footer {
 .intro {
   display: flex;
   flex-flow: row nowrap;
-}
-.text {
-  /*flex-basis: 2;*/
-  padding-right: 1em;
-  background-color: #FFFAF0;
+  padding: 1em;
+  justify-content: flex-start;
 }
 
-button {
-  padding: 0 1em;
+
+.text {
+  background-color: #FFFFFF;
+  flex-basis: 60%;
+  margin: -1em 0 -1em -1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
-.methodology-img img {
-  width: 50%;
-  height: 50%;
-}
-/*.brand {
+.brand {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-content: center;
-  flex-flow: column nowrap;
-  background-size: contain;
-
-
+  max-width: 40%;
 }
 
 .brand:after {
@@ -366,21 +326,40 @@ button {
   background-blend-mode: lighten;
   position: absolute;
   top: 0;
-  left: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-size:cover;
   margin-bottom: -10em;
-  background-size: contain;
-  padding: 1em 1em 0 1em;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 1em 20em 0 1em;
   z-index: -1;
-}*/
+}
+.brand img, .brand button {
+ align-self: center;
+ margin 1em auto;
+ padding: 1em 2em;
+ max-width: 100%;
+ height: auto;
+}
+
+.methodology-img img {
+  width: 50%;
+  height: 50%;
+}
+
 
 
 
 .brand img, button {
   margin: 1em 0;
 }
-
+button {
+  padding: 0 1em;
+}
 
   p.bold {
     margin-bottom: 2em;
