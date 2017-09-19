@@ -55,6 +55,9 @@ p {
   line-height: 1.33em;
   font-size: 1.1em;
 }
+p.bold {
+  font-weight: 700;
+}
 sup a{
   font-size: .75em;
   padding-left: .25em;
@@ -104,31 +107,11 @@ li {
    height: 50px;
  }
 
+
  .intro {
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-   flex-flow: column nowrap;
-   background-size: cover;
-
-   padding: 1em 1em 0 1em;
+  padding: 1em 1em 0 1em;
  }
- .intro::after {
-   content: "";
-   background: rgba(197, 145, 145, 0.92);
-   background-image: url(../images/yummeatsbackground.png);
-   opacity: .50;
-   background-blend-mode: lighten;
-   position: absolute;
-   top: 0;
-   left: 0;
-   bottom: -10em;
-   right: 0;
-   background-size: cover;
-   padding: 1em 1em 0 1em;
-   z-index: -1;
 
- }
 
 
 .logo {
@@ -332,22 +315,75 @@ footer {
 }
 /*Media Queries*/
 @media (min-width: 768px) {
+.intro {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.text {
+  flex-basis: 70%;
+}
+/*.brand {
+  flex-basis: 25%;
+}*/
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  background-size: cover;
+  margin-left: 2em;
+  flex-shrink: 0;
+}
+.brand:after {
+  content: "";
+  background: rgba(197, 145, 145, 0.92);
+  background-image: url(../images/side-image.jpg);
+  opacity: .50;
+  background-blend-mode: lighten;
+  /*position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;*/
+
+  flex-shrink: 0;
+  padding: 1em 1em 0 1em;
+  /*z-index: -1;*/
+
+}
+
+
+
+/*.brand {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}*/
+
+
+  p.bold {
+    margin-bottom: 2em;
+  }
   img.element {
     max-width: 40%;
   }
   .methodology {
     display: flex;
     flex-direction: column wrap;
+    /*max-width: 70%;
+    align-items: center;*/
+
   }
   .method-detail {
     display: flex;
     align-items: flex-start;
     margin-bottom: 2em;
+    justify-content: center;
   }
    ul.list {
     display: flex;
     flex-direction: column;
-    flex: 3;
+    /*flex: 3;*/
   }
   ul.list li {
     max-width: 24em;
@@ -360,7 +396,7 @@ footer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-  flex: 4;
+  /*flex: 4;*/
 }
 .methodology-img img {
   max-width: 150px;
@@ -368,13 +404,7 @@ footer {
   padding: 0;
 }
 
-/*.research-detail {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-direction: row wrap;
-  margin-bottom: 2em;
-}*/
+
 hr {
   visibility: hidden;
 }
