@@ -104,6 +104,8 @@ li {
    flex-flow: column;
    justify-content: center;
    align-content: center;
+   /*background-size: cover;
+   background-repeat: no-repeat;*/
  }
 
  .brand:after {
@@ -114,12 +116,12 @@ li {
    background-blend-mode: lighten;
    position: absolute;
    top: 0;
-   left: 0;
-   bottom: 0;
    right: 0;
+   bottom: 0;
+   background-size:cover;
    margin-bottom: -10em;
-   background-size: contain;
-   padding: 1em 1em 0 1em;
+
+   padding: 1em 20em 0 1em;
    z-index: -1;
  }
 
