@@ -157,7 +157,7 @@ ul.list {
 }
 .methodology-img img {
   padding: 1em;
-  width: 30%
+  width: 30%;
   height: 30%;
 }
 .methodology p, .methodology h3, .methodology h5, .methodology h6, .methodology li, .design p, .design h3, .design h5{
@@ -347,14 +347,6 @@ footer {
  height: auto;
 }
 
-.methodology-img img {
-  width: 50%;
-  height: 50%;
-}
-
-
-
-
 .brand img, button {
   margin: 1em 0;
 }
@@ -397,11 +389,11 @@ button {
     justify-content: flex-start;
 
 }
-.methodology-img img {
-  max-width: 150px;
-  height: auto;
+/*.methodology-img img {
+  max-width: 225px;
+  max-height: 300px;
   padding: 0;
-}
+}*/
 
 
 hr {
