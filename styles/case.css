@@ -99,6 +99,13 @@ li {
    justify-content: center;
    padding: 1em;
  }
+ .text {
+   background-color: #FFFAF0;
+   position: relative;
+
+  margin-top: -1em;
+  margin-bottom: -1em;
+ }
  .brand {
    display: flex;
    flex-flow: column;
@@ -329,8 +336,9 @@ footer {
   flex-flow: row nowrap;
 }
 .text {
-  flex-basis: 2;
+  /*flex-basis: 2;*/
   padding-right: 1em;
+  background-color: #FFFAF0;
 }
 
 button {
