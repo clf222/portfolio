@@ -1,0 +1,235 @@
+/*home page styles*/
+body {
+    background-image: url('../images/home-image-small.jpg');
+    background-repeat: repeat;
+    background-color: #fff;
+}
+
+
+
+nav {
+  background-color: rgba(21,21,21,.8);
+
+}
+.active {
+  color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+a:hover {
+    color: #DAE4E6;
+}
+p a, p.made-in, a {
+    color: #FFFAF0;
+    margin-bottom: 0;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+
+.container-hero {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /*margin-top: 16vh;*/
+  text-align: center;
+  margin-bottom: 0;
+}
+
+
+.content {
+  margin-bottom: 1em;
+}
+
+h1 {
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+  line-height: 1em;
+  font-family: 'Merriweather', serif;
+}
+
+.description {
+  font-size: .75em;
+}
+
+.important {
+  font-size: .75em;
+  font-weight: bold;
+}
+
+.medium {
+  font-size: .875em;
+  font-family: 'Merriweather', serif;
+}
+.normal {
+  font-size: .6em;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+}
+
+
+
+ul li {
+  display: inline;
+}
+span.fa {
+  color: #FFFAF0;
+}
+
+ul.tools li {
+  font-family: 'Merriweather', serif;
+  font-size: 1.33em;
+  /*margin-right: 1.33em;*/
+}
+ul.tools {
+  margin-bottom: .75em;
+}
+li.first {
+  margin-right: 1.33em;
+  }
+li.middle {
+  margin-left: 0;
+  margin-right: 0;
+}
+li.last {
+    margin-left: 1.33em;
+  }
+
+
+
+/*default text styles*/
+h1, h2,h5, h6 {
+  font-family: 'Merriweather', serif;
+}
+
+
+.dark {
+  color: #151515;
+}
+
+p.light a, .light {
+  color: #FFFAF0;
+}
+a {
+  text-decoration: none;
+}
+p.light a:hover {
+  color: #DAE4E6;
+}
+strong {
+  font-weight: 700;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+}
+
+/*end default text styles*/
+
+/*utilities*/
+.text-center {
+  text-align: center;
+}
+.center {
+  margin: auto;
+}
+.text-right {
+  text-align: right;
+}
+/*end utilities*/
+
+
+ul.socials li.last {
+  margin-right: 0;
+  margin-left: 0;
+}
+ul.socials li.first {
+  margin-right: 1em;
+  margin-left: 0;
+}
+ul.socials li {
+  margin-right: 1em;
+  margin-left: 0;
+}
+a span.fa:hover {
+  color: #DAE4E6;
+}
+
+
+.right{
+  padding-right: 0;
+  margin-right: 0;
+}
+footer  {
+flex-flow: column;
+justify-content: center;
+align-items: center;
+
+
+}
+
+/*end contact and about styles*/
+
+
+/* Larger than phablet */
+@media (min-width: 768px) {
+  /*home page styles*/
+body {
+      background: url(http://takeflight.design/images/home-image.jpg) no-repeat top center;
+      background-size: cover;
+      overflow-x: hidden;
+      overflow-y: hidden;
+
+  }
+
+
+
+  .container-hero {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 14vh;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+
+
+  h3.logo-text {
+    font-family: 'Special Elite', cursive;
+    font-size: 1em;
+    letter-spacing: .15px;
+    color: #FFFAF0;
+    /*flex-basis: 70%;*/
+    padding: 1em;
+    padding-bottom: 0;
+  }
+
+
+  /*.content {
+    margin-bottom: 2em;
+  }*/
+  h1 {
+    line-height: 1.5em;
+  }
+  .important {
+    font-size: 1.66em;
+  }
+  .description, .medium {
+    font-size: 1.33em;
+  }
+  .normal {
+    font-size: 1.2em;
+  }
+
+
+  footer  {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  }
+
+}

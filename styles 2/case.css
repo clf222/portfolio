@@ -17,14 +17,15 @@ body {
 
 h1 {
   font-size: 1.5em;
-  line-height: 2em;
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
   font-size: 1.5em;
   font-weight: 700;
   text-decoration: underline;
-  /*padding-top: 1em;*/
+  padding-top: 1em;
 }
 h3 {
   font-size: 1.25em;
@@ -49,7 +50,7 @@ button {
 p {
   margin-bottom: .5em;
   line-height: 1.33em;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 p.bold {
   font-weight: 700;
@@ -80,19 +81,18 @@ li {
 
 
  .case-heading {
-   text-align: center;
-   position: sticky;
-   top:0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    background-color: #151515;
    height: 50px;
    width: 100vw;
-   /*margin-bottom: 1em;*/
  }
  .intro {
    display: flex;
    flex-flow: column nowrap;
    /*padding: 1em;*/
-   justify-content: flex-start;
+   justify-content: center;
    align-items: flex-start;
  }
 
@@ -100,7 +100,7 @@ li {
  .text {
    background-color: #FFFFFF;
    /*width: 100vw;*/
-   padding: 1em 2em 0;
+   padding: 1em 2em;
  }
  .brand {
    display: flex;
@@ -122,7 +122,7 @@ li {
    bottom: 0;
    left: 0;
    background-size:cover;
-   margin-bottom: -16em;
+   margin-bottom: -12em;
    width: 100vw;
    height: auto;
    padding: 0 0 0 0;
@@ -342,25 +342,24 @@ footer {
 }
 /*Media Queries*/
 @media (min-width: 768px) {
-p {
-  font-size: 1em;
-}
 .intro {
   display: flex;
   flex-flow: row nowrap;
+
   justify-content: flex-start;
 }
 
 
 .text {
   background-color: #FFFFFF;
-  width: 55vw;
 
 }
 .brand {
+  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-content: center;
-  max-width: 45vw;
+  max-width: 40%;
 }
 
 .brand:after {
