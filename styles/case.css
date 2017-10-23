@@ -1,9 +1,6 @@
 /*default text styles*/
-html {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+
+
 body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
@@ -21,15 +18,21 @@ body {
 
 h1 {
   font-size: 1.5em;
+
+  line-height: 2em;
+
   padding: 0;
   margin: 0;
+
 }
 
 h2 {
   font-size: 1.5em;
   font-weight: 700;
   text-decoration: underline;
+
   padding-top: 1em;
+
 }
 h3 {
   font-size: 1.25em;
@@ -54,8 +57,11 @@ button {
 p {
   margin-bottom: .5em;
   line-height: 1.33em;
+D
+  font-size: 1em;
+
   font-size: 1.1em;
-}
+
 p.bold {
   font-weight: 700;
 }
@@ -85,12 +91,66 @@ li {
 
 
  .case-heading {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+
+   text-align: center;
+   position: sticky;
+   top:0;
    background-color: #151515;
    height: 50px;
+   width: 100vw;
+   /*margin-bottom: 1em;*/
  }
+ .intro {
+   display: flex;
+   flex-flow: column nowrap;
+   /*padding: 1em;*/
+   justify-content: flex-start;
+   align-items: flex-start;
+ }
+
+
+ .text {
+   background-color: #FFFFFF;
+   /*width: 100vw;*/
+   padding: 1em 2em 0;
+ }
+ .brand {
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: flex-start;
+   align-content: center;
+   width: 100vw;
+ }
+
+ .brand:after {
+   content: "";
+   background: rgba(197, 145, 145, 0.92);
+   background-image: url(../images/yummeatsbackground.png);
+   opacity: .50;
+   background-blend-mode: lighten;
+   position:  absolute;
+   top: 100px;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background-size:cover;
+   margin-bottom: -16em;
+   width: 100vw;
+   height: auto;
+   padding: 0 0 0 0;
+   z-index: -1;
+ }
+ .brand img,
+ .brand button {
+  align-self: center;
+  margin: 1em auto;
+  padding: 1em 2em;
+  height: auto;
+ }
+ .brand img {
+   flex-basis: 40%;
+ }
+
 
 
 
@@ -296,16 +356,34 @@ footer {
 }
 /*Media Queries*/
 @media (min-width: 768px) {
+
+p {
+  font-size: 1em;
+}
+.intro {
+  display: flex;
+  flex-flow: row nowrap;
+
 .intro {
   display: flex;
   flex-flow: row nowrap;
   padding: 1em;
+
   justify-content: flex-start;
 }
 
 
 .text {
   background-color: #FFFFFF;
+
+  width: 55vw;
+
+}
+.brand {
+  justify-content: center;
+  align-content: center;
+  max-width: 45vw;
+
   flex-basis: 60%;
   margin: -1em 0 -1em -1em;
   padding-left: 1em;
@@ -317,6 +395,7 @@ footer {
   justify-content: center;
   align-content: center;
   max-width: 40%;
+
 }
 
 .brand:after {
@@ -341,7 +420,11 @@ footer {
 }
 .brand img, .brand button {
  align-self: center;
+
+ margin: 1em auto;
+
  margin 1em auto;
+
  padding: 1em 2em;
  max-width: 100%;
  height: auto;
@@ -389,11 +472,7 @@ button {
     justify-content: flex-start;
 
 }
-/*.methodology-img img {
-  max-width: 225px;
-  max-height: 300px;
-  padding: 0;
-}*/
+
 
 
 hr {
