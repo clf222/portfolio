@@ -233,7 +233,9 @@ ul.list {
 /*end methodology*/
 /*Research*/
 .research {
+  display: flex;
   flex-flow: column nowrap;
+  align-items: flex-start;
   padding: 1em;
 }
 
@@ -241,10 +243,9 @@ ul.list {
   display: flex;
   flex-wrap: wrap;
   padding-right: 1em;
+  width: 80vw;
 }
-.research ul li {
-  flex-basis: 80%;
-}
+
 .research-images {
   display: flex;
   flex-flow: column wrap;
@@ -441,8 +442,14 @@ button {
   ul.list li {
     max-width: 60vw;
   }
+  .research {
+    flex-flow: row nowrap;
+  }
   ul.research li {
-    max-width: 80%;
+    max-width: 40vw;
+  }
+  ul.research {
+    max-width: 40vw;
   }
 
   .methodology-img {
@@ -462,14 +469,22 @@ button {
   margin: 1em;
 }
 
-
+.research {
+  flex flow: row nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.research ul.list {
+  max-width: 40vw;
+}
 hr {
   visibility: hidden;
 }
 .research-images {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  max-width: 40vw;
 }
 img.element {
   max-width: 396px;
