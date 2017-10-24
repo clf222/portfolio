@@ -105,16 +105,15 @@ li {
  .brand, .brand1 {
    display: flex;
    flex-flow: column nowrap;
-   /*width: 100vw;*/
+   min-height: 200px;
+
  }
  .brand {
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
+   width: 100%;
  }
- /*.brand1 {
-   justify-content: center;
-   align-items: flex-end;
- }*/
+
 
  .brand:after, .brand1:after {
    content: "";
@@ -143,7 +142,6 @@ li {
      background-blend-mode: soft-light;
      background-size: cover;
      background-repeat: no-repeat;
-
      margin-top: -4em;
 
 
@@ -158,21 +156,21 @@ li {
    margin: 0 auto;
 
  }
- .brand img, .brand1 img,
+ .brand img,
  .brand button, .brand1 button {
-  /*align-self: center;*/
-  margin: 0 auto;
+  margin: 1em auto;
   padding: 0 2em;
   height: auto;
  }
-
+.brand img {
+  max-width: 60%;
+  height: auto;
+}
 
  .brand1 img {
    padding: 1em 0;
    margin-bottom:0;
    max-width: 90%;
-   flex-basis: 60px;
-
  }
 
 
@@ -192,18 +190,15 @@ p.last {
 .section-head {
   height: 30px;
   width: 100%;
-  display: flex;
-  padding: 1em;
-  justify-content: center;
-  margin-top: -1em;
-  margin-bottom: 0;
-  margin-left: -1em;
   background-color: #FFFFE0;
+  text-align: center;
+  padding: 1em 0;
 }
+
 /*Methodology*/
 .methodology {
   flex-flow: column  wrap;
-  background-color: #F0F8FF;
+  background-color: #FFFAF0;
   padding-top: 1em;
 }
 
@@ -293,7 +288,7 @@ ul.list {
   flex-flow: column nowrap;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: #F0F8FF;
+  background-color: #FFFAF0;
   padding: 0 1em 1em;
 }
 
@@ -378,7 +373,7 @@ img.element {
   display:flex;
   flex-flow: column nowrap;
   padding: 1em;
-  background-color: #F0F8FF;
+  background-color: #FFFAF0;
 }
 /*end lessons learned*/
 
@@ -430,7 +425,7 @@ p {
 img.logo {
   align-self: flex-end;
   margin: 0 1em 0 0;
- 
+
 
 }
 .brand:after {
@@ -465,9 +460,7 @@ img.logo {
  height: auto;
 }
 
-.brand img,   {
-  margin: 1em 0;
-}
+
 .brand1 img, .brand1 button{
   align-self: flex-end;
 }
