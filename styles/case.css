@@ -102,7 +102,7 @@ li {
    /*width: 100vw;*/
    padding: 1em 2em 0;
  }
- .brand {
+ .brand, .brand1 {
    display: flex;
    flex-flow: column nowrap;
    justify-content: flex-start;
@@ -110,10 +110,10 @@ li {
    width: 100vw;
  }
 
- .brand:after {
+ .brand:after, .brand1:after {
    content: "";
    background: rgba(197, 145, 145, 0.92);
-   background-image: url(../images/yummeatsbackground.png);
+
    opacity: .50;
    background-blend-mode: lighten;
    position:  absolute;
@@ -122,14 +122,28 @@ li {
    bottom: 0;
    left: 0;
    background-size:cover;
-   margin-bottom: -16em;
+
+
    width: 100vw;
    height: auto;
    padding: 0 0 0 0;
    z-index: -1;
  }
- .brand img,
- .brand button {
+ .brand:after {
+   background-image: url(../images/yummeatsbackground.png);
+    background-blend-mode: lighten;
+    margin-bottom: -16em;
+    top: 100px;
+
+ }
+ .brand1:after {
+    background-image: url(../images/girlwithwaffle.jpg);
+     background-blend-mode: soft-light;
+     margin-bottom: 0;
+     top: 0;
+ }
+ .brand img, brand1 img,
+ .brand button, .brand1 button {
   align-self: center;
   margin: 1em auto;
   padding: 1em 2em;
