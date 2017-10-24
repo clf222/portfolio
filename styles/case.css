@@ -17,14 +17,15 @@ body {
 
 h1 {
   font-size: 1.5em;
-  line-height: 2em;
+  display: table-cell;
+  margin: 0;
+
 }
 
 h2 {
   font-size: 1.5em;
   font-weight: 700;
   text-decoration: underline;
-  /*padding-top: 1em;*/
 }
 h3 {
   font-size: 1.25em;
@@ -75,18 +76,40 @@ a {
 
 li {
   font-size: 1em;
-  line-height: 1.2em;
+
 }
 
 
  .case-heading {
-   text-align: center;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1em 0;
    position: sticky;
    top:0;
    background-color: #151515;
-   height: 50px;
+   height: 80px;
    width: 100vw;
-   /*margin-bottom: 1em;*/
+ }
+ nav {
+   display: table;
+   margin: 0;
+   width: 90%;
+ }
+ nav ul {
+
+   margin-bottom: 0;
+   list-style: none;
+   padding-right: 1em 0;
+   text-align: center;
+ }
+ nav ul li {
+   display: inline;
+   color: #FFFAF0;
+
+   padding: 1em 1em 0 0;
+
  }
  .intro {
    display: flex;
@@ -184,7 +207,7 @@ p.last {
    padding-bottom: 1em;
 
  }
- .methodology, .research, .user-heading {
+ #ethodology, #research, .user-heading {
    padding: 1em;
  }
 .section-head {
@@ -192,17 +215,18 @@ p.last {
   width: 100%;
   background-color: #FFFFE0;
   text-align: center;
+
   padding: 1em 0;
 }
 
 /*Methodology*/
-.methodology {
+#methodology {
   flex-flow: column  wrap;
   background-color: #FFFAF0;
   padding-top: 1em;
 }
 
-.methodology p {
+#methodology p {
   flex-basis: 40%;
 }
 
@@ -214,10 +238,10 @@ ul.list {
 
 
 
-.methodology p {
+#methodology p {
   margin-bottom: .25em;
 }
-.methodology-img {
+#methodology-img {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -225,7 +249,7 @@ ul.list {
   width: 80vw;
   margin: 0 auto;
 }
-.methodology-img img {
+#methodology-img img {
   width: 30vw;
   margin-bottom: 1em;
   padding: 0;
@@ -235,10 +259,10 @@ ul.list {
   flex-basis: 60vw;
   margin: 1em;
 }
-.methodology p, .methodology h3, .methodology h5, .methodology h6, .methodology li, .design p, .design h3, .design h5{
+#methodology p, #methodology h3, #methodology h5, #methodology h6, #methodology li, #design p, #design h3, #design h5{
   color: #151515;
 }
-.methodology {
+#methodology {
   display: flex;
   flex-direction: column wrap;
 
@@ -254,27 +278,27 @@ ul.list {
 
 /*end methodology*/
 /*Research*/
-.research {
+#research {
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
   padding: 1em;
 }
 
-.research ul {
+#research ul {
   display: flex;
   flex-wrap: wrap;
   padding-right: 1em;
   width: 80vw;
 }
 
-.research-images {
+#research-images {
   display: flex;
   flex-flow: column wrap;
   margin: auto;
   justify-content: center;
 }
-.research-images img{
+#research-images img{
   max-width: 60%;
   max-height: auto;
   margin: 1em auto;
@@ -283,7 +307,7 @@ ul.list {
 /*End Research*/
 /*Design*/
 
-.design, .user-test {
+#design, #user-test {
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
@@ -293,16 +317,16 @@ ul.list {
 }
 
 
-.design-element, .item {
+#design-element, .item {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   margin: 1em 0;
 }
-.design-element p {
+#design-element p {
   align-self: flex-start;
 }
-.design-element img {
+#design-element img {
 
 }
 .cases {
@@ -320,33 +344,12 @@ ul.list {
 }
 
 
-/*.design-image {
-  wid
 
 
-}*/
-/*End Design*/
-/*User testing*/
-/*.user-test {
-  display: flex;
-  flex-flow: column nowrap;
-  padding: 1em;
-}*/
-
-.user-test h4 {
+#user-test h4 {
   color: #151515;
 }
-/*.item {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1em;
-}
-.user-test .item p {
-  flex-basis: 80%;
-  margin-bottom: 1em;
-}*/
+
 hr.style {
     border: 0;
     height: 1px;
@@ -369,7 +372,7 @@ img.element {
 
 /*End User testing*/
 /*lessons learned*/
-.lessons-learned {
+#lessons-learned {
   display:flex;
   flex-flow: column nowrap;
   padding: 1em;
@@ -386,6 +389,42 @@ footer {
 }
 /*Media Queries*/
 @media (min-width: 768px) {
+  .case-heading {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding: 1em 0 0 0;
+    position: sticky;
+    top:0;
+    background-color: #151515;
+    height: 60px;
+    width: 100vw;
+  }
+  h1 {
+
+    margin: 0 1em;
+  }
+  nav {
+    display: table;
+    margin: 0;
+    width: 50%;
+  }
+  nav ul {
+
+    margin-bottom: 0;
+    list-style: none;
+    padding: 0;
+  }
+  nav ul li {
+    display: inline;
+    color: #FFFAF0;
+    margin-bottom: 0;
+    padding: 1em 1em 0 0;
+    margin-bottom: 16px;
+
+  }
+
 p {
   font-size: 1em;
 }
@@ -472,7 +511,7 @@ img.logo {
     max-width: 30vw;
     align-self: center;
   }
-  .methodology {
+  #methodology {
     display: flex;
     flex-direction: column wrap;
     justify-content: flex-start;
@@ -494,23 +533,23 @@ img.logo {
   ul.list li {
     max-width: 60vw;
   }
-  .research {
+  #research {
     flex-flow: row nowrap;
   }
-  ul.research li {
+  ul#research li {
     max-width: 40vw;
   }
-  ul.research {
+  ul#research {
     max-width: 40vw;
   }
 
-  .methodology-img {
+  #methodology-img {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
 }
-.methodology-img img {
+#methodology-img img {
   width: 25vw;
   margin-bottom: 1em;
   padding: 0;
@@ -521,18 +560,18 @@ img.logo {
   margin: 1em;
 }
 
-.research {
+#research {
   flex flow: row nowrap;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.research ul.list {
+#research ul.list {
   max-width: 40vw;
 }
 hr {
   visibility: hidden;
 }
-.research-images {
+#research-images {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -543,24 +582,24 @@ img.element {
   max-height: auto;
   align-self: flex-start;
 }
-.design, .user-test {
+#design, #user-test {
   flex-flow: row nowrap;
   align-items: flex-start;
   justify-content: space-around;
   padding: 1em;
 
 }
-.design-element, .item {
+#design-element, .item {
   flex-basis: 30vw;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.design-element h5, .item h5 {
+#design-element h5, .item h5 {
   align-self: center;
 }
-.design-element img{
+#design-element img{
   width: 25vw;
   align-self: center;
 }
