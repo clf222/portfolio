@@ -131,7 +131,7 @@ li {
    background-color: #FFFFFF;
    padding: 1em 2em 0;
  }
- .brand, .brand1 {
+ .brand {
    display: flex;
    flex-flow: column nowrap;
 
@@ -144,7 +144,7 @@ li {
  }
 
 
- .brand:after,  {
+ .brand:after {
    content: "";
    background: rgba(197, 145, 145, 0.92);
    opacity: .50;
@@ -169,6 +169,7 @@ li {
 .brand img {
   max-width: 60%;
   height: auto;
+  margin-top: 1em;
 }
 
 p.last {
@@ -287,7 +288,7 @@ ul.list {
   background-color: #FFFAF0;
 }
 
-.design-element, .item {
+ .item {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -354,120 +355,102 @@ footer {
 }
 /*Media Queries*/
 @media (min-width: 768px) {
-  .case-heading {
+    .case-heading {
+      flex-flow: row wrap;
+      align-items: baseline;
+      padding: 1em 0 0 0;
+      position: sticky;
+      top:0;
+      height: 60px;
+      width: 100vw;
+    }
+    h1 {
+      margin: 0 1em;
+    }
+    nav {
+      display: table;
+      margin: 0;
+      width: 30%;
+    }
+    nav ul {
+      margin-bottom: 0;
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      color: #FFFAF0;
+      margin-bottom: 0;
+      padding: 1em 1em 0 0;
+      margin-bottom: 16px;
+
+    }
+
+  p {
+    font-size: 1em;
+  }
+  .intro {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 1em 0 0 0;
-    position: sticky;
-    top:0;
-    background-color: #151515;
-    height: 60px;
-    width: 100vw;
+    justify-content: flex-start;
   }
-  h1 {
 
-    margin: 0 1em;
-  }
-  nav {
-    display: table;
+  .sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
     margin: 0;
-    width: 30%;
-  }
-  nav ul {
-
-    margin-bottom: 0;
-    list-style: none;
-    padding: 0;
-  }
-  nav ul li {
-    display: inline;
-    color: #FFFAF0;
-    margin-bottom: 0;
-    padding: 1em 1em 0 0;
-    margin-bottom: 16px;
-
+    padding: 0 0;
   }
 
-p {
-  font-size: 1em;
-}
-.intro {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-}
+  .text {
+    background-color: #FFFFFF;
 
-.sub {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column nowrap;
-  margin: 0;
-  padding: 0 0;
-}
+  }
+  .method-text {
+    margin-top: 1em;
+  }
+  .brand {
+    justify-content: center;
+    align-content: center;
 
-.text {
-  background-color: #FFFFFF;
+  }
 
-}
-.method-text {
-  margin-top: 1em;
-}
-.brand {
-  justify-content: center;
-  align-content: center;
-
-}
-.brand1 {
-  display: flex;
-  max-width: 50%;
-  justify-content: center;
-  align-items: flex-end;
-}
-img.logo {
-  align-self: flex-end;
-  margin: 0 1em 0 0;
+  img.logo {
+    align-self: flex-end;
+    margin: 0 1em 0 0;
 
 
-}
-.brand:after {
-  content: "";
-  background: rgba(197, 145, 145, 0.92);
-  background-image: url(../images/side-image.jpg);
-  opacity: .50;
-  background-blend-mode: lighten;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-size:cover;
-  margin-bottom: -10em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-  z-index: -1;
-}
-.brand1:after {
-   background-image: url(../images/girlwithwaffle.jpg);
-    background-blend-mode: soft-light;
-    margin-bottom: 0;
+  }
+  .brand:after {
+    content: "";
+    background: rgba(197, 145, 145, 0.92);
+    background-image: url(../images/side-image.jpg);
+    opacity: .50;
+    background-blend-mode: lighten;
+    position: absolute;
     top: 0;
-}
-.brand img, .brand button {
- align-self: center;
- margin: 1em auto;
- padding: 1em 2em;
- max-width: 100%;
- height: auto;
-}
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size:cover;
+    margin-bottom: -10em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    z-index: -1;
+  }
+
+  .brand img, .brand button {
+   align-self: center;
+   margin: 1em auto;
+   padding: 1em 2em;
+   max-width: 100%;
+   height: auto;
+  }
 
 
-.brand1 img, .brand1 button{
-  align-self: flex-end;
-}
 
   p.bold {
     margin-bottom: 2em;
@@ -514,74 +497,60 @@ img.logo {
     justify-content: center;
     align-items: center;
 }
-#methodology-img img {
-  width: 25vw;
-  margin-bottom: 1em;
-  padding: 0;
-  height: auto;
-}
-.method-text {
-  flex-basis: 60vw;
-  margin: 1em;
-}
+  #methodology-img img {
+    width: 25vw;
+    margin-bottom: 1em;
+    padding: 0;
+    height: auto;
+  }
+  .method-text {
+    flex-basis: 60vw;
+    margin: 1em;
+  }
 
-#research {
-  flex flow: row nowrap;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-#research ul.list {
-  max-width: 40vw;
-}
-hr {
-  visibility: hidden;
-}
-#research-images {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  max-width: 40vw;
-}
-img.element {
+  #research {
+    flex flow: row nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  #research ul.list {
+    max-width: 40vw;
+  }
+  hr {
+    visibility: hidden;
+  }
+  #research-images {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    max-width: 40vw;
+  }
 
-  max-height: auto;
-  align-self: flex-start;
-}
-#design, #user-test {
-  flex-flow: row nowrap;
-  align-items: flex-start;
-  justify-content: space-around;
-  padding: 1em;
+  #design, #user-test {
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 1em;
 
-}
-.design-element, .item {
-  /*flex-basis: 30vw;*/
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.design-element h5, .item h5 {
-  align-self: center;
-}
-.design-element img{
-  width: 25vw;
-  align-self: center;
-}
-img.element {
-  align-self: center;
-}
-.big-element {
-  width: 15vw;
-}
+  }
+   .item {
+    flex-basis: 30vw;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+   .item h5 {
+    align-self: center;
+  }
 
-
-
-
-
-
-
-
+  img.element {
+    align-self: center;
+    margin: auto 0 0;
+  }
+  .big-element {
+    width: 15vw;
+  }
 }
 
 /*End Media Queries*/
