@@ -51,7 +51,9 @@ h5 {
 button {
   margin:  2em 0;
 }
-
+li span {
+  font-weight: 700;
+}
 
 p {
   margin-bottom: .5em;
@@ -171,6 +173,12 @@ li {
   height: auto;
   margin-top: 1em;
 }
+.detail {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1em;
+  background-color: #FFF;
+}
 
 p.last {
   padding-bottom: 1em;
@@ -219,16 +227,15 @@ ul.list {
 }
 #methodology-img {
   display: flex;
-  flex-direction: row;
+  flex-basis: 90vw;
+  flex-flow: row nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 80vw;
   margin: 0 auto;
 }
 #methodology-img img {
-  /*width: 30vw;*/
-  margin-bottom: 1em;
-  padding: 0;
+  width: 40%;
   height: auto;
 }
 
@@ -294,15 +301,8 @@ ul.list {
   align-items: center;
   margin: 1em;
 }
-/*#design, #user-test {
-  flex-flow: row nowrap;
-  align-items: flex-start;
-  justify-content: space-around;
-  padding: 1em;
 
-}*/
  .item {
-  /*flex-basis: 30vw;*/
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
@@ -412,10 +412,7 @@ footer {
     padding: 0 0;
   }
 
-  .text {
-    background-color: #FFFFFF;
 
-  }
   .method-text {
     margin-top: 1em;
   }
