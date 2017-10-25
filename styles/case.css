@@ -6,7 +6,10 @@ body {
   letter-spacing: 0;
   margin: 0;
 }
-
+.active {
+  color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
 .light {
     color: #FFFAF0;
 }
@@ -392,7 +395,7 @@ footer {
   .case-heading {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: baseline;
     padding: 1em 0 0 0;
     position: sticky;
@@ -408,7 +411,7 @@ footer {
   nav {
     display: table;
     margin: 0;
-    width: 50%;
+    width: 30%;
   }
   nav ul {
 
