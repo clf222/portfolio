@@ -210,16 +210,16 @@ p.last {
    padding-bottom: 1em;
 
  }
- #ethodology, #research, .user-heading {
+ #methodology, #research, #design, #user-test, #lessons-learned {
    padding: 1em;
  }
-.section-head {
-  height: 30px;
-  width: 100%;
-  background-color: #FFFFE0;
-  text-align: center;
-
-  padding: 1em 0;
+ .section-head {
+   height: 30px;
+   color: white;
+   width: 100%;
+   background-color: #BE9997;
+   text-align: center;
+   padding: 1em 0;
 }
 
 /*Methodology*/
@@ -313,22 +313,20 @@ ul.list {
   align-items: flex-start;
   justify-content: flex-start;
   background-color: #FFFAF0;
-  padding: 0 1em 1em;
+
 }
 
 
-#design-element, .item {
+.design-element, .item {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   margin: 1em 0;
 }
-#design-element p {
+/*#design-element p {
   align-self: flex-start;
-}
-#design-element img {
+}*/
 
-}
 .cases {
   background-color:#F0F8FF;
 }
@@ -589,17 +587,17 @@ img.element {
   padding: 1em;
 
 }
-#design-element, .item {
+.design-element, .item {
   flex-basis: 30vw;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
   justify-content: flex-start;
 }
-#design-element h5, .item h5 {
+.design-element h5, .item h5 {
   align-self: center;
 }
-#design-element img{
+.design-element img{
   width: 25vw;
   align-self: center;
 }
