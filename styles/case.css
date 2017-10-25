@@ -26,23 +26,26 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: 700;
+  letter-spacing: 0;
   text-decoration: underline;
 }
 h3 {
-  font-size: 1.25em;
-  font-weight: bold;
+  font-size: 1.3em;
+  font-weight: 700;
   letter-spacing: normal;
 }
 h4 {
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 700;
-  text-decoration: underline;
   margin-bottom: .5em;
 }
+.subhead {
+    text-decoration: underline;
+}
 h5 {
-  font-size: 1.5em;
+  font-size: 1.1em;
   margin-bottom: 0;
 }
 button {
@@ -141,7 +144,7 @@ li {
  }
 
 
- .brand:after, .brand1:after {
+ .brand:after,  {
    content: "";
    background: rgba(197, 145, 145, 0.92);
    opacity: .50;
@@ -161,44 +164,12 @@ li {
     background-blend-mode: lighten;
     margin-bottom: -16em;
     top: 100px;
-
  }
- .brand1:after {
-    background-image: url(../images/girlwithwaffle-cropped.jpg);
-     background-blend-mode: soft-light;
-     background-size: cover;
-     background-repeat: no-repeat;
-     margin-top: -4em;
 
-
-}
- .brand1 {
-   display: flex;
-   flex-flow: column nowrap;
-   align-items: center;
-   justify-content: center;
-   width: 90%;
-   min-height: 200px;
-   margin: 0 auto;
-
- }
- .brand img,
- .brand button, .brand1 button {
-  margin: 1em auto;
-  padding: 0 2em;
-  height: auto;
- }
 .brand img {
   max-width: 60%;
   height: auto;
 }
-
- .brand1 img {
-   padding: 1em 0;
-   margin-bottom:0;
-   max-width: 90%;
- }
-
 
 p.last {
   padding-bottom: 1em;
@@ -208,11 +179,12 @@ p.last {
    border-radius:5px;
    background-color: #2F4F4F;
    padding-bottom: 1em;
-
  }
+
  #methodology, #research, #design, #user-test, #lessons-learned {
    padding: 1em;
  }
+
  .section-head {
    height: 30px;
    color: white;
@@ -253,7 +225,7 @@ ul.list {
   margin: 0 auto;
 }
 #methodology-img img {
-  width: 30vw;
+  /*width: 30vw;*/
   margin-bottom: 1em;
   padding: 0;
   height: auto;
@@ -298,11 +270,11 @@ ul.list {
   margin: auto;
   justify-content: center;
 }
+
 #research-images img{
   max-width: 60%;
   max-height: auto;
   margin: 1em auto;
-
 }
 /*End Research*/
 /*Design*/
@@ -313,19 +285,14 @@ ul.list {
   align-items: flex-start;
   justify-content: flex-start;
   background-color: #FFFAF0;
-
 }
-
 
 .design-element, .item {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  margin: 1em 0;
+  margin: 1em;
 }
-/*#design-element p {
-  align-self: flex-start;
-}*/
 
 .cases {
   background-color:#F0F8FF;
@@ -363,8 +330,8 @@ hr.style1 {
 }
 
 img.element {
-  max-width: 60%;
-  height: auto;
+  /*max-width: 60%;*/
+  /*height: auto;*/
   margin-bottom: 1em;
 }
 
@@ -506,7 +473,7 @@ img.logo {
     margin-bottom: 2em;
   }
   img.element {
-    max-width: 30vw;
+    /*max-width: 30vw;*/
     align-self: center;
   }
   #methodology {
@@ -576,7 +543,7 @@ hr {
   max-width: 40vw;
 }
 img.element {
-  max-width: 396px;
+
   max-height: auto;
   align-self: flex-start;
 }
@@ -588,7 +555,7 @@ img.element {
 
 }
 .design-element, .item {
-  flex-basis: 30vw;
+  /*flex-basis: 30vw;*/
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
@@ -602,9 +569,12 @@ img.element {
   align-self: center;
 }
 img.element {
-  width: 20vw;
   align-self: center;
 }
+.big-element {
+  width: 15vw;
+}
+
 
 
 
