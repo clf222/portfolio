@@ -176,12 +176,15 @@ li {
   background-color: #FFF;
 }
 .methodology-img {
-  width: 80vw;
+  width: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
-img.element.big-element.proto {
+img.element.proto {
   display: inline;
   margin: 0 auto;
-  width: 100%;
+  width: 80%;
 }
 
 p.last {
@@ -307,7 +310,7 @@ ul.list li {
   align-self: center;
 }
 
-img.element {
+img.element.proto {
   align-self: center;
   /*margin: 1em auto;
   padding: 1em auto;*/
@@ -389,7 +392,21 @@ footer {
       margin-bottom: 16px;
 
     }
-
+    .detail {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em 0 ;
+      background-color: #FFF;
+      width: 100vw;
+    }
+.methodology-img {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 40%;
+}
   p {
     font-size: 1em;
   }
@@ -398,7 +415,7 @@ footer {
     flex-flow: row wrap;
     justify-content: flex-start;
   }
-
+i
   .sub {
     display: flex;
     justify-content: center;
@@ -407,7 +424,15 @@ footer {
     margin: 0;
     padding: 0 0;
   }
-
+  .text {
+    width: 60vw;
+  }
+  /*.methodology-img {
+    width: 40vw;
+  }*/
+  img.element.big-element.proto {
+    width: 50%;
+  }
 
   .method-text {
     margin-top: 1em;
@@ -415,6 +440,7 @@ footer {
   .brand {
     justify-content: center;
     align-content: center;
+    height: 350px;
 
   }
 
