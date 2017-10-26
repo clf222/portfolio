@@ -316,24 +316,8 @@ img.element.proto {
 #user-test h4 {
   color: #151515;
 }
-/*
-hr.style {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
-hr.style1 {
-    border: 0;
-    height: 1px;
-    width: 20%;
-    background: #333;
-    background-image: linear-gradient(to right, #ccc, #333, #ccc);
-
-}*/
 
 img.element {
-  /*max-width: 60%;*/
-  /*height: auto;*/
   margin-bottom: 1em;
 }
 
@@ -394,6 +378,10 @@ footer {
       padding: 1em 0 ;
       background-color: #FFF;
       width: 100vw;
+    }
+    .brand1 {
+      height: 350px;
+      justify-content: center;
     }
     .text h2 {
       font-size: 1.5em;
