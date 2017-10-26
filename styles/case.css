@@ -115,9 +115,7 @@ li {
  nav ul li {
    display: inline;
    color: #FFFAF0;
-
    padding: 1em 1em 0 0;
-
  }
  .intro {
    display: flex;
@@ -129,7 +127,6 @@ li {
 
 
  .text {
-   /*background-color: #FFFFFF;*/
    padding: 0 1em;
    flex-basis: 50vw;
  }
@@ -178,6 +175,14 @@ li {
   padding: 1em 0;
   background-color: #FFF;
 }
+.methodology-img {
+  width: 80vw;
+}
+img.element.big-element.proto {
+  display: inline;
+  margin: 0 auto;
+  width: 100%;
+}
 
 p.last {
   padding-bottom: 1em;
@@ -217,6 +222,10 @@ p.last {
   align-items: flex-start;
   /*margin: 0 1em;*/
 }
+h5, h6 {
+  text-align: center;
+  margin: 0 auto;
+}
 ul.list {
   margin-top: 1em;
   padding-left: 40px;
@@ -224,7 +233,6 @@ ul.list {
 }
 ul.list li {
     max-width: 80vw;
-
   }
 
 
