@@ -130,20 +130,20 @@ li {
    padding: 0 1em;
    flex-basis: 50vw;
  }
- .brand {
+/*img.small {
+  width: 60%;
+}*/
+ .brand, .brand1 {
    display: flex;
    flex-flow: column nowrap;
- }
- .brand {
    justify-content: space-between;
    align-items: center;
    width: 100%;
  }
-
-
- .brand:after {
+ .brand:after, .brand1:after {
    content: "";
    background: rgba(197, 145, 145, 0.92);
+   background-blend-mode: lighten;
    opacity: .50;
    position:  absolute;
    top: 50px;
@@ -162,8 +162,11 @@ li {
     margin-bottom: -16em;
     top: 100px;
  }
-
-.brand img {
+ .brand1:after {
+   background-image: url(../images/girlwithwaffle.jpg);
+   height: 350px;
+ }
+.brand img, .brand1 img {
   max-width: 60%;
   height: auto;
   margin-top: 1em;
@@ -176,7 +179,7 @@ li {
   background-color: #FFF;
 }
 .methodology-img {
-  width: 80%;
+  width: 80vw;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -222,7 +225,7 @@ p.last {
 .method-detail {
   display: flex;
   flex-flow: column nowrap;
-  align-items: flex-start;
+  align-items: center;
   /*margin: 0 1em;*/
 }
 h5, h6 {
@@ -259,29 +262,20 @@ ul.list li {
 #research {
   display: flex;
   flex-flow: column nowrap;
-  align-items: flex-start;
+  align-items: center;
   padding: 1em;
 }
 
-#research ul {
+#research ul.list {
   display: flex;
-  flex-wrap: wrap;
-  padding-right: 1em;
-  width: 80vw;
+  flex-flow: column nowrap;
+  padding: 1em;
+
+}
+#research img.element.big-element {
+  margin: 0 auto;
 }
 
-#research-images {
-  display: flex;
-  flex-flow: column wrap;
-  margin: auto;
-  justify-content: center;
-}
-
-#research-images img{
-  max-width: 60%;
-  max-height: auto;
-  margin: 1em auto;
-}
 /*End Research*/
 /*Design*/
 
@@ -396,10 +390,19 @@ footer {
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
       padding: 1em 0 ;
       background-color: #FFF;
       width: 100vw;
+    }
+    .text h2 {
+      font-size: 1.5em;
+    }
+    .text h4 {
+      font-size: 1.25em;
+    }
+    p {
+      font-size: 1.1em;
     }
 .methodology-img {
   display: flex;
@@ -430,14 +433,14 @@ i
   /*.methodology-img {
     width: 40vw;
   }*/
-  img.element.big-element.proto {
+  /*img.element.big-element.proto {
     width: 50%;
-  }
+  }*/
 
   .method-text {
     margin-top: 1em;
   }
-  .brand {
+  .brand  {
     justify-content: center;
     align-content: center;
     height: 350px;
@@ -453,7 +456,6 @@ i
   .brand:after {
     content: "";
     background: rgba(197, 145, 145, 0.92);
-    background-image: url(../images/side-image.jpg);
     opacity: .50;
     background-blend-mode: lighten;
     position: absolute;
@@ -468,6 +470,10 @@ i
     padding: 0;
     z-index: -1;
   }
+  .brand:after {
+    background-image: url(../images/side-image.jpg);
+  }
+
 
   .brand img, .brand button {
    align-self: center;
@@ -494,15 +500,20 @@ i
   }
   .method-detail {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     align-items: flex-start;
-    margin: 0 1em;
+    margin: 0 2em;
     justify-content:flex-start;
+    width: 100vw;
   }
    ul.list {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     padding-left: 1em;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex
+
 
   }
 
@@ -510,37 +521,27 @@ i
     text-align: center;
     margin: 0 auto;
   }
+
+
+  /*ul.list  {
+   flex-basis: : 30vw;
+   padding-left: 2em;
+  }*/
   ul.list li {
-    max-width: 60vw;
+    align-self: flex-start;
   }
-  #research {
-    flex-flow: row nowrap;
-  }
-  ul#research li {
-    max-width: 40vw;
-  }
-  ul#research {
-    max-width: 40vw;
-  }
+
 
   #research {
     flex-flow: row nowrap;
     align-items: flex-start;
-    justify-content: flex-start;
-  }
-  #research ul.list {
-    max-width: 40vw;
-  }
-  hr {
-    visibility: hidden;
-  }
-  #research-images {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    max-width: 40vw;
+    justify-content: space-between;
+
   }
 
+  #research img {
+    flex-basis: 50vw;
+  }
   #design, #user-test {
     flex-flow: row nowrap;
     align-items: flex-start;
