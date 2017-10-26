@@ -270,6 +270,7 @@ ul.list li {
   display: flex;
   flex-flow: column nowrap;
   padding: 1em;
+  margin: 1em;
 
 }
 #research img.element.big-element {
@@ -515,16 +516,14 @@ i
    flex-basis: : 30vw;
    padding-left: 2em;
   }*/
-  ul.list li {
-    align-self: flex-start;
-  }
+
 
 
   #research {
     flex-flow: row nowrap;
     align-items: flex-start;
-    justify-content: space-between;
-
+    justify-content: flex-start;
+    margin: 1em;
   }
 
   #research img {
