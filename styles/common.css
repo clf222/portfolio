@@ -1,8 +1,9 @@
 /*common text */
 html {
   font-family: 'Lato', sans-serif;
-
-
+}
+body {
+  font-size: 16px;
 }
 /***HEADER STYLES ***/
  .heading {
@@ -10,12 +11,16 @@ html {
    flex-flow: column nowrap;
    justify-content: space-between;
    align-items: center;
-   padding: 1em 0;
+   padding: 0;
    position: sticky;
    top:0;
    background-color: #151515;
    height: 70px;
    z-index: 10;
+ }
+ h3.logo-text {
+   padding: 0 1.5em;
+   margin-bottom: 0;
  }
  .active {
    color: #FFFFFF;
@@ -42,6 +47,7 @@ html {
 h3.logo-text {
   font-size: 1em;
   font-family:'Special Elite', cursive;
+  padding: 0;
 }
  /*** END HEADER STYLES ***/
 
@@ -96,15 +102,15 @@ p.dark.text-center, .made-in {
   .heading {
       flex-flow: row wrap;
       align-items: baseline;
-      padding: 1em 0 0 0;
+      padding: 0;
       position: sticky;
       top: 0;
       height: 50px;
 
   }
-  h3.logo-text {
-    padding-left: 1em;
-  }
+  /*h3.logo-text {
+    padding: 0;
+  }*/
   .links {
     align-items: flex-end;
     display: flex;
