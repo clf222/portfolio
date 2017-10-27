@@ -187,7 +187,7 @@ li {
 img.element.proto {
   display: inline;
   margin: 0 auto;
-  width: 80%;
+  max-width: 40vw;
 }
 
 p.last {
@@ -369,16 +369,16 @@ footer {
       margin-bottom: 0;
       padding: 1em 1em 0 0;
       margin-bottom: 16px;
-
     }
+
     .detail {
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
       align-items: flex-start;
-      padding: 1em 0 ;
+      padding: 1em 10em;
       background-color: #FFF;
-      width: 100vw;
+
     }
     .brand1 {
       height: 350px;
@@ -397,7 +397,13 @@ footer {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  width: 40%;
+  width: 30%;
+}
+img.element.proto {
+  max-width: 100%;
+}
+.text {
+  margin-right: 2em;
 }
   p {
     font-size: 1em;
@@ -483,17 +489,19 @@ i
   }
   #methodology {
     display: flex;
-    flex-direction: column wrap;
+    flex-direction: row wrap;
     justify-content: flex-start;
-
+  }
+  #methodology h3 {
+    align-self: flex-start;
   }
   .method-detail {
     display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
+    flex-flow: row nowrap;
+    align-items: center;
     margin: 0 2em;
-    justify-content:flex-start;
-    width: 100vw;
+    justify-content:space-between;
+    /*width: 100vw;*/
   }
    ul.list {
     display: flex;
