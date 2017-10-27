@@ -126,7 +126,7 @@ li {
  }
 
 
- .text {
+ .left {
    padding: 0 1em;
    flex-basis: 50vw;
  }
@@ -178,11 +178,15 @@ li {
   padding: 1em 0;
   background-color: #FFF;
 }
-.methodology-img {
+.right {
   width: 80vw;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+}
+h2.bold {
+  margin-left: 0;
+  /*padding-left: 160px;*/
 }
 img.element.proto {
   display: inline;
@@ -245,10 +249,10 @@ ul.list li {
 #methodology p, #methodology h3, #methodology h5, #methodology h6, #methodology li, #design p, #design h3, #design h5{
   color: #151515;
 }
-#methodology {
+/*#methodology {
   display: flex;
   flex-direction: column wrap;
-}
+}*/
 .sub {
   display: flex;
   flex-basis: 40%;
@@ -353,6 +357,10 @@ footer {
     h1 {
       margin: 0 1em;
     }
+    h2.bold {
+      margin-left: 0;
+      padding-left: 160px;
+    }
     nav {
       display: table;
       margin: 0;
@@ -378,8 +386,12 @@ footer {
       align-items: flex-start;
       padding: 1em 10em;
       background-color: #FFF;
-
     }
+
+  h2.bold {
+    margin-right:auto;
+    flex-basis: 100%;
+  }
     .brand1 {
       height: 350px;
       justify-content: center;
@@ -393,7 +405,7 @@ footer {
     p {
       font-size: 1.1em;
     }
-.methodology-img {
+.right{
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -402,7 +414,10 @@ footer {
 img.element.proto {
   max-width: 100%;
 }
-.text {
+ul.left {
+  padding-left: 0;
+}
+.left {
   margin-right: 2em;
 }
   p {
@@ -422,7 +437,7 @@ i
     margin: 0;
     padding: 0 0;
   }
-  .text {
+  .left {
     width: 60vw;
   }
   /*.methodology-img {
@@ -487,14 +502,12 @@ i
     /*max-width: 30vw;*/
     align-self: center;
   }
-  #methodology {
+  /*#methodology {
     display: flex;
     flex-direction: row wrap;
     justify-content: flex-start;
-  }
-  #methodology h3 {
-    align-self: flex-start;
-  }
+  }*/
+
   .method-detail {
     display: flex;
     flex-flow: row nowrap;
