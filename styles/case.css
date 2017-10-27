@@ -17,6 +17,7 @@ body {
 
 .dark {
   color: #151515;
+  text-decoration: underline;
 }
 
 h1 {
@@ -83,7 +84,6 @@ a {
 
 li {
   font-size: 1em;
-
 }
 
 
@@ -97,7 +97,7 @@ li {
    top:0;
    background-color: #151515;
    height: 80px;
-   width: 100vw;
+   /*width: 100vw;*/
    z-index: 10;
  }
  nav {
@@ -149,7 +149,7 @@ li {
    bottom: 0;
    left: 0;
    background-size:cover;
-   width: 100vw;
+   /*width: 100vw;*/
    height: auto;
    padding: 0 0 0 0;
    z-index: -1;
@@ -173,12 +173,17 @@ li {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  justify-content: flex-start;
   padding: 1em 0;
   background-color: #FFF;
 }
 .detail.cream {
   background-color: #FFFAF1;
 }
+.shrink {
+  flex-shrink: 1;
+}
+
 .right {
   width: 80vw;
   display: flex;
@@ -238,18 +243,18 @@ ul.list {
   padding-left: 40px;
   list-style-position: outside;
 }
-ul.list li {
+ul.left {
+  margin-bottom: 0;
+}
+/*ul.list li {
     max-width: 80vw;
-  }
+  }*/
 
 
 #methodology p, #methodology h3, #methodology h5, #methodology h6, #methodology li, #design p, #design h3, #design h5{
   color: #151515;
 }
-/*#methodology {
-  display: flex;
-  flex-direction: column wrap;
-}*/
+
 .sub {
   display: flex;
   flex-basis: 40%;
@@ -272,6 +277,7 @@ ul.list li {
   flex-flow: column nowrap;
   padding: 1em;
   margin: 1em;
+  background-color: #FFF;
 
 }
 #research img.element.big-element {
@@ -349,7 +355,7 @@ footer {
       position: sticky;
       top:0;
       height: 60px;
-      width: 100vw;
+      /*width: 100vw;*/
     }
     h1 {
       margin: 0 1em;
@@ -408,13 +414,16 @@ footer {
   align-items: center;
   width: 30%;
 }
+img.element {
+  margin-top: 1em;
+}
 img.element.proto {
   max-width: 100%;
 }
-ul.left {
+/*ul.left {
   padding-left: 0;
-  background-color: #FFFAF1;
-}
+
+}*/
 .left {
   margin-right: 2em;
 
@@ -439,15 +448,10 @@ i
   .left {
     width: 60vw;
   }
-  /*.methodology-img {
-    width: 40vw;
-  }*/
-  /*img.element.big-element.proto {
-    width: 50%;
-  }*/
 
   .method-text {
     margin-top: 1em;
+    padding: 0 10em;
   }
   .brand  {
     justify-content: center;
@@ -459,7 +463,9 @@ i
   img.logo {
     align-self: flex-end;
     margin: 0 1em 0 0;
-
+.detail-single {
+  padding: 0 5em;
+}
 
   }
   .brand:after {
@@ -518,32 +524,21 @@ i
    ul.list {
     display: flex;
     flex-flow: column wrap;
-    padding-left: 1em;
+    /*padding-left: 1em;*/
     justify-content: flex-start;
     align-items: flex-start;
-    flex
-
-
   }
 
-  h5, h6 {
+  h4, h5, h6 {
     text-align: center;
     margin: 0 auto;
   }
 
-
-  /*ul.list  {
-   flex-basis: : 30vw;
-   padding-left: 2em;
-  }*/
-
-
-
   #research {
     flex-flow: row nowrap;
     align-items: flex-start;
-    justify-content: flex-start;
-    margin: 1em;
+    justify-content: center;
+    /*margin: 1em;*/
   }
 
   #research img {
@@ -566,7 +561,9 @@ i
    .item h5 {
     align-self: center;
   }
-
+#lessons-learned {
+  padding: 1em 10em;
+}
   .big-element {
     width: 15vw;
   }
