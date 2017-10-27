@@ -86,8 +86,8 @@ li {
   font-size: 1em;
 }
 
-
- .case-heading {
+/***HEADER STYLES ***/
+ .heading {
    display: flex;
    flex-flow: column nowrap;
    justify-content: space-between;
@@ -97,7 +97,6 @@ li {
    top:0;
    background-color: #151515;
    height: 80px;
-   /*width: 100vw;*/
    z-index: 10;
  }
  nav {
@@ -106,7 +105,6 @@ li {
    width: 90%;
  }
  nav ul {
-
    margin-bottom: 0;
    list-style: none;
    padding-right: 1em 0;
@@ -117,6 +115,8 @@ li {
    color: #FFFAF0;
    padding: 1em 1em 0 0;
  }
+
+ /*** END HEADER STYLES ***/
  .intro {
    display: flex;
    flex-flow: column nowrap;
@@ -348,7 +348,7 @@ footer {
 }
 /*Media Queries*/
 @media (min-width: 768px) {
-    .case-heading {
+    .heading {
       flex-flow: row wrap;
       align-items: baseline;
       padding: 1em 0 0 0;
