@@ -130,9 +130,7 @@ li {
    padding: 0 1em;
    flex-basis: 50vw;
  }
-/*img.small {
-  width: 60%;
-}*/
+
  .brand, .brand1 {
    display: flex;
    flex-flow: column nowrap;
@@ -178,6 +176,9 @@ li {
   padding: 1em 0;
   background-color: #FFF;
 }
+.detail.cream {
+  background-color: #FFFAF1;
+}
 .right {
   width: 80vw;
   display: flex;
@@ -186,7 +187,6 @@ li {
 }
 h2.bold {
   margin-left: 0;
-  /*padding-left: 160px;*/
 }
 img.element.proto {
   display: inline;
@@ -225,13 +225,10 @@ p.last {
   align-items: center;
   padding-top: 1em 0;
 }
-
-.method-detail {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  /*margin: 0 1em;*/
+.cream {
+  background-color: #FFFAF1;
 }
+
 h5, h6 {
   text-align: center;
   margin: 0 auto;
@@ -416,9 +413,11 @@ img.element.proto {
 }
 ul.left {
   padding-left: 0;
+  background-color: #FFFAF1;
 }
 .left {
   margin-right: 2em;
+
 }
   p {
     font-size: 1em;
