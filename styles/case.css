@@ -218,7 +218,7 @@ p.last {
    padding: 1em;
  }
 
- .section-head {
+ .section-head, .section-head1 {
    height: 30px;
    color: white;
    width: 100%;
