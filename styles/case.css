@@ -161,11 +161,11 @@ li {
  }
  .brand1:after {
      background: rgba(255,0,0,1);
-     background-image: url(../images/girlwithwaffle-cropped.jpg);
+     background-image: url(../images/girlwithwaffle-cropped-1.jpg);
      background-blend-mode: luminosity;
 
-     top: -100px;
-     height: 700px;
+     /*top: -100px;*/
+     height: 350px;
      background-repeat: repeat-x;
      background-size: contain;
    }
