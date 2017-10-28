@@ -254,9 +254,6 @@ ul.list {
 ul.left {
   margin-bottom: 0;
 }
-/*ul.list li {
-    max-width: 80vw;
-  }*/
 
 
 #methodology p, #methodology h3, #methodology h5, #methodology h6, #methodology li, #design p, #design h3, #design h5{
@@ -276,6 +273,14 @@ ul.left {
 #research {
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1em;
+}
+.single {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
   align-items: center;
   padding: 1em;
 }
@@ -399,6 +404,10 @@ footer {
       background-color: #FFF;
     }
 
+.single {
+  align-items: center;
+  padding: 1em 10em;
+}
   h2.bold {
     margin-right:auto;
     flex-basis: 100%;
