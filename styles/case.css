@@ -149,7 +149,6 @@ li {
    bottom: 0;
    left: 0;
    background-size:cover;
-   /*width: 100vw;*/
    height: auto;
    padding: 0 0 0 0;
    z-index: -1;
@@ -161,9 +160,15 @@ li {
     top: 100px;
  }
  .brand1:after {
-   background-image: url(../images/girlwithwaffle.jpg);
-   height: 350px;
- }
+     background: rgba(255,0,0,1);
+     background-image: url(../images/girlwithwaffle-cropped.jpg);
+     background-blend-mode: luminosity;
+
+     top: -100px;
+     height: 700px;
+     background-repeat: repeat-x;
+     background-size: contain;
+   }
 .brand img, .brand1 img {
   max-width: 60%;
   height: auto;
