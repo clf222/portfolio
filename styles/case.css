@@ -344,22 +344,19 @@ ul.left {
   background-color: #FFFAF0;
 }
 
- .item {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  margin: 1em;
-}
 
  .item {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-between;
+  margin: 1em;
 }
- .item h5 {
-  align-self: center;
+
+.item h4 {
+  margin-bottom: 1em;
 }
+
 
 img.element.proto {
   align-self: center;
