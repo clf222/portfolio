@@ -513,9 +513,9 @@ i
   img.logo {
     align-self: flex-end;
     margin: 0 1em 0 0;
-.detail-single {
+/*.detail-single {
   padding: 0 5em;
-}
+}*/
 
   }
   .brand:after, .brand1:after {
@@ -565,11 +565,7 @@ i
     /*max-width: 30vw;*/
     align-self: center;
   }
-  /*#methodology {
-    display: flex;
-    flex-direction: row wrap;
-    justify-content: flex-start;
-  }*/
+
 
   .method-detail {
     display: flex;
@@ -577,12 +573,12 @@ i
     align-items: center;
     margin: 0 2em;
     justify-content:space-between;
-    /*width: 100vw;*/
+
   }
    ul.list {
     display: flex;
     flex-flow: column wrap;
-    /*padding-left: 1em;*/
+
     justify-content: flex-start;
     align-items: flex-start;
   }
@@ -595,13 +591,13 @@ i
   #research {
     flex-flow: row nowrap;
     align-items: flex-start;
-    justify-content: center;
-    /*margin: 1em;*/
+    justify-content: space-between;
+    /*padding: 1em 10em;*/
   }
 
-  #research img {
+  /*#research img {
     flex-basis: 50vw;
-  }
+  }*/
   #design, #user-test {
     flex-flow: row nowrap;
     align-items: flex-start;
