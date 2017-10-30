@@ -2,13 +2,14 @@
 html {
     background-color: #FFFAF0;
     font-family: 'Lato', sans-serif;
+
+
 }
-
-
 body {
-  display: flex;
+
+  /*display: flex;
   flex-flow: column ;
-  align-content: space-between;
+  align-content: space-between;*/
 }
 
 
@@ -50,23 +51,7 @@ p.last-social {
   flex-basis: 100%;
 }
 
-.detail {
-  display: grid;
-  grid-gap: 1em;
-  grid-template-columns: 1fr;
-  grid-template-rows: 5;
-}
-.text {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 4;
-}
 
-.about-img {
-  grid-column: 2;
-
-}
 img {
 max-width: 173px;
 height: auto;
@@ -87,6 +72,11 @@ h1, h2, .text-head h3 {
 h3 {
   font-family: 'Lato', sans-serif;
   font-weight: 700px;
+}
+
+h4 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
 }
 
 .description {
@@ -185,38 +175,42 @@ input[type=text]:hover,  input[type=email]:hover, input[type=tel]:hover, textare
 
 .container-form{
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column nowrap;
   margin-bottom: 1em;
-
-  /*height: 100vh;*/
   padding: 1em;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+img.center {
+  align-self: center;
+  margin: 1em 0;
 }
 .formfieldset  {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  flex-basis: 50%;
+  flex-basis: 80%;
 
 }
 label {
-  justify-content: flex-start;
-  flex-basis: 10em;
+
+  flex-basis: 8em;
 }
 textarea, input {
-  align-items: flex-start;
-  /*margin-left: 1em;*/
-  flex-basis: 65%;
+
+
+  flex-basis: 2;
 }
 button.button-primary {
-margin: 0;
+margin: 1em 0 0;
 border-color: #151515;
 background-color: #151515;
 color: #FFFAF0;
-width:200px;
-flex-basis: 100%;
+flex-shrink: 1;
+flex-basis: 70%;
+
+
 }
 button.button-primary:hover {
   color: #151515;
@@ -247,7 +241,18 @@ button.button-primary:hover {
         height: 60px;
 
       }
+.container-form.about{
+  flex-flow: row wrap;
+  padding: 0
+}
+button.button-primary {
+flex-basis: 100%;
+}
+textarea, input {
 
+
+  flex-basis: 90%;
+}
   footer {
 
  flex-direction: row;
@@ -269,45 +274,10 @@ button.button-primary:hover {
 
 
 .about-img {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+  a
 }
 img {
     max-width: 230px;
     padding: 0;
   }
-  /*.text {
-  width: 50vw;
-  margin-right: 2em;
-}*/
-
-/*@media (min-width: 1000px) {
-
-
-  .text-head {
-    display: flex;
-
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    padding-bottom: 0;
-
-  }
-
-
-  .text {
-  width: 50vw;
-  margin-right: 2em;
 }
-
-
-  ul {
-  display: flex;
-  flex-flow: row wrap;
-}
-  ul li {
-  align-content: flex-start;
-}
-
-}*/
