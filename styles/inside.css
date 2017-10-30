@@ -249,12 +249,9 @@ button.button-primary {
 flex-basis: 100%;
 }
 textarea, input {
-
-
   flex-basis: 90%;
 }
   footer {
-
  flex-direction: row;
  bottom: 0;
  margin-bottom: 0;
@@ -271,10 +268,20 @@ textarea, input {
     flex-grow: 1;
     align-items: baseline;
   }
-
-
-.about-img {
-  a
+.one-column {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 6em;
+}
+.about-text {
+  flex: 3;
+  margin-right: 3em;
+}
+img.center {
+  flex: 2;
+  padding:0;
+  margin: 0;
+  align-self: flex-start;
 }
 img {
     max-width: 230px;
