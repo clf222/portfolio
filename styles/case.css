@@ -388,9 +388,10 @@ img.element {
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 0 10em;
+  align-items: center;
   background-color: #151515;
-  height: 40px;
+  height: 50px;
 }
 /*Media Queries*/
 @media (min-width: 768px) {
