@@ -1,15 +1,11 @@
 /*home page styles*/
 html {
-    background-color: #FFFAF0;
-    font-family: 'Lato', sans-serif;
-
 
 }
 body {
-
-  /*display: flex;
-  flex-flow: column ;
-  align-content: space-between;*/
+  background-color: #FFFAF0;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
 }
 
 
@@ -78,7 +74,9 @@ h4 {
   font-size: 1.5em;
   margin-bottom: 1em;
 }
-
+p {
+  margin-bottom: 1em;
+}
 .description {
   font-size: .75em;
 }
@@ -98,9 +96,7 @@ h4 {
   font-style: italic;
 }
 
-/*ul li {
-  display: inline;
-}*/
+
 span.fa {
   color: #FFFAF0;
 }
@@ -251,8 +247,11 @@ flex-basis: 100%;
 textarea, input {
   flex-basis: 90%;
 }
-  footer {
- flex-direction: row;
+footer {
+ display: flex;
+ flex-flow: row nowrap;
+ justify-content: space-between;
+ align-items: baseline;
  bottom: 0;
  margin-bottom: 0;
  padding-left: 2em;
