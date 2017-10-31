@@ -22,8 +22,7 @@ body {
 
 h1 {
   font-size: 1.5em;
-  display: table-cell;
-  margin: 0;
+  /*margin: 0;*/
 
 }
 
