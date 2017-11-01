@@ -52,7 +52,7 @@ h5 {
 
 button {
 	border: none;
-	background: #2E4D5E;
+	background: #0F2E42;
 	color: #FFFFFF;
 	padding: 0 2em;
 	font-size: 1em;
@@ -60,7 +60,7 @@ button {
 	position: relative;
 	box-sizing: border-box;
 	transition: all 500ms ease;
-  margin:  2em 0;
+  margin:  1em 0;
 
 }
 li span {
@@ -104,9 +104,6 @@ a, a.link {
   text-decoration: none;
 }
 
-/*a:hover, a.link:hover {
-        color: #90A9BA;
-}*/
 li {
   font-size: 1em;
 }
@@ -161,20 +158,21 @@ h3.baloo {
    background-blend-mode: lighten;
    opacity: .50;
    position:  absolute;
-   top: 50px;
+   top: 40px;
    right: 0;
    bottom: 0;
    left: 0;
    background-size:cover;
-   height: auto;
+   height: 400px;
    padding: 0 0 0 0;
    z-index: -1;
  }
  .brand:after {
    background-image: url(../images/yummeatsbackground.png);
     background-blend-mode: lighten;
-    margin-bottom: -16em;
-    top: 100px;
+    margin-bottom: -14em;
+    height: 400px;
+    top: 40px;
  }
  .brand1:after {
      background: rgba(255,0,0,1);
@@ -182,12 +180,12 @@ h3.baloo {
      background-blend-mode: luminosity;
 
      top: -100px;
-     height: 350px
+     height: 400px;
      background-repeat: repeat-x;
      background-size: contain;
    }
 .brand img, .brand1 img {
-  max-width: 60%;
+  max-width: 40%;
   height: auto;
   margin-top: 1em;
 }
@@ -225,11 +223,6 @@ p.last {
   padding-bottom: 1em;
   align-self: flex-start;
 }
- button {
-   border-radius:5px;
-   background-color: #2F4F4F;
-   padding-bottom: 1em;
- }
 
  #methodology, #research, #design, #user-test, #lessons-learned {
    padding: 1em;
