@@ -48,7 +48,7 @@ body {
  }
  nav ul li {
    display: inline;
-   color: #FFFAF0;
+   color: #FFFFFF;
    font-size: 16px;
    font-family: 'Lato', sans-serif;
    padding: 1em 1em 0 0;
@@ -93,8 +93,10 @@ p.dark.text-center, .made-in {
 @media (min-width: 750px) {
   nav {
     display: table;
-    margin: 0;
-    width: 30%;
+    margin: 0 0 0 auto;
+    width: 50%;
+    padding-left: 0;
+
   }
   nav ul {
     margin-bottom: 0;
@@ -102,11 +104,9 @@ p.dark.text-center, .made-in {
     padding: 0;
   }
   nav ul li {
-    display: inline;
-    color: #FFFAF0;
     margin-bottom: 0;
     padding: 1em 1em 0 0;
-    margin-bottom: 16px;
+
   }
   .heading {
     flex-flow: row wrap;
