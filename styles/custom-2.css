@@ -7,20 +7,14 @@ body {
     font-size: 16px;
 }
 
-
-
-nav {
-  background-color: rgba(21,21,21,.8);
-
-}
 .active {
   color: #FFFFFF;
   border-bottom: 1px solid #FFFFFF;
 }
 a:hover {
-    color: #DAE4E6;
+    color: #90A9BA;
 }
-p a, p.made-in, a {
+p , p.made-in {
     color: #FFFAF0;
     margin-bottom: 0;
 }
@@ -29,18 +23,15 @@ ul {
   margin-bottom: 0;
 }
 
-
 .container-hero {
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-
   text-align: center;
   margin-bottom: 0;
 }
-
 
 .content {
   margin-bottom: 1em;
@@ -70,8 +61,6 @@ h1 {
   font-family: 'Merriweather', serif;
   font-style: italic;
 }
-
-
 
 ul li {
   display: inline;
@@ -111,15 +100,15 @@ h1, h2,h5, h6 {
   color: #151515;
 }
 
-p.light a, .light {
+ .light {
   color: #FFFAF0;
 }
 a {
   text-decoration: none;
 }
-p.light a:hover {
+/*p.light a:hover {
   color: #DAE4E6;
-}
+}*/
 strong {
   font-weight: 700;
   font-family: 'Merriweather', serif;
@@ -184,17 +173,6 @@ body {
 
   }
 
-      .heading {
-        flex-flow: row wrap;
-        align-items: baseline;
-        padding: 1em 0 0 1.5em;
-        position: sticky;
-        top:0;
-        height: 60px;
-
-      }
-
-
   .container-hero {
     flex-direction: column;
     display: flex;
@@ -205,18 +183,6 @@ body {
     text-align: center;
     margin-bottom: 0;
   }
-
-
-
-  /*h3.logo-text {
-    font-family: 'Special Elite', cursive;
-    font-size: 1em;
-    letter-spacing: .15px;
-    color: #FFFAF0;
-    padding: 1em;
-    padding-bottom: 0;
-  }*/
-
 
   h1 {
     line-height: 1.5em;

@@ -3,10 +3,9 @@
 body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
-  color: #151515
+  color: #151515;
   letter-spacing: 0;
   margin: 0;
-  /*box-sizing: content-box;*/
 }
 .active {
   color: #FFFFFF;
@@ -27,8 +26,6 @@ button:hover {
 
 h1 {
   font-size: 1.5em;
-  /*margin: 0;*/
-
 }
 
 h2 {
@@ -55,7 +52,7 @@ h5 {
 
 button {
 	border: none;
-	background: #3a7999;
+	background: #2E4D5E;
 	color: #FFFFFF;
 	padding: 0 2em;
 	font-size: 1em;
@@ -71,9 +68,9 @@ li span {
 }
 
 p {
-  /*margin-bottom: .5em;*/
   line-height: 1.33em;
   font-size: 1em;
+  margin-bottom: 1em;
 }
 p.bold {
   font-weight: 700;
@@ -106,13 +103,10 @@ a, a.link {
   color: #FFFFFF;
   text-decoration: none;
 }
-a.link {
-  color: #1EAEDB;
-}
-a.link:hover {
-  color: #151515;
-}
 
+a:hover, a.link:hover {
+        color: #90A9BA;
+}
 li {
   font-size: 1em;
 }
@@ -139,41 +133,11 @@ h3.baloo {
   align-self: center;
   margin-top: 2em auto;
 }
-/***HEADER STYLES ***/
- .heading {
-   display: flex;
-   flex-flow: column nowrap;
-   justify-content: space-between;
-   align-items: center;
-   padding: 1em 0;
-   position: sticky;
-   top:0;
-   background-color: #151515;
-   height: 80px;
-   z-index: 10;
- }
- nav {
-   display: table;
-   margin: 0;
-   width: 90%;
- }
- nav ul {
-   margin-bottom: 0;
-   list-style: none;
-   padding-right: 1em 0;
-   text-align: center;
- }
- nav ul li {
-   display: inline;
-   color: #FFFAF0;
-   padding: 1em 1em 0 0;
- }
 
  /*** END HEADER STYLES ***/
  .intro {
    display: flex;
    flex-flow: column nowrap;
-   /*padding: 1em;*/
    justify-content: flex-start;
    align-items: flex-start;
  }
@@ -193,7 +157,7 @@ h3.baloo {
  }
  .brand:after, .brand1:after {
    content: "";
-   background: rgba(197, 145, 145, 0.92);
+   background: rgba(148, 128, 194, 0.92);
    background-blend-mode: lighten;
    opacity: .50;
    position:  absolute;
@@ -271,16 +235,13 @@ p.last {
    padding: 1em;
  }
 
- .section-head, .section-head1 {
+ .section-head {
    height: 30px;
    color: white;
    width: 100%;
-   background-color: #BD9997;
+   background-color: #366797;
    text-align: center;
    padding: 1em 0;
-}
-.section-head1 {
-  background-color: #FE868D;
 }
 
 /*Methodology*/
@@ -331,7 +292,6 @@ ul.left {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: flex-start;
-  padding: 1em;
 }
 .single {
   display: flex;
@@ -415,15 +375,6 @@ footer {
 }
 /*Media Queries*/
 @media (min-width: 768px) {
-    .heading {
-      flex-flow: row wrap;
-      align-items: baseline;
-      padding: 1em 0 0 0;
-      position: sticky;
-      top:0;
-      height: 60px;
-
-    }
     h1 {
       margin: 0 1em;
     }
@@ -491,10 +442,7 @@ img.element {
 img.element.proto {
   max-width: 100%;
 }
-/*ul.left {
-  padding-left: 0;
 
-}*/
 .left {
   margin-right: 2em;
 
@@ -503,11 +451,9 @@ img.element.proto {
     font-size: 1em;
   }
   .intro {
-    display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
   }
-i
+
   .sub {
     display: flex;
     justify-content: center;
@@ -534,16 +480,8 @@ i
   img.logo {
     align-self: flex-end;
     margin: 0 1em 0 0;
-/*.detail-single {
-  padding: 0 5em;
-}*/
-
   }
   .brand:after, .brand1:after {
-    content: "";
-    background: rgba(197, 145, 145, 0.92);
-    background-blend-mode: lighten;
-    opacity: .50;
     position:  absolute;
     top: 50px;
     right: 0;
@@ -561,14 +499,10 @@ i
     background: rgba(255,0,0,1);
     background-image: url(../images/girlwithwaffle-cropped-1.jpg);
     background-blend-mode: luminosity;
-
-    /*top: -100px;*/
     height: 350px;
     background-repeat: repeat-x;
     background-size: contain;
   }
-
-
   .brand img, .brand button {
    align-self: center;
    margin: 1em auto;
@@ -576,34 +510,25 @@ i
    max-width: 100%;
    height: auto;
   }
-
-
-
   p.bold {
     margin-bottom: 2em;
   }
   img.element {
-    /*max-width: 30vw;*/
     align-self: center;
   }
-
-
   .method-detail {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     margin: 0 2em;
     justify-content:space-between;
-
   }
    ul.list {
     display: flex;
     flex-flow: column wrap;
-
     justify-content: flex-start;
     align-items: flex-start;
   }
-
   h4, h5, h6 {
     text-align: center;
     margin: 0 auto;
@@ -613,23 +538,14 @@ i
     flex-flow: row nowrap;
     align-items: flex-start;
     justify-content: space-between;
-    /*padding: 1em 10em;*/
   }
 
-  /*#research img {
-    flex-basis: 50vw;
-  }*/
   #design, #user-test {
     flex-flow: row nowrap;
-    align-items: flex-start;
     justify-content: space-around;
-    padding: 1em;
-
   }
    .item {
     flex-basis: 30vw;
-    display: flex;
-    flex-flow: column nowrap;
     align-items: flex-start;
     justify-content: space-between;
   }

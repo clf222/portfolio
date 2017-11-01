@@ -17,10 +17,16 @@ body {
    background-color: #151515;
    height: 70px;
    z-index: 10;
+
  }
+
  h3.logo-text {
    padding: 0 1.5em;
    margin-bottom: 0;
+   letter-spacing: normal;
+ }
+ h3.logo-text a, .heading ul li a{
+   text-decoration: none;
  }
  .active {
    color: #FFFFFF;
@@ -49,6 +55,9 @@ h3.logo-text {
   font-family:'Special Elite', cursive;
   padding: 0;
 }
+a {
+  color: #FFFFFF;
+}
  /*** END HEADER STYLES ***/
 
 p {
@@ -65,7 +74,7 @@ p {
   margin-bottom:0;
 }
 
-p a, p.made-in, a {
+p , p.made-in,  {
     color: #FFFAF0;
     margin-bottom: 0;
 }
@@ -100,17 +109,14 @@ p.dark.text-center, .made-in {
     margin-bottom: 16px;
   }
   .heading {
-      flex-flow: row wrap;
-      align-items: baseline;
-      padding: 0;
-      position: sticky;
-      top: 0;
-      height: 50px;
-
+    flex-flow: row wrap;
+    align-items: baseline;
+    padding: 1em 0 0 1.5em;
+    position: sticky;
+    top:0;
+    height: 60px;
   }
-  /*h3.logo-text {
-    padding: 0;
-  }*/
+
   .links {
     align-items: flex-end;
     display: flex;
