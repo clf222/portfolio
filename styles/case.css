@@ -104,9 +104,9 @@ a, a.link {
   text-decoration: none;
 }
 
-a:hover, a.link:hover {
+/*a:hover, a.link:hover {
         color: #90A9BA;
-}
+}*/
 li {
   font-size: 1em;
 }

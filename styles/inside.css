@@ -133,9 +133,7 @@ strong {
   font-weight: 700;
 
 }
-a:hover {
-  color: #DAE4E6;
-}
+
 /*end default text styles*/
 
 
@@ -150,15 +148,6 @@ a:hover {
 }
 /*end utilities*/
 
-
-
-
-a span.dark-icon.fa:hover {
-  color: #DAE4E6;
-}
-
-
-/*contact and about styles*/
 /*form styles*/
 input[type=text],  input[type=email], input[type=tel], textarea{
   border-radius:10px;

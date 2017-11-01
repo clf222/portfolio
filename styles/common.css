@@ -17,7 +17,6 @@ body {
    background-color: #151515;
    height: 70px;
    z-index: 10;
-
  }
 
  h3.logo-text {
@@ -32,6 +31,10 @@ body {
    color: #FFFFFF;
    border-bottom: 1px solid #FFFFFF;
  }
+ a:hover, a.link:hover, a span.dark-icon.fa:hover{
+         color: #90A9BA;
+ }
+
  nav {
    display: table;
    margin: 0;
@@ -88,9 +91,6 @@ p.dark.text-center, .made-in {
 }
 
 @media (min-width: 750px) {
-
-
-
   nav {
     display: table;
     margin: 0;
@@ -124,18 +124,11 @@ p.dark.text-center, .made-in {
     flex-basis: 37%;
   }
 }
-
-
-
 @media (min-width: 1000px) {
-
-
 .wrapper {
   padding: 0 2em;
-  /*flex-grow: 1;*/
   flex-shrink: 1;
   display: flex;
   justify-content: space-between;
-}
-
+  }
 }
