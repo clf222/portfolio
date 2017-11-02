@@ -65,8 +65,9 @@ button {
 	transition: all 500ms ease;
   margin:  1em 0;
 }
-a:active, a.link:active, button:active {
-    color: pink;
+
+button:focus {
+  color:#000000;
 }
 li span {
   font-weight: 700;
