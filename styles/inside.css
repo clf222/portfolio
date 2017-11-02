@@ -1,34 +1,29 @@
-/*home page styles*/
-html {
-
-}
 body {
-  background-color: #FFFAF0;
-  font-family: 'Lato', sans-serif;
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );  font-family: 'Lato', sans-serif;
   font-size: 16px;
+  background-size: cover;
 }
-
-
 footer {
-  flex-direction: column;
-  background-color: #151515;
-  position: fixed;
-  min-height: 40px;
-  width: 100%;
-  bottom: 0;
   display: flex;
   justify-content: space-between;
+  padding: 0 10em;
   align-items: center;
-  padding: .5em 0 0 0;
-  flex-grow: 0;
+  background-color: #0F2E42;
+  height: 50px;
 }
 
 .socials {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 0;
-  padding-bottom: .5em;
+  margin-right: 4em;
 }
 .socials p {
   padding-right: 1em;
@@ -38,7 +33,6 @@ p.last-social {
   padding-right: 0;
 }
 
-
 .text-head {
   display: flex;
   flex-wrap: wrap;
@@ -47,7 +41,6 @@ p.last-social {
   flex-basis: 100%;
 }
 
-
 img {
 max-width: 173px;
 height: auto;
@@ -55,15 +48,14 @@ padding: .5em;
 
 }
 
-
 h1, h2, .text-head h3 {
   font-family: 'Merriweather', serif;
   line-height: 1.25em;
 }
-
+/*
 .content {
   margin-bottom: 1em
-}
+}*/
 
 h3 {
   font-family: 'Lato', sans-serif;
@@ -74,9 +66,9 @@ h4 {
   font-size: 1.5em;
   margin-bottom: 1em;
 }
-p {
+/*p {
   margin-bottom: 1em;
-}
+}*/
 .description {
   font-size: .75em;
 }
@@ -95,19 +87,9 @@ p {
   font-family: 'Merriweather', serif;
   font-style: italic;
 }
-
-
 span.fa {
-  color: #FFFAF0;
+  color: #FFFFFF;
 }
-
-
-
-a {
-  color: #FFFAF0;
-}
-
-
 .active {
   color: #FFFFFF;
   border-bottom: 1px solid #FFFFFF;
@@ -115,27 +97,23 @@ a {
 /*end nav text styling*/
 
 
-.dark {
+/*.dark {
   color: #151515;
-}
+}*/
 h4 {
   font-style: italic;
   font-family: 'Lato', sans-serif;
 }
-p.light a, .light {
+/*p.light a, .light {
   color: #FFFAF0;
-}
+}*/
 a {
   text-decoration: none;
 }
 
 strong {
   font-weight: 700;
-
 }
-
-/*end default text styles*/
-
 
 .center {
   margin: auto;
@@ -154,7 +132,6 @@ input[type=text],  input[type=email], input[type=tel], textarea{
 
 }
 input[type=text]:hover,  input[type=email]:hover, input[type=tel]:hover, textarea:hover{
-  /*border-radius:10px;*/
   border-color: #151515;
 }
 
@@ -162,9 +139,12 @@ input[type=text]:hover,  input[type=email]:hover, input[type=tel]:hover, textare
   display: flex;
   flex-flow: column nowrap;
   margin-bottom: 1em;
-  padding: 1em;
-  justify-content: flex-start;
-  align-items: flex-start;
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  width: 30em;
+  margin: 0 auto;
 }
 
 img.center {
@@ -176,15 +156,11 @@ img.center {
   flex-wrap: wrap;
   justify-content: flex-start;
   flex-basis: 80%;
-
 }
 label {
-
   flex-basis: 8em;
 }
 textarea, input {
-
-
   flex-basis: 2;
 }
 button.button-primary {
@@ -194,8 +170,6 @@ background-color: #151515;
 color: #FFFAF0;
 flex-shrink: 1;
 flex-basis: 70%;
-
-
 }
 button.button-primary:hover {
   color: #151515;
@@ -214,41 +188,18 @@ button.button-primary:hover {
 }
 
 
-@media (min-width: 750px) {
+@media (min-width: 768px) {
 
-
-      .heading {
-        flex-flow: row wrap;
-        align-items: baseline;
-        padding: 1em 0 0 1.5em;
-        position: sticky;
-        top:0;
-        height: 60px;
-
-      }
-.container-form.about{
+/*.container-form.about{
   flex-flow: row wrap;
   padding: 0
-}
+}*/
 button.button-primary {
 flex-basis: 100%;
 }
 textarea, input {
   flex-basis: 90%;
 }
-footer {
- display: flex;
- flex-flow: row nowrap;
- justify-content: space-between;
- align-items: baseline;
- bottom: 0;
- margin-bottom: 0;
- padding-left: 2em;
- padding-right: 2em;
-}
-  .socials {
-    margin-right: 4em;
-  }
 
   .text-head {
     display: flex;

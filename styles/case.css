@@ -200,9 +200,9 @@ h3.baloo {
 .detail.cream {
   background-color: #FFFAF1;
 }
-.shrink {
+/*.shrink {
   flex-shrink: 1;
-}
+}*/
 
 .right {
   width: 80vw;
@@ -361,7 +361,7 @@ footer {
   justify-content: space-between;
   padding: 0 10em;
   align-items: center;
-  background-color: #151515;
+  background-color: #0F2E42;
   height: 50px;
 }
 /*Media Queries*/
@@ -373,23 +373,7 @@ footer {
       margin-left: 0;
       padding-left: 160px;
     }
-    /*nav {
-      display: table;
-      margin: 0;
-      width: 30%;
-    }
-    nav ul {
-      margin-bottom: 0;
-      list-style: none;
-      padding: 0;
-    }
-    nav ul li {
-      display: inline;
-      color: #FFFAF0;
-      margin-bottom: 0;
-      padding: 1em 1em 0 0;
-      margin-bottom: 16px;
-    }*/
+
 
     .detail {
       display: flex;
@@ -446,10 +430,6 @@ img.element.proto {
   }
 
   .sub {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
     margin: 0;
     padding: 0 0;
   }

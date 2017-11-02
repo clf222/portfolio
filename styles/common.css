@@ -69,6 +69,9 @@ p {
   line-height: 1.3em;
   font-family: 'Lato', sans-serif;
 }
+p.light {
+  color: #FFFFFF;
+}
 
 .made-in {
   font-size: .8em;
@@ -86,10 +89,10 @@ p.dark.text-center, .made-in {
   margin-bottom: 0;
 }
 
-.wrapper {
+/*.wrapper {
   padding: 0 1em;
   margin-bottom: 6em;
-}
+}*/
 
 @media (min-width: 768px) {
   nav {
@@ -124,10 +127,10 @@ p.dark.text-center, .made-in {
   }
 }
 @media (min-width: 1000px) {
-.wrapper {
+/*.wrapper {
   padding: 0 2em;
   flex-shrink: 1;
   display: flex;
   justify-content: space-between;
-  }
+  }*/
 }
