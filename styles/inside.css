@@ -109,9 +109,7 @@ h4 {
   font-style: italic;
   font-family: 'Lato', sans-serif;
 }
-/*p.light a, .light {
-  color: #FFFAF0;
-}*/
+
 a {
   text-decoration: none;
 }
@@ -245,15 +243,25 @@ img {
   footer {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center
     padding: 0 10em;
+    margin: 0 auto;
     align-items: center;
     background-color: #0F2E42;
     height: 50px;
     bottom: 0;
     width: 100vw;
-    position: sticky;
+    position: absolute;
     margin-top: 5em;
+  }
+  .left {
+    padding-left: 4em;
+  }
+  .center {
+    margin: 0 auto;
+  }
+  .right {
+    padding-right: 4em;
   }
 
 }
