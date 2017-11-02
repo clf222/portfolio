@@ -12,22 +12,29 @@ body {
 }
 footer {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  padding: 0 10em;
+  flex-flow: column nowrap;
+  justify-content: space-around;
   align-items: center;
+  padding: .5em 0;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
   background-color: #0F2E42;
   height: 50px;
+  font-size: .875em;
 }
 
 .socials {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*margin-right: 4em;*/
 }
 p {
   margin-bottom: 0;
+}
+.container-form p, .container-about p {
+  margin-bottom: 1em;
 }
 .socials p {
   padding-right: 1em;
@@ -56,10 +63,6 @@ h1, h2, .text-head h3 {
   font-family: 'Merriweather', serif;
   line-height: 1.25em;
 }
-/*
-.content {
-  margin-bottom: 1em
-}*/
 
 h3 {
   font-family: 'Lato', sans-serif;
@@ -70,9 +73,7 @@ h4 {
   font-size: 1.5em;
   margin-bottom: 1em;
 }
-/*p {
-  margin-bottom: 1em;
-}*/
+
 .description {
   font-size: .75em;
 }
@@ -142,16 +143,13 @@ input[type=text]:hover,  input[type=email]:hover, input[type=tel]:hover, textare
 .container-form, .container-about{
   display: flex;
   flex-flow: column nowrap;
-  margin-bottom: 1em;
-  padding: 2em;
+
   justify-content: center;
   align-items: center;
   background-color: #FFF;
-  width: 50em;
-  margin: 0 auto;
-}
-.container-about {
-  width: 50em;
+
+  margin: 0 auto auto;
+  padding: 2em 2em;
 }
 
 img.center {
@@ -172,16 +170,16 @@ textarea, input {
 }
 button.button-primary {
 margin: 1em 0 0;
-border-color: #151515;
-background-color: #151515;
-color: #FFFAF0;
+border-color: #0F2E42;
+background-color: #0F2E42;
+color: #FFFFFF;
 flex-shrink: 1;
-flex-basis: 70%;
+flex-basis: 100%;
 }
 button.button-primary:hover {
-  color: #151515;
-  background-color: #FFFAF0;
-  border: 1px solid #151515;
+  color: #0F2E42;
+  background-color: #FFFFFF;
+  border: 1px solid #0F2E42;
 }
 .button, button, input[type="submit"], input[type="reset"], input[type="button"] {
   text-transform: inherit;
@@ -206,6 +204,17 @@ flex-basis: 100%;
 }
 textarea, input {
   flex-basis: 90%;
+}
+
+.container-form, .container-about{
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 2em 2em 3em 2em;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  width: 50em;
+  margin: 0 auto auto;
 }
 
   .text-head {
@@ -233,4 +242,18 @@ img {
     max-width: 230px;
     padding: 0;
   }
+  footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 10em;
+    align-items: center;
+    background-color: #0F2E42;
+    height: 50px;
+    bottom: 0;
+    width: 100vw;
+    position: sticky;
+    margin-top: 5em;
+  }
+
 }
