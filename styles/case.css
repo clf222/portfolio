@@ -503,8 +503,11 @@ img.element.proto {
     align-items: flex-start;
   }
   h4, h5, h6 {
-    text-align: center;
+    /*text-align: center;*/
     margin: 0 auto;
+  }
+  .left h4 {
+    margin: 1em 0;
   }
 
   #research {
