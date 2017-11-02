@@ -12,6 +12,7 @@ body {
 }
 footer {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   padding: 0 10em;
   align-items: center;
@@ -23,7 +24,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 4em;
+  /*margin-right: 4em;*/
+}
+p {
+  margin-bottom: 0;
 }
 .socials p {
   padding-right: 1em;
@@ -135,7 +139,7 @@ input[type=text]:hover,  input[type=email]:hover, input[type=tel]:hover, textare
   border-color: #151515;
 }
 
-.container-form{
+.container-form, .container-about{
   display: flex;
   flex-flow: column nowrap;
   margin-bottom: 1em;
@@ -143,8 +147,11 @@ input[type=text]:hover,  input[type=email]:hover, input[type=tel]:hover, textare
   justify-content: center;
   align-items: center;
   background-color: #FFF;
-  width: 30em;
+  width: 50em;
   margin: 0 auto;
+}
+.container-about {
+  width: 50em;
 }
 
 img.center {
