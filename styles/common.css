@@ -109,10 +109,6 @@ p.dark.text-center, .made-in {
   margin-bottom: 0;
 }
 
-/*.wrapper {
-  padding: 0 1em;
-  margin-bottom: 6em;
-}*/
 
 @media (min-width: 768px) {
   nav {

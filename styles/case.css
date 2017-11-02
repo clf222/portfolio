@@ -11,6 +11,9 @@ body {
   color: #FFFFFF;
   border-bottom: 1px solid #FFFFFF;
 }
+
+
+
 .light {
     color: #FFFAF0;
 }
@@ -61,7 +64,9 @@ button {
 	box-sizing: border-box;
 	transition: all 500ms ease;
   margin:  1em 0;
-
+}
+a:active, a.link:active, button:active {
+    color: pink;
 }
 li span {
   font-weight: 700;
@@ -200,9 +205,6 @@ h3.baloo {
 .detail.cream {
   background-color: transparent;
 }
-/*.shrink {
-  flex-shrink: 1;
-}*/
 
 .right {
   width: 80vw;
