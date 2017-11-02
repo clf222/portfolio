@@ -198,7 +198,7 @@ h3.baloo {
   background-color: #FFF;
 }
 .detail.cream {
-  background-color: #FFFAF1;
+  background-color: transparent;
 }
 /*.shrink {
   flex-shrink: 1;
