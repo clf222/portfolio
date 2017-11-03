@@ -19,11 +19,13 @@ footer {
   position: sticky;
   bottom: 0;
   left: 0;
+  position: absolute;
   width: 100vw;
   background-color: #0F2E42;
   height: 50px;
   font-size: .875em;
 }
+
 
 .socials {
   display: flex;
@@ -61,7 +63,7 @@ padding: .5em;
 
 h1, h2, .text-head h3 {
   font-family: 'Merriweather', serif;
-  line-height: 1.25em;
+  line-height: 1em;
 }
 
 h3 {
@@ -70,7 +72,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin-bottom: 1em;
 }
 
@@ -208,7 +210,7 @@ textarea, input {
   display: flex;
   flex-flow: column nowrap;
   padding: 2em 2em 3em 2em;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: #FFF;
   width: 50em;
@@ -242,10 +244,10 @@ img {
   }
   footer {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: center;
-    padding: 0 10em;
-    margin: 0 auto;
+    padding: 0;
+    /*margin: 0 auto;*/
     align-items: center;
     background-color: #0F2E42;
     height: 50px;
