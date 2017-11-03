@@ -406,14 +406,14 @@ footer p {
   flex:1
 }
 
-    .detail {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding: 1em 4em 1em 10em;
-      background-color: #FFF;
-    }
+.detail {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1em 4em 1em 10em;
+  background-color: #FFF;
+}
 
 .single {
   align-items: center;
