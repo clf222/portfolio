@@ -243,7 +243,7 @@ img {
   footer {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center
+    justify-content: center;
     padding: 0 10em;
     margin: 0 auto;
     align-items: center;

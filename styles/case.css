@@ -67,7 +67,9 @@ button {
 }
 
 button:focus {
-  color:#000000;
+  color:#FFFFFF;
+  background-color: #000000;
+
 }
 li span {
   font-weight: 700;
@@ -361,11 +363,17 @@ img.element {
 
 footer {
   display: flex;
-  justify-content: space-between;
-  padding: 0 10em;
+  flex-flow: column nowrap;
+  justify-content: space-around;
   align-items: center;
   background-color: #0F2E42;
-  height: 50px;
+  font-size: .875em;
+  height: 80px;
+}
+footer p {
+  font-size: .875em;
+  line-height: 1em;
+  margin-bottom: 0;
 }
 /*Media Queries*/
 @media (min-width: 768px) {
@@ -534,6 +542,18 @@ img.element.proto {
 }
   .big-element {
     width: 15vw;
+  }
+  footer {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 10em;
+    align-items: center;
+    height: 50px;
+  }
+  footer p {
+    font-size: 1em;
+    line-height: 1.3em;
+    margin-bottom: 0;
   }
 }
 
