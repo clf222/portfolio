@@ -147,7 +147,6 @@ h3.baloo {
    align-items: flex-start;
  }
 
-
  .left {
    padding: 0 1em;
    flex-basis: 50vw;
@@ -187,7 +186,7 @@ h3.baloo {
      background-image: url(../images/girlwithwaffle-cropped-1.jpg);
      background-blend-mode: luminosity;
 
-     top: -100px;
+     top: 50px;
      height: 400px;
      background-repeat: repeat-x;
      background-size: contain;
@@ -202,7 +201,7 @@ h3.baloo {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: flex-start;
-  padding: 1em 0;
+  padding: 1em;
   background-color: #FFF;
 }
 .detail.cream {
@@ -465,7 +464,7 @@ img.element.proto {
   }
   .brand:after, .brand1:after {
     position:  absolute;
-    top: 50px;
+    top: 55px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -551,8 +550,8 @@ img.element.proto {
     height: 50px;
   }
   footer p {
-    font-size: 1em;
-    line-height: 1.3em;
+    font-size: .875;
+    line-height: 1em;
     margin-bottom: 0;
   }
 }
