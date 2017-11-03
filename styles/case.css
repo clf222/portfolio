@@ -231,8 +231,8 @@ h2.bold {
 }
 img.element.proto {
   display: inline;
-  margin: 0 auto;
-  max-width: 40vw;
+  margin: 0 0 1em;
+  max-width: 300px;
 }
 
 p.last {
@@ -261,9 +261,9 @@ p.last {
   align-items: center;
   padding-top: 1em 0;
 }
-.cream {
+/*.cream {
   background-color: #FFFAF1;
-}
+}*/
 
 h5, h6 {
   text-align: center;
@@ -279,6 +279,10 @@ ul.list {
 }
 ul.left {
   margin-bottom: 0;
+  flex-basis: 1;
+}
+.left, .right {
+  flex: 1;
 }
 
 
@@ -347,9 +351,9 @@ ul.left {
 }
 
 
-img.element.proto {
-  align-self: center;
-}
+/*img.element.proto {
+  align-self: flex-start;
+}*/
 .big-element {
   width: 80%;
 }
@@ -395,14 +399,19 @@ footer p {
       margin-left: 0;
       padding-left: 160px;
     }
-
+.left {
+  flex:1
+}
+.right {
+  flex:1
+}
 
     .detail {
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
       align-items: flex-start;
-      padding: 1em 10em;
+      padding: 1em 4em 1em 10em;
       background-color: #FFF;
     }
 
@@ -436,12 +445,12 @@ footer p {
 img.element {
   margin-top: 1em;
 }
-img.element.proto {
+/*img.element.proto {
   max-width: 100%;
-}
+}*/
 
 .left {
-  margin-right: 2em;
+  margin-right: 0;
 
 }
   p {
@@ -455,9 +464,9 @@ img.element.proto {
     margin: 0;
     padding: 0 0;
   }
-  .left {
+  /*.left {
     width: 60vw;
-  }
+  }*/
 
   .method-text {
     margin-top: 1em;
@@ -552,7 +561,7 @@ img.element.proto {
   padding: 1em 10em;
 }
   .big-element {
-    width: 15vw;
+    max-width: 250px;
   }
   footer {
     flex-flow: row nowrap;
