@@ -226,9 +226,9 @@ h3.baloo {
   flex-flow: column nowrap;
   align-items: center;
 }
-h2.bold {
+/*h2.bold {
   margin-left: 0;
-}
+}*/
 img.element.proto {
   display: inline;
   margin: 0 0 1em;
@@ -261,9 +261,6 @@ p.last {
   align-items: center;
   padding-top: 1em 0;
 }
-/*.cream {
-  background-color: #FFFAF1;
-}*/
 
 h5, h6 {
   text-align: center;
@@ -273,13 +270,13 @@ h6 {
   font-size: 1em;
 }
 ul.list {
-  margin-top: 1em;
+  /*margin-top: 1em;*/
   padding-left: 40px;
   list-style-position: outside;
 }
 ul.left {
   margin-bottom: 0;
-  flex-basis: 1;
+  /*flex-basis: 1;*/
 }
 .left, .right {
   flex: 1;
@@ -314,14 +311,14 @@ ul.left {
   padding: 1em;
 }
 
-#research ul.list {
+/*#research ul.list {
   display: flex;
   flex-flow: column nowrap;
   padding: 1em;
   margin: 1em;
   background-color: #FFF;
 
-}
+}*/
 #research img.element.big-element {
   margin: 0 auto;
 }
@@ -400,10 +397,11 @@ footer p {
       padding-left: 160px;
     }
 .left {
-  flex:1
+  flex:1;
+  padding-right: auto;
 }
 .right {
-  flex:1
+
 }
 
 .detail {
@@ -412,7 +410,7 @@ footer p {
   justify-content: space-between;
   align-items: flex-start;
   padding: 1em 4em 1em 10em;
-  background-color: #FFF;
+  /*background-color: #FFF;*/
 }
 
 .single {
@@ -440,17 +438,15 @@ footer p {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  width: 30%;
+  width: 30vw;
 }
 img.element {
   margin-top: 1em;
 }
-/*img.element.proto {
-  max-width: 100%;
-}*/
+
 
 .left {
-  margin-right: 0;
+ widht: 30vw;
 
 }
   p {
@@ -470,7 +466,7 @@ img.element {
 
   .method-text {
     margin-top: 1em;
-    padding: 0 10em;
+    padding-left: 0;
   }
   .brand  {
     justify-content: center;
@@ -538,8 +534,14 @@ img.element {
   .left h4 {
     margin: 1em 0;
   }
+  #methodology .detail {
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0;
+  }
 
-  #research {
+ #research {
     flex-flow: row nowrap;
     align-items: flex-start;
     justify-content: space-between;
