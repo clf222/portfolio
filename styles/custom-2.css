@@ -18,7 +18,9 @@ p , p.made-in {
     color: #FFFAF0;
     margin-bottom: 0;
 }
-
+p {
+  line-height: 1.4em;
+}
 ul {
   margin-bottom: 0;
 }
@@ -122,6 +124,7 @@ strong {
 }
 /*end utilities*/
 
+
 ul.socials li.last {
   margin-right: 0;
   margin-left: 0;
@@ -146,8 +149,14 @@ footer  {
 flex-flow: column;
 justify-content: center;
 align-items: center;
+margin-top: 2em;
 }
-
+ul.socials.text-center {
+  margin-top: 1em;
+}
+ul.socials.text-center li {
+  font-size: 1.5em;
+}
 /* Larger than phablet */
 @media (min-width: 768px) {
   /*home page styles*/
