@@ -56,8 +56,8 @@ p.last-social {
 
 img {
 max-width: 173px;
-height: auto;
-padding: .5em;
+/*height: auto;*/
+
 
 }
 
@@ -154,7 +154,7 @@ input[type=text]:hover,  input[type=email]:hover, input[type=tel]:hover, textare
 
 img.center {
   align-self: center;
-  margin: 1em 0;
+  margin: 0;
 }
 .formfieldset  {
   display: flex;
@@ -194,11 +194,10 @@ button.button-primary:hover {
 
 
 @media (min-width: 768px) {
-
-/*.container-form.about{
-  flex-flow: row wrap;
-  padding: 0
+/*h4 {
+  margin-bottom: 5em;
 }*/
+
 button.button-primary {
 flex-basis: 100%;
 }
@@ -214,6 +213,7 @@ textarea, input {
   align-items: center;
   background-color: #FFF;
   width: 50em;
+  /*height: 90vh;*/
   margin: 0 auto auto;
 }
 
@@ -225,18 +225,20 @@ textarea, input {
   }
 .one-column {
   display: flex;
-  flex-flow: row wrap;
-  padding: 0 6em;
+  flex-flow: row nowrap;
+  padding: 0 6em ;
 }
 .about-text {
-  flex: 3;
+  /*flex: 3;*/
+
+  /*z-index: 1;*/
   margin-right: 3em;
 }
 img.center {
-  flex: 2;
+  /*flex: 2;*/
   padding:0;
-  margin: 0;
   align-self: flex-start;
+
 }
 img {
     max-width: 230px;
@@ -247,14 +249,16 @@ img {
     flex-flow: row nowrap;
     justify-content: center;
     padding: 0;
-    /*margin: 0 auto;*/
+    margin: 0 auto;
     align-items: center;
     background-color: #0F2E42;
     height: 50px;
     bottom: 0;
+    left:0;
+    right:0;
     width: 100vw;
     position: absolute;
-    margin-top: 5em;
+  /*margin-top: 5em;*/
   }
   .left {
     padding-left: 4em;
