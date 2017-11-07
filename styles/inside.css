@@ -10,13 +10,16 @@ body {
   font-size: 16px;
   background-size: cover;
 }
+/*header {
+  position: absolute;
+}*/
 footer {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
   padding: .5em 0;
-  position: sticky;
+  position: absolute;
   bottom: 0;
   left: 0;
   position: absolute;
@@ -216,6 +219,7 @@ textarea, input {
   /*height: 90vh;*/
   margin: 0 auto auto;
 }
+
 
   .text-head {
     display: flex;
