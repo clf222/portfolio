@@ -229,6 +229,7 @@ textarea, input {
   }
 .one-column {
   display: flex;
+  height: calc(100vh-50px);
   flex-flow: row nowrap;
   padding: 0 6em ;
 }
