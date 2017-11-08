@@ -19,7 +19,7 @@ p , p.made-in {
     margin-bottom: 0;
 }
 p {
-  line-height: 1.4em;
+  line-height: 1.5em;
 }
 ul {
   margin-bottom: 0;
@@ -148,7 +148,7 @@ ul.socials li {
 @media (min-width: 768px) {
 
 body {
-      background: url(http://takeflight.design/images/home-image.jpg) no-repeat top center;
+      background: url(http://takeflight.design/images/home-image-opt.jpg) no-repeat top center;
       background-size: cover;
 
   }
