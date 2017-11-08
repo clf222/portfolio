@@ -19,7 +19,6 @@ footer {
   padding: .5em 0;
   bottom: 0;
   left: 0;
-  position: relative;
   width: 100vw;
   background-color: #0F2E42;
   height: 50px;
@@ -139,10 +138,12 @@ input[type=text]:hover,  input[type=email]:hover, input[type=tel]:hover, textare
   justify-content: center;
   align-items: center;
   background-color: #FFF;
-  margin: 0 auto auto;
+  margin: 0 auto;
   padding: 2em 2em;
 }
-
+.container-form {
+    height: calc(100vh-50px);
+}
 img.center {
   align-self: center;
   margin: 0;
@@ -198,10 +199,12 @@ textarea, input {
   align-items: center;
   background-color: #FFF;
   width: 50em;
-  margin: 0 auto 2em;
+  padding-bottom: 1em;
+  margin: 0 auto;
 }
 .container-about {
-  margin-bottom: 4em;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
   .text-head {
     display: flex;
@@ -211,7 +214,7 @@ textarea, input {
   }
 .one-column {
     display: flex;
-    height: calc(100%-50px);
+    height: calc(100vh-50px);
     flex-flow: row nowrap;
     padding: 0 6em;
 }
@@ -226,7 +229,7 @@ img {
     max-width: 230px;
     padding: 0;
   }
-  footer {
+    footer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -238,9 +241,10 @@ img {
     bottom: 0;
     left:0;
     right:0;
-    width: 100vw;
-    position: absolute;
+    /*width: 100vw;*/
   }
+
+
   .left {
     padding-left: 4em;
   }
