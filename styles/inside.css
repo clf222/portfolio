@@ -23,8 +23,12 @@ footer {
   background-color: #0F2E42;
   height: 50px;
   font-size: .875em;
-}
 
+}
+.container-form, .container-about {
+  height: 80vh;
+  padding-top: 2em;
+}
 
 .socials {
   display: flex;
@@ -60,6 +64,9 @@ img {
 h1, h2, .text-head h3 {
   font-family: 'Merriweather', serif;
   line-height: 1em;
+}
+h1 {
+  font-size: 2em;
 }
 
 h3 {
@@ -135,14 +142,14 @@ input[type=text]:hover,  input[type=email]:hover, input[type=tel]:hover, textare
 .container-form, .container-about{
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: #FFF;
   margin: 0 auto;
-  padding: 2em 2em;
+  padding: 1em 2em;
 }
-.container-form {
-    height: calc(100vh-50px);
+.container-form, .container-about {
+    height: 100vh;
 }
 img.center {
   align-self: center;
@@ -182,6 +189,11 @@ button.button-primary:hover {
   display: flex;
   flex-wrap: wrap;
 }
+@media (min-width: 550px) {
+  h1 {
+    font-size: 3em;
+  }
+}
 
 @media (min-width: 768px) {
 button.button-primary {
@@ -190,6 +202,7 @@ button.button-primary {
 textarea, input {
   flex-basis: 90%;
 }
+
 
 .container-form, .container-about{
   display: flex;
@@ -206,6 +219,7 @@ textarea, input {
   margin-bottom: 0;
   padding-bottom: 0;
 }
+
   .text-head {
     display: flex;
     justify-content: space-between;
@@ -241,7 +255,7 @@ img {
     bottom: 0;
     left:0;
     right:0;
-    /*width: 100vw;*/
+    position: fixed;
   }
 
 
