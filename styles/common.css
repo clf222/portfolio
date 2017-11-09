@@ -34,6 +34,7 @@ body {
     background:#0F2E42;
     padding: 0;
     margin: 0;
+    line-height: 1em;
 }
 
 .menu {
@@ -51,6 +52,7 @@ body {
 .menu a {
     transition:all linear 0.15s;
     color:#FFFFFF;
+    margin-bottom: 0;
 }
 
 .menu li:hover > a, .menu .current-item > a {
