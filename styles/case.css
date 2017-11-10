@@ -78,11 +78,6 @@ button {
   margin:  1em 0;
 }
 
-/*button:focus {
-  color:#FFFFFF;
-  background-color: #000000;
-
-}*/
 li span {
   font-weight: 700;
 }
@@ -177,7 +172,6 @@ h3.baloo {
    background-blend-mode: lighten;
    opacity: .50;
    position:  absolute;
-   top: 40px;
    right: 0;
    bottom: 0;
    left: 0;
@@ -188,20 +182,18 @@ h3.baloo {
  }
  .brand:after {
    background-image: url(../images/yummeatsbackground.png);
-    background-blend-mode: lighten;
-    margin-bottom: -14em;
-    height: 400px;
-    top: 40px;
+   background-blend-mode: lighten;
+   margin-top: -2em;
+   height: 400px;
  }
  .brand1:after {
      background: rgba(255,0,0,1);
      background-image: url(../images/girlwithwaffle-cropped-1.jpg);
      background-blend-mode: luminosity;
-
-     top: 55px;
-     height: 400px;
+     margin-top: -.5em;
+     height: 350px;
      background-repeat: repeat-x;
-     background-size: contain;
+     background-size: cover;
    }
 .brand img, .brand1 img {
   max-width: 40%;
@@ -226,9 +218,7 @@ h3.baloo {
   flex-flow: column nowrap;
   align-items: center;
 }
-/*h2.bold {
-  margin-left: 0;
-}*/
+
 img.element.proto {
   display: inline;
   margin: 0 0 1em;
@@ -311,14 +301,7 @@ ul.left {
   padding: 1em;
 }
 
-/*#research ul.list {
-  display: flex;
-  flex-flow: column nowrap;
-  padding: 1em;
-  margin: 1em;
-  background-color: #FFF;
 
-}*/
 #research img.element.big-element {
   margin: 0 auto;
 }
@@ -400,9 +383,6 @@ footer p {
   flex:1;
   padding-right: auto;
 }
-.right {
-
-}
 
 .detail {
   display: flex;
@@ -410,13 +390,12 @@ footer p {
   justify-content: space-between;
   align-items: flex-start;
   padding: 1em 4em 1em 10em;
-  /*background-color: #FFF;*/
 }
 
-.single {
-  align-items: center;
-  padding: 1em 10em;
-}
+  .single {
+    align-items: center;
+    padding: 1em 10em;
+  }
   h2.bold {
     margin-right:auto;
     flex-basis: 100%;
@@ -434,21 +413,16 @@ footer p {
     p {
       font-size: 1.1em;
     }
-.right{
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  width: 30vw;
-}
+  .right{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 30vw;
+  }
 img.element {
   margin-top: 1em;
 }
 
-
-.left {
- widht: 30vw;
-
-}
   p {
     font-size: 1em;
   }
@@ -458,11 +432,8 @@ img.element {
 
   .sub {
     margin: 0;
-    padding: 0 0;
+    padding: 0;
   }
-  /*.left {
-    width: 60vw;
-  }*/
 
   .method-text {
     margin-top: 1em;
@@ -528,7 +499,6 @@ img.element {
     align-items: flex-start;
   }
   h4, h5, h6 {
-    /*text-align: center;*/
     margin: 0 auto;
   }
   .left h4 {
@@ -538,7 +508,8 @@ img.element {
     flex-flow: row nowrap;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 0;
+    margin-top: 0;
+
   }
 
  #research {

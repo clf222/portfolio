@@ -17,7 +17,7 @@ body {
    top:0;
    left: 0;
    background-color: #0F2E42;
-   height: 40px;
+   height: 50px;
    z-index: 10;
  }
  /**** dropdown ****/
@@ -29,9 +29,9 @@ body {
 
 /*----- Menu Outline -----*/
 .menu-wrap {
-    width:100%:
-    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
-    background:#0F2E42;
+    width:50%;
+    /*box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+    background:#0F2E42;*/
     padding: 0;
     margin: 0;
     line-height: 1em;
@@ -90,9 +90,10 @@ body {
     opacity:1;
 }
  .sub-menu {
-    width:100%;
+    width:160%;
     padding:10px 30px;
     position:absolute;
+    margin-top:5px;
     top:100%;
     left:0px;
     z-index:-1;
@@ -104,12 +105,14 @@ body {
 .sub-menu li {
     display:block;
     font-size:16px;
+    padding: 5px;
 }
 
 .sub-menu li a {
     /*padding:5px 15px;*/
     display:block;
     color: #FFFFFF;
+    padding: 5px;
 }
 
 .sub-menu li a:hover, .sub-menu .current-item a {
@@ -171,7 +174,7 @@ body {
    font-size: 16px;
    font-family: 'Lato', sans-serif;
    margin: 0;
-   padding: 5px;
+   padding: 0 5px;
  }
 h3.logo-text {
   font-size: 1em;
@@ -227,13 +230,13 @@ p.dark.text-center, .made-in {
   }
   nav.menu ul li {
     display: inline;
-    margin-bottom: 16px;
+    /*margin-bottom: 16px;*/
     /*padding: 1em 1em 0 0;*/
 
   }
   .heading {
     flex-flow: row wrap;
-    align-items: baseline;
+    /*align-items: center'*/
     padding: 0 0 0 1.5em;
   }
 
