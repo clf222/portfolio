@@ -12,11 +12,22 @@ body {
   border-bottom: 1px solid #FFFFFF;
 }
 
-
+.dark {
+  color: #151515;
+  text-decoration: underline;
+}
 
 .light {
     color: #FFFAF0;
 }
+
+.pink {
+  color: #E75078;
+}
+.blue {
+  color: #336699;
+}
+/** buttons **/
 button:hover {
   background:rgb(255,255,240);
   color: #336699;
@@ -34,37 +45,6 @@ button, button:focus {
 	transition: all 500ms ease;
   margin:  1em 0;
 }
-.dark {
-  color: #151515;
-  text-decoration: underline;
-}
-
-h1 {
-  font-size: 1.5em;
-}
-
-h2 {
-  font-size: 1.4em;
-  font-weight: 700;
-  letter-spacing: 0;
-
-}
-h3 {
-  font-size: 1.3em;
-  font-weight: 700;
-  letter-spacing: normal;
-}
-h4 {
-  font-size: 1.2em;
-  font-weight: 700;
-  margin-bottom: .5em;
-}
-
-h5 {
-  font-size: 1.1em;
-  margin-bottom: 0;
-}
-
 button {
 	border: none;
 	background: #0F2E42;
@@ -76,6 +56,32 @@ button {
 	box-sizing: border-box;
 	transition: all 500ms ease;
   margin:  1em 0;
+}
+/** end buttons **/
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.4em;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+h3 {
+  font-size: 1.3em;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+h4 {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: .5em;
+}
+
+h5 {
+  font-size: 1.1em;
+  margin-bottom: 0;
 }
 
 li span {
@@ -93,6 +99,11 @@ p.bold {
 p.dark {
   margin-bottom: 1em;
 }
+p.last {
+  padding-bottom: 1em;
+  align-self: flex-start;
+}
+/* footnotes */
 sup a{
   font-size: .75em;
   padding-left: .25em;
@@ -114,6 +125,7 @@ sup a.alt:hover {
   color: #151515;
   background-color: #FFFFF0;
 }
+
 a, a.link {
   color: #FFFFFF;
   text-decoration: none;
@@ -130,12 +142,7 @@ h2.baloo, h2.hind {
 h2.hind {
   font-family: 'Hind', sans-serif;
 }
-.pink {
-  color: #E75078;
-}
-.blue {
-  color: #336699;
-}
+
 h3.baloo {
   font-family: 'Baloo', sans-serif;
   font-size: 2.5em;
@@ -146,7 +153,6 @@ h3.baloo {
   margin-top: 2em auto;
 }
 
- /*** END HEADER STYLES ***/
  .intro {
    display: flex;
    flex-flow: column nowrap;
@@ -172,6 +178,7 @@ h3.baloo {
    background-blend-mode: lighten;
    opacity: .50;
    position:  absolute;
+   top: 50px;
    right: 0;
    bottom: 0;
    left: 0;
@@ -183,14 +190,14 @@ h3.baloo {
  .brand:after {
    background-image: url(../images/yummeatsbackground.png);
    background-blend-mode: lighten;
-   margin-top: -2em;
+   margin-top: -10em;
    height: 400px;
  }
  .brand1:after {
      background: rgba(255,0,0,1);
      background-image: url(../images/girlwithwaffle-cropped-1.jpg);
      background-blend-mode: luminosity;
-     margin-top: -.5em;
+     margin-top: -2em;
      height: 350px;
      background-repeat: repeat-x;
      background-size: cover;
@@ -225,10 +232,7 @@ img.element.proto {
   max-width: 300px;
 }
 
-p.last {
-  padding-bottom: 1em;
-  align-self: flex-start;
-}
+
 
  #methodology, #research, #design, #user-test, #lessons-learned {
    padding: 1em;
@@ -285,7 +289,7 @@ ul.left {
   flex-flow: column nowrap;
 }
 
-/*end methodology*/
+
 /*Research*/
 #research {
   display: flex;
@@ -430,7 +434,7 @@ img.element {
     flex-flow: row wrap;
   }
 
-  .sub {
+ .sub {
     margin: 0;
     padding: 0;
   }
@@ -468,7 +472,8 @@ img.element {
     background: rgba(255,0,0,1);
     background-image: url(../images/girlwithwaffle-cropped-1.jpg);
     background-blend-mode: luminosity;
-    height: 350px;
+    height: 400px;
+    margin-top:-1em;
     background-repeat: repeat-x;
     background-size: contain;
   }
