@@ -116,8 +116,8 @@ body {
 }
 
 .sub-menu li a:hover, .sub-menu .current-item a {
-    background:#0F2E42;
-    color: #FFFFFF;
+    color:#0F2E42;
+    background: #FFFFFF;
 }
 /*** end drop down ***/
  .white-g {
