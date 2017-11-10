@@ -89,9 +89,10 @@ body {
     z-index:1;
     opacity:1;
 }
- .sub-menu {
+ ul.sub-menu {
     width:160%;
-    padding:10px 30px;
+    padding:10px 0;
+    margin-left: 0;
     position:absolute;
     margin-top:5px;
     top:100%;
@@ -165,7 +166,6 @@ body {
  nav.menu ul {
    margin-bottom: 0;
    list-style: none;
-   /*padding-right: 1em;*/
    text-align: center;
  }
  nav.menu ul li {

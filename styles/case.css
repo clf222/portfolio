@@ -275,11 +275,11 @@ ul.left {
 .left, .right {
   flex: 1;
 }
-
+/*
 
 #methodology p, #methodology h3, #methodology h5, #methodology h6, #methodology li, #design p, #design h3, #design h5{
   color: #151515;
-}
+}*/
 
 .sub {
   display: flex;
@@ -509,18 +509,14 @@ img.element {
   .left h4 {
     margin: 1em 0;
   }
-  #methodology .detail {
+  #methodology .detail, #research {
     flex-flow: row nowrap;
     align-items: flex-start;
     justify-content: space-between;
-    margin-top: 0;
-
   }
 
- #research {
-    flex-flow: row nowrap;
-    align-items: flex-start;
-    justify-content: space-between;
+ #methodology .detail{
+      margin-top: 0;
   }
 
   #design, #user-test {
