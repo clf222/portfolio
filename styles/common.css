@@ -29,9 +29,7 @@ body {
 
 /*----- Menu Outline -----*/
 .menu-wrap {
-    width:50%;
-    /*box-shadow:0px 1px 3px rgba(0,0,0,0.2);
-    background:#0F2E42;*/
+    width:80%;
     padding: 0;
     margin: 0;
     line-height: 1em;
@@ -67,7 +65,7 @@ body {
 
 /*----- Top Level -----*/
 .menu > ul > li {
-    float:left;
+    float: none;
     display:inline-block;
     position:relative;
     font-size:16px;
@@ -110,7 +108,6 @@ body {
 }
 
 .sub-menu li a {
-    /*padding:5px 15px;*/
     display:block;
     color: #FFFFFF;
     padding: 5px;
