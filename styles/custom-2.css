@@ -6,10 +6,13 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
 }
-.active {
-  color: #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
+.heading-custom a{
+  color: #0F2E42;
 }
+/*.active {
+  color: #FFFFFF;
+  border-bottom: 1px solid #0F2E42;
+}*/
 a:hover {
     color: #90A9BA;
 }
@@ -53,7 +56,7 @@ a span.fa:hover {
 }
 .active {
   color: #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #0F2E42;
 }
 a:hover {
     color: #90A9BA;
@@ -68,7 +71,12 @@ a:hover {
 a {
   text-decoration: none;
 }
-
+.tech-tools {
+  margin-top: 1em;
+}
+.tech-tools p {
+  font-size: .75em;
+}
 
 /*end default text styles*/
 
@@ -162,6 +170,13 @@ body {
   .normal {
     font-size: 1.2em;
   }
+  .tech-tools {
+    margin-top: 1.5em;
+  }
+  .tech-tools p {
+    font-size: 1em;
+  }
+
   footer  {
     justify-content: space-between;
     align-items: center;

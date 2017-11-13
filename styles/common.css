@@ -7,7 +7,7 @@ body {
   height: 100vh;
 }
 /***HEADER STYLES ***/
- .heading {
+ .heading, .heading-custom {
    display: flex;
    flex-flow: column nowrap;
    justify-content: space-between;
@@ -16,10 +16,22 @@ body {
    position: sticky;
    top:0;
    left: 0;
-   background-color: #0F2E42;
    height: 50px;
    z-index: 10;
  }
+ .heading {
+   background-color: #0F2E42;
+ }
+ .heading-custom {
+   /*background-color: rgba(255,255,255,.9);*/
+   background: rgba(237,237,237,0.9);
+   background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,0.95) 47%, rgba(255,250,240,0.9) 100%);
+   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,0.95)), color-stop(100%, rgba(255,250,240,0.9)));
+   background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,0.95) 47%, rgba(255,250,240,0.9) 100%);
+   background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,0.95) 47%, rgba(255,250,240,0.9) 100%);
+   background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,0.95) 47%, rgba(255,250,240,0.9) 100%);
+   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,0.95) 47%, rgba(255,250,240,0.9) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fffaf0', GradientType=0 ); }
  /**** dropdown ****/
 
  .clearfix:after {
@@ -45,6 +57,9 @@ body {
     list-style:none;
     color: #FFFFFF;
     display: inline;
+}
+.heading-custom > .menu li {
+  color: #0F2E42;
 }
 
 .menu a {
@@ -167,7 +182,7 @@ body {
  }
  nav.menu ul li {
    display: inline;
-   color: #FFFFFF;
+   color: #0F2E42;
    font-size: 16px;
    font-family: 'Lato', sans-serif;
    margin: 0;
@@ -231,10 +246,12 @@ p.dark.text-center, .made-in {
     /*padding: 1em 1em 0 0;*/
 
   }
-  .heading {
+  .heading, .heading-custom {
     flex-flow: row wrap;
-    /*align-items: center'*/
     padding: 0 0 0 1.5em;
+  }
+  .heading-custom {
+
   }
 
   .links {
