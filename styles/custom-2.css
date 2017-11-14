@@ -71,7 +71,7 @@ a:hover {
 a {
   text-decoration: none;
 }
-.tech-tools {
+.important-tools, .tech-tools {
   margin-top: 1em;
 }
 .tech-tools p {
@@ -120,7 +120,7 @@ li.last {
     margin-left: 1.33em;
   }
 ul.socials {
-  margin-top: 1em;
+  margin-top:0;
 }
 ul.socials li.last {
   margin-right: 0;
@@ -170,7 +170,7 @@ body {
   .normal {
     font-size: 1.2em;
   }
-  .tech-tools {
+  .important-tools, .tech-tools {
     margin-top: 1.5em;
   }
   .tech-tools p {
@@ -178,7 +178,11 @@ body {
   }
 
   footer  {
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    margin-top: 1em;
+  }
+  .socials {
+    margin-top: 0;
   }
 }
