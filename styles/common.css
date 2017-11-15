@@ -72,7 +72,7 @@ body {
     text-decoration:none;
     color:#0F2E42;
 }
-.heading-custom a {
+.heading-custom ul.clearfix a {
   text-decoration: none;
   color: rgba(255,255,255,1);
   position: relative;
@@ -82,13 +82,13 @@ body {
   transition: padding .3s,border-color .3s;
 }
 
-.heading-custom a:focus, .heading-custom a:hover {
+.heading-custom ul.clearfix a:focus, .heading-custom ul.clearfix a:hover {
   padding: 5px 7px;
   border-color: #0F2E42;
   outline: none;
 }
 
-.heading-custom a::before {
+.heading-custom ul.clearfix a::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -101,7 +101,7 @@ body {
   transition: max-height .3s,border-color 0s;
 }
 
-.heading-custom a::after {
+.heading-custom ul.clearfix a::after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -114,7 +114,7 @@ body {
   transition: max-height .3s,border-color 0s;
 }
 
-.heading-custom a:focus::before, .heading-custom a:hover::before, .heading-custom a:focus::after, .heading-custom a:hover::after {
+.heading-custom ul.clearfix a:focus::before, .heading-custom ul.clearfix a:hover::before, .heading-custom ul.clearfix a:focus::after, .heading-custom ul.clearfix a:hover::after {
   max-height: 100%;
   transition-delay: .28s;
   border-color: #0F2E42;
