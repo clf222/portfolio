@@ -52,12 +52,12 @@ body {
     margin:0px auto;
 }
 
-.menu li {
+/*.menu li {
     margin:0px;
     list-style:none;
     color: #FFFFFF;
     display: inline;
-}
+}*/
 /*.heading-custom > .menu li {
   color: #0F2E42;
 }*/
@@ -74,11 +74,11 @@ body {
 }
 .heading-custom ul.clearfix a {
   text-decoration: none;
-  color: rgba(255,255,255,1);
+  color: #0F2E42;
   position: relative;
   padding: 16px 7px;
-  border-top: 2px solid rgba(255,255,255,0);
-  border-bottom: 2px solid rgba(255,255,255,0);
+  border-top: 2px solid #0F2E42;
+  border-bottom: 2px solid #0F2E42;
   transition: padding .3s,border-color .3s;
 }
 
