@@ -1,10 +1,12 @@
 /*common text */
 html {
   font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
 }
 body {
   font-size: 16px;
   height: 100vh;
+
 }
 /***HEADER STYLES ***/
  .heading, .heading-custom {
@@ -28,6 +30,7 @@ body {
     background: -ms-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(15,46,66,1) 48%);
     background: linear-gradient(to bottom, rgba(73,155,234,1) 0%, rgba(15,46,66,1) 48%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#0f2e42', GradientType=0 );
+    box-sizing: border-box;
  }
  .heading-custom {
    /*background-color: rgba(255,255,255,.9);*/
@@ -232,10 +235,8 @@ p.dark.text-center, .made-in {
     flex-flow: row wrap;
     padding: 0 0 0 1.5em;
   }
-  .heading-custom {
 
-  }
-  .heading-custom ul.clearfix a {
+  .heading, .heading-custom ul.clearfix a {
     text-decoration: none;
     color: #0F2E42;
     position: relative;
@@ -243,6 +244,11 @@ p.dark.text-center, .made-in {
     border-top: 2px solid rgba(255,255,255,0);
     border-bottom: 2px solid rgba(255,255,255,0);
     transition: padding .3s,border-color .3s;
+  }
+  .heading {
+    color: #FFFAF0;
+    height: 50px;
+
   }
   .heading-custom ul.clearfix ul.sub-menu a{
     padding: 8px 7px;
