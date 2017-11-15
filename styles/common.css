@@ -68,10 +68,10 @@ body {
     margin-bottom: 0;
 }*/
 
-.menu li:hover > a, .menu .current-item > a {
+/*.menu li:hover > a, .menu .current-item > a {
     text-decoration:none;
     color:#0F2E42;
-}
+}*/
 .heading-custom ul.clearfix a {
   text-decoration: none;
   color: #0F2E42;
@@ -107,9 +107,8 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  padding: 5px;
   max-height: 0;
-  color: #0F2E42;
+  color: rgba(255,255,255,0);
   border-right: 2px solid #0F2E42;
   content: attr(data-text);
   transition: max-height .3s,border-color 0s;
