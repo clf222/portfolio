@@ -10,9 +10,6 @@ body {
   color: #0F2E42;
 }
 
-a:hover {
-    color: #90A9BA;
-}
 p , p.made-in {
     color: #FFFAF0;
     margin-bottom: 0;
@@ -50,13 +47,6 @@ span.fa {
 }
 a span.fa:hover {
   color: #DAE4E6;
-}
-/*.active {
-  color: #FFFFFF;
-  border-bottom: 1px solid #0F2E42;
-}*/
-a:hover {
-    color: #90A9BA;
 }
 /*default text styles*/
 .dark {
