@@ -228,13 +228,13 @@ p.dark.text-center, .made-in {
     flex-flow: row wrap;
     padding: 0 0 0 1.5em;
   }
-  .heading ul.clearfix a, .heading-custom ul.clearfix a {
+  .heading ul.clearfix a, .heading-custom ul.clearfix > li > a {
     text-decoration: none;
     position: relative;
     padding: 16px 7px;
     transition: padding .3s,border-color .3s;
   }
-   .heading ul.clearfix a, .heading-custom ul.clearfix a {
+   .heading ul.clearfix a, .heading-custom ul.clearfix > li > a {
     border-top: 2px solid rgba(255,255,255,0);
     border-bottom: 2px solid rgba(255,255,255,0);
   }
@@ -249,15 +249,15 @@ p.dark.text-center, .made-in {
     padding: 8px 7px;
   }
 
-  .heading ul.clearfix a:focus, .heading-custom ul.clearfix a:focus, .heading ul.clearfix a:hover, .heading-custom ul.clearfix a:hover {
+  .heading ul.clearfix > li > a:focus, .heading-custom ul.clearfix > li > a:focus, .heading ul.clearfix > li > a:hover, .heading-custom ul.clearfix > li > a:hover {
     padding: 5px 7px;
     border-color: #0F2E42;
     outline: none;
   }
-.heading ul.clearfix a:focus, .heading ul.clearfix a:hover {
+.heading ul.clearfix > li > a:focus, .heading ul.clearfix > li > a:hover {
   border-color: #FFFAF0;
 }
-  .heading-custom ul.clearfix a::before {
+  .heading-custom ul.clearfix > li > a:before {
     position: absolute;
     top: 0;
     left: 0;
@@ -269,10 +269,8 @@ p.dark.text-center, .made-in {
     content: attr(data-text);
     transition: max-height .3s,border-color 0s;
   }
-  /*.heading ul.clearfix a::before {
-    border-left: 2px solid #FFFAF0;
-  }*/
-.heading ul.clearfix a::before {
+
+.heading ul.clearfix > li > a::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -285,7 +283,7 @@ p.dark.text-center, .made-in {
     transition: max-height .3s,border-color 0s;
   }
 
-  .heading-custom  ul.clearfix a::before {
+  .heading-custom  ul.clearfix > li > a::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -297,7 +295,7 @@ p.dark.text-center, .made-in {
     content: attr(data-text);
     transition: max-height .3s,border-color 0s;
   }
-  .heading ul.clearfix  a::before {
+  .heading ul.clearfix > li > a:before {
     position: absolute;
     top: 0;
     left: 0;
@@ -310,7 +308,7 @@ p.dark.text-center, .made-in {
     transition: max-height .3s,border-color 0s;
   }
 
-  .heading-custom ul.clearfix a:focus::before, .heading-custom ul.clearfix a:hover::before, .heading-custom ul.clearfix a:focus::after, .heading-custom ul.clearfix a:hover::after {
+  .heading-custom ul.clearfix > li > a:focus::before, .heading-custom ul.clearfix > li > a:hover::before, .heading-custom ul.clearfix > li > a:focus::after, .heading-custom ul.clearfix > li > a:hover::after {
     max-height: 100%;
     transition-delay: .28s;
     border-color: #0F2E42;
