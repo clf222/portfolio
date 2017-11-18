@@ -133,15 +133,14 @@ body {
  h3.logo-text a, .heading ul li a{
    text-decoration: none;
  }
- footer p a:hover,
- a:hover {
+ footer p a:hover
+ {
    color: #90A9BA;
  }
+.heading a:hover {
+  color: #FFFFFF;
+}
 
- /*.active {
-   color: #FFFFFF;
-   border-bottom: 1px solid #FFFFFF;
- }*/
  /*a:hover, */
  a.link:hover, a span.dark-icon.fa:hover{
          color: #90A9BA;
