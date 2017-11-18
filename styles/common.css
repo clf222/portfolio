@@ -24,8 +24,10 @@ body {
  .heading {
    background-color: #0F2E42;
  }
+ .heading-custom a.active, .heading a.active{
+   text-decoration: underline;
+ }
  .heading-custom {
-   /*background-color: rgba(255,255,255,.9);*/
    background: rgba(237,237,237,0.9);
    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,0.95) 47%, rgba(255,250,240,0.9) 100%);
    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,0.95)), color-stop(100%, rgba(255,250,240,0.9)));
@@ -34,10 +36,6 @@ body {
    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,0.95) 47%, rgba(255,250,240,0.9) 100%);
    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,0.95) 47%, rgba(255,250,240,0.9) 100%);
    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fffaf0', GradientType=0 ); }
-   .heading-custom h3.logo-text a:hover, .heading-custom a:hover {
-     color: #90A9BA;
-   }
-
 
 /*----- Menu Outline -----*/
 .menu-wrap {
@@ -51,8 +49,8 @@ body {
     width: 100%;
     margin:0px auto;
 }
-  a.active {
-  border-bottom: 1px solid #FFFFFF;
+  .heading a.active {
+  border-bottom: 1px solid #0F2E42;
 }
 
 
@@ -64,10 +62,7 @@ body {
     font-size:16px;
 }
 
-/*ul.clearfix li a:hover {
-  border-bottom: 1px solid #0F2E42;
 
-}*/
 /*----- Bottom Level -----*/
 .menu li:hover .sub-menu {
     z-index:1;
@@ -142,13 +137,11 @@ body {
  a:hover {
    color: #90A9BA;
  }
- h3.logo-text a:hover, a:hover {
-   color: #FFFAF0;
- }
- .active {
+
+ /*.active {
    color: #FFFFFF;
    border-bottom: 1px solid #FFFFFF;
- }
+ }*/
  /*a:hover, */
  a.link:hover, a span.dark-icon.fa:hover{
          color: #90A9BA;
