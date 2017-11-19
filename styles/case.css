@@ -7,10 +7,10 @@ body {
   letter-spacing: 0;
   margin: 0;
 }
-a:visited {
+/*a:visited {
   text-decoration:underline;
 
-}
+}*/
 .active {
   color: #FFFFFF;
   border-bottom: 1px solid #FFFFFF;
@@ -280,8 +280,7 @@ ul.left {
   align-items: flex-start;
 }
 .left {
-  margin-right: 2em;
-  padding: 1em;
+  margin: 0;
 }
 
 .sub {
@@ -340,9 +339,7 @@ ul.left {
 .intro .detail {
   width: 100vw;
 }
-/*img.element.proto {
-  align-self: flex-start;
-}*/
+
 .big-element {
   width: 80%;
   margin: 0 auto;
@@ -419,7 +416,9 @@ footer p {
 ul.left, .left img {
   justify-content: flex-end;
 }
-
+.left {
+  margin-right: 2em;
+}
   .single {
     align-items: center;
     padding: 1em 10em;

@@ -112,6 +112,7 @@ span.fa {
   color: #FFFFFF;
 
 }
+.
 /*end nav text styling*/
 
 h4 {
@@ -156,8 +157,8 @@ input[type=text]:hover,  input[type=email]:hover, input[type=tel]:hover, textare
   margin: 0 auto;
   padding: 1em 2em;
 }
-.container-about {
-margin-bottom: 5em;}
+/*.container-about {
+margin-bottom: 5em;}*/
 .container-form{
     height: 100vh;
 }
@@ -208,6 +209,10 @@ button.button-primary:hover {
   h1 {
     font-size: 3em;
   }
+  .container-about {
+    margin-bottom: 0;
+    padding-bottom: 5em;
+  }
 }
 
 @media (min-width: 768px) {
@@ -222,17 +227,17 @@ textarea, input {
 .container-form, .container-about{
   display: flex;
   flex-flow: column nowrap;
-  padding: 2em 2em 3em 2em;
+  padding: 2em 2em 5em 2em;
   justify-content: flex-start;
   align-items: center;
   background-color: #FFF;
   width: 50em;
-  padding-bottom: 1em;
-  margin: 0 auto 50px;
+
+  margin: 0 auto  ;
 }
 .container-about {
   margin-bottom: 0;
-  padding-bottom: 0;
+  padding-bottom: 3em;
 }
 
   .text-head {
