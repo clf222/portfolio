@@ -24,6 +24,9 @@ body {
  .heading {
    background-color: #0F2E42;
  }
+ .heading a {
+   color: #FFFFFF;
+ }
  .heading-custom a.active, .heading a.active{
    text-decoration: underline;
  }
