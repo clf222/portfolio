@@ -30,7 +30,6 @@ img.center {
 }
 
 .container-form, .container-about {
-  /*height: 80vh;*/
   padding-top: 2em;
 }
 .one-column {
@@ -164,15 +163,12 @@ margin-bottom: 5em;}
 }
 .about-text {
     display: flex;
-    /*height: calc(100vh-50px);*/
+
     flex-flow: column nowrap;
     justify-content: space-between;
     padding: 0 1em;
 }
-/*img.center {
-  align-self: center;
-  margin: 0;
-}*/
+
 .formfieldset  {
   display: flex;
   flex-wrap: wrap;
@@ -211,9 +207,6 @@ button.button-primary:hover {
   h1 {
     font-size: 3em;
   }
-body {
-  /*overflow: hidden;*/
-}
 }
 
 @media (min-width: 768px) {
@@ -249,14 +242,11 @@ textarea, input {
   }
 .about-text {
     display: flex;
-    /*height: calc(100vh-50px);*/
     flex-flow: column nowrap;
     justify-content: space-between;
     padding: 0 1em;
 }
-/*.about-text {
-    margin-right: 3em;
-}*/
+
 img.center {
     margin: 0 auto;
 }
