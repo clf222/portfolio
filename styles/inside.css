@@ -34,6 +34,8 @@ img.center {
   padding-top: 2em;
 }
 .one-column {
+  display: flex;
+  flex-flow: column nowrap;
   height: calc(100%-50px);
   margin-bottom: 5em;
 }
@@ -155,13 +157,22 @@ input[type=text]:hover,  input[type=email]:hover, input[type=tel]:hover, textare
   margin: 0 auto;
   padding: 1em 2em;
 }
-.container-form, .container-about {
+.container-about {
+margin-bottom: 5em;}
+.container-form{
     height: 100vh;
 }
-img.center {
+.about-text {
+    display: flex;
+    /*height: calc(100vh-50px);*/
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+/*img.center {
   align-self: center;
   margin: 0;
-}
+}*/
 .formfieldset  {
   display: flex;
   flex-wrap: wrap;
@@ -201,7 +212,7 @@ button.button-primary:hover {
     font-size: 3em;
   }
 body {
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 }
 
@@ -223,7 +234,7 @@ textarea, input {
   background-color: #FFF;
   width: 50em;
   padding-bottom: 1em;
-  margin: 0 auto;
+  margin: 0 auto 50px;
 }
 .container-about {
   margin-bottom: 0;
@@ -236,20 +247,20 @@ textarea, input {
     flex-grow: 1;
     align-items: baseline;
   }
-.one-column {
-    display: flex;
-    height: calc(100vh-50px);
-    flex-flow: row nowrap;
-    padding: 0 6em;
-}
 .about-text {
+    display: flex;
+    /*height: calc(100vh-50px);*/
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+/*.about-text {
     margin-right: 3em;
+}*/
+img.center {
+    margin: 0 auto;
 }
 img.center {
-    padding:0;
-    align-self: flex-start;
-}
-img {
     max-width: 230px;
     padding: 0;
   }
