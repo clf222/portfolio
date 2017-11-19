@@ -2,10 +2,11 @@
 body {
     background-image: url('../images/home-image-small.jpg');
     background-repeat: repeat;
-    background-color: #fff;
+    background-color: #FFF;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
 }
+/* text styles */
 .heading-custom a{
   color: #0F2E42;
 }
@@ -17,18 +18,6 @@ p , p.made-in {
 p {
   line-height: 1.5em;
 }
-/*** text container layout ***/
-.container-hero {
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding: .5em;
-  text-align: center;
-  margin-bottom: 0;
-}
-/*** end container ***/
 h1, h2, h5, h6, strong, .medium, .normal, ul.tools li {
   font-family: 'Merriweather', serif;
 }
@@ -48,25 +37,20 @@ span.fa {
 a span.fa:hover {
   color: #DAE4E6;
 }
-/*default text styles*/
-.dark {
-  color: #151515;
-}
- .light {
-  color: #FFFAF0;
-}
-a {
-  text-decoration: none;
-}
-.important-tools, .tech-tools {
-  margin-top: 1em;
-}
-.tech-tools p {
-  font-size: .75em;
-}
+/* end text styles */
 
-/*end default text styles*/
-
+/*** text container layout ***/
+.container-hero {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: .5em;
+  text-align: center;
+  margin-bottom: 0;
+}
+/*** end container ***/
 /*utilities*/
 
 .center {
@@ -84,6 +68,21 @@ strong {
   font-style: italic;
 }
 
+.dark {
+  color: #151515;
+}
+ .light {
+  color: #FFFAF0;
+}
+a {
+  text-decoration: none;
+}
+.important-tools, .tech-tools {
+  margin-top: 1em;
+}
+.tech-tools p {
+  font-size: .75em;
+}
 /*end utilities*/
 /* list styles */
 ul li {
@@ -99,24 +98,18 @@ ul.tools {
 li.first {
   margin-right: 1.33em;
   }
-li.middle {
-  margin-left: 0;
-  margin-right: 0;
-}
+
 li.last {
     margin-left: 1.33em;
   }
 ul.socials {
   margin-top:0;
 }
-ul.socials li.last {
+ul.socials li.last, li.middle {
   margin-right: 0;
   margin-left: 0;
 }
-ul.socials li.first {
-  margin-right: 1em;
-  margin-left: 0;
-}
+
 ul.socials li {
   margin-right: 1em;
   margin-left: 0;
@@ -167,10 +160,7 @@ body {
 
   footer  {
     justify-content: flex-start;
-    align-items: center;
     margin-top: 1em;
   }
-  .socials {
-    margin-top: 0;
-  }
+
 }

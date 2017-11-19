@@ -35,7 +35,6 @@ img.center {
 .one-column {
   display: flex;
   flex-flow: column nowrap;
-  height: calc(100%-50px);
   margin-bottom: 5em;
 }
 .socials {
@@ -57,19 +56,8 @@ p.last-social {
   padding-right: 0;
 }
 
-.text-head {
-  display: flex;
-  flex-wrap: wrap;
-}
-.text-head h3 {
-  flex-basis: 100%;
-}
 
-img {
-  max-width: 173px;
-}
-
-h1, h2, .text-head h3 {
+h1, h2 {
   font-family: 'Merriweather', serif;
   line-height: 1em;
 }
@@ -110,11 +98,7 @@ span.fa {
 }
 .active {
   color: #FFFFFF;
-
 }
-.
-/*end nav text styling*/
-
 h4 {
   font-style: italic;
   font-family: 'Lato', sans-serif;
@@ -127,6 +111,9 @@ a {
 strong {
   font-weight: 700;
 }
+/*end nav text styling*/
+
+/*utilities*/
 
 .center {
   margin: auto;
@@ -136,6 +123,10 @@ strong {
 }
 .lastp {
   margin-bottom: 0;
+}
+
+img {
+  max-width: 173px;
 }
 /*end utilities*/
 
@@ -164,7 +155,6 @@ margin-bottom: 5em;}*/
 }
 .about-text {
     display: flex;
-
     flex-flow: column nowrap;
     justify-content: space-between;
     padding: 0 1em;
@@ -240,41 +230,26 @@ textarea, input {
   padding-bottom: 3em;
 }
 
-  .text-head {
+  /*.text-head {
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
     align-items: baseline;
-  }
-.about-text {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    padding: 0 1em;
-}
+  }*/
 
 img.center {
-    margin: 0 auto;
-}
-img.center {
     max-width: 230px;
+    margin: 0 auto;
     padding: 0;
   }
     footer {
-    display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     padding: 0;
     margin: 0 auto;
-    align-items: center;
-    background-color: #0F2E42;
-    height: 50px;
-    bottom: 0;
-    left:0;
     right:0;
     position: fixed;
   }
-
 
   .left {
     padding-left: 4em;
