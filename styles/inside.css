@@ -30,11 +30,12 @@ img.center {
 }
 
 .container-form, .container-about {
-  height: 80vh;
+  /*height: 80vh;*/
   padding-top: 2em;
 }
-.container-about .one-column {
-  margin-bottom: 6em;
+.one-column {
+  height: calc(100%-50px);
+  margin-bottom: 5em;
 }
 .socials {
   display: flex;
