@@ -7,15 +7,10 @@ body {
   letter-spacing: 0;
   margin: 0;
 }
-/*a:visited {
-  text-decoration:underline;
-
-}*/
 .active {
   color: #FFFFFF;
   border-bottom: 1px solid #FFFFFF;
 }
-
 .dark {
   color: #151515;
   text-decoration: underline;
@@ -63,7 +58,7 @@ button {
   margin:  1em 0;
 }
 /** end buttons **/
-
+/** text sizing */
 h1 {
   font-size: 1.5em;
 }
@@ -108,6 +103,7 @@ p.last {
   padding-bottom: 1em;
   align-self: flex-start;
 }
+/*text */
 /* footnotes */
 sup a{
   font-size: .75em;
@@ -130,12 +126,9 @@ sup a.alt:hover {
   color: #151515;
   background-color: #FFFFF0;
 }
-
 a, a.link {
-
   text-decoration: underline;
 }
-
 li {
   font-size: 1em;
 }
@@ -157,7 +150,6 @@ h3.baloo {
   align-self: center;
   margin-top: 2em auto;
 }
-
  .intro {
    display: flex;
    flex-flow: column nowrap;
@@ -217,26 +209,20 @@ h3.baloo {
 .detail.cream {
   background-color: transparent;
 }
-
 .left, .right {
   width: 80vw;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
-
 img.element.proto {
   display: inline;
   margin: 0 0 1em;
   max-width: 300px;
 }
-
-
-
  #methodology, #research, #design, #user-test, #lessons-learned {
    padding: 1em;
  }
-
  .section-head {
    height: 30px;
    color: white;
@@ -282,7 +268,6 @@ ul.left {
 .left {
   margin: 0;
 }
-
 .sub {
   display: flex;
   flex-basis: 40%;
@@ -290,8 +275,6 @@ ul.left {
   align-items: center;
   flex-flow: column nowrap;
 }
-
-
 /*Research*/
 #research {
   display: flex;
@@ -307,14 +290,11 @@ ul.left {
   padding: 1em;
 }
 
-
 #research img.element.big-element {
   margin: 0 auto;
 }
-
 /*End Research*/
 /*Design*/
-
 #design, #user-test {
   display: flex;
   flex-flow: column nowrap;
@@ -361,12 +341,10 @@ img.element {
   justify-content: center;
   align-items: center;
   padding: 1em;
-  /*max-width: 100vw;*/
 }
 .method-text {
   max-width: 80%;
   margin: 1em 0 0;
-  /*padding: 1em;*/
 }
 /*lessons learned*/
 #lessons-learned {
@@ -405,13 +383,11 @@ footer p {
   padding: 1em;
 }
 .detail {
-  display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: flex-start;
   width: 100vw
   padding: 1em auto;
-  background-color: rgba(255,255,255,0);
 }
 ul.left, .left img {
   justify-content: flex-end;
@@ -461,14 +437,10 @@ ul.left, .left img {
 
   .method-text {
     max-width: 80%;
-    /*margin: 1em;
-    padding: 1em;*/
   }
   .brand  {
     justify-content: center;
-    align-content: center;
     height: 350px;
-
   }
 
   img.logo {
@@ -476,26 +448,14 @@ ul.left, .left img {
     margin: 0 1em 0 0;
   }
   .brand:after, .brand1:after {
-    position:  absolute;
-    top: 55px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-size:cover;
     height: auto;
-    padding: 0 0 0 0;
-    z-index: -1;
   }
   .brand:after {
     background-image: url(../images/side-image.jpg);
   }
   .brand1:after {
-    background: rgba(255,0,0,1);
-    background-image: url(../images/girlwithwaffle-cropped-1.jpg);
-    background-blend-mode: luminosity;
     height: 400px;
     margin-top:-1em;
-    background-repeat: repeat-x;
     background-size: contain;
   }
   .brand img, .brand button {
@@ -534,12 +494,10 @@ ul.left, .left img {
     flex-flow: row nowrap;
     align-items: flex-start;
     justify-content: space-between;
+    margin-top: 0;
   }
 
- #methodology .detail, #prototyping .detail{
-      margin-top: 0;
-  }
-#lessons-learned {
+#lessons-learned, {
   flex-flow: row wrap;
   justify-content: center;
 }

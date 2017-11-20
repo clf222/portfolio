@@ -214,16 +214,6 @@ p.dark.text-center, .made-in {
     padding-left: 0;
 
   }
-  nav.menu ul {
-    margin-bottom: 0;
-    list-style: none;
-    padding: 0;
-  }
-  nav.menu ul li {
-    display: inline;
-
-
-  }
   .heading, .heading-custom {
     flex-flow: row wrap;
     padding: 0 0 0 1.5em;
@@ -242,9 +232,7 @@ p.dark.text-center, .made-in {
   ul.clearfix ul.sub-menu a{
     color: #0F2E42;
   }
-  .heading {
-    height: 50px;
-  }
+
   .heading ul.clearfix ul.sub-menu a, .heading-custom ul.clearfix ul.sub-menu a{
     padding: 8px 7px;
   }
@@ -255,7 +243,7 @@ p.dark.text-center, .made-in {
     outline: none;
   }
 .heading ul.clearfix > li > a:focus, .heading ul.clearfix > li > a:hover {
-  border-color: #FFFAF0;
+  border-color: #FFFFFF;
 }
   .heading-custom ul.clearfix > li > a:before {
     position: absolute;
@@ -270,7 +258,7 @@ p.dark.text-center, .made-in {
     transition: max-height .3s,border-color 0s;
   }
 
-.heading ul.clearfix > li > a::before {
+.heading ul.clearfix > li > a::before, .heading-custom  ul.clearfix > li > a::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -278,22 +266,13 @@ p.dark.text-center, .made-in {
     right: 0;
     max-height: 0;
     color: rgba(255,255,255,0);
-    border-left: 2px solid #FFFAF0;
+    border-left: 2px solid #FFFFFF;
     content: attr(data-text);
     transition: max-height .3s,border-color 0s;
   }
 
   .heading-custom  ul.clearfix > li > a::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    max-height: 0;
-    color: rgba(255,255,255,0);
     border-right: 2px solid #0F2E42;
-    content: attr(data-text);
-    transition: max-height .3s,border-color 0s;
   }
   .heading ul.clearfix > li > a:before {
     position: absolute;
@@ -303,7 +282,7 @@ p.dark.text-center, .made-in {
     right: 0;
     max-height: 0;
     color: rgba(255,255,255,0);
-    border-right: 2px solid #FFFAF0;
+    border-right: 2px solid #FFFFFF;
     content: attr(data-text);
     transition: max-height .3s,border-color 0s;
   }
@@ -319,7 +298,7 @@ p.dark.text-center, .made-in {
   .heading ul.clearfix > li > a:hover::after {
     max-height: 100%;
     transition-delay: .28s;
-    border-color: #FFFAF0;
+    border-color: #FFFFFF;
   }
   .links {
     align-items: flex-end;
