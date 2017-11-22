@@ -64,22 +64,22 @@ h1 {
 }
 
 h2 {
-  font-size: 1.4em;
+  font-size: 2em;
   font-weight: 700;
   margin: 0;
 }
 h3 {
-  font-size: 24px;
+  font-size: 1.8em;
   margin: 0;
 }
 h4 {
-  font-size: 1.2em;
+  font-size: 1.6em;
   font-weight: 700;
   margin-bottom: .5em;
 }
 
 h5 {
-  font-size: 1.1em;
+  font-size: 1.4em;
   margin-bottom: 0;
 }
 
@@ -225,6 +225,9 @@ img.element.proto {
   max-width: 300px;
 
 }
+.problem {
+  max-width: 20ch;
+}
  /*#methodology, #research, #design, #user-test, #prototyping, #lessons-learned {
    padding: 1em 15vw;
  }*/
@@ -232,7 +235,6 @@ img.element.proto {
    /*display: flex;
    align-items: center;*/
    height: 50px;
-   font-size: 24px;
    line-height: 50px;
    color: #484848;
    /*width: 100%;*/
@@ -263,7 +265,7 @@ h5, h6 {
   margin: 0 auto;
 }
 h6 {
-  font-size: 1em;
+  font-size: 1.2em;
   margin: 0 auto;
 }
 
@@ -455,6 +457,7 @@ ul.left, .left img {
 
 
 
+
   /*.intro {
     flex-flow: row wrap;
 
@@ -527,6 +530,11 @@ ul.left, .left img {
     justify-content: space-between;
     /*margin: 0 15vw;*/
   }
+   .right {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+  }
   #intro .detail, #methodology .detail, #research .detail {
     flex-flow: row nowrap;
   }
@@ -551,7 +559,7 @@ h6 {
     width: 70vw;
     align-items: flex-start;
     justify-content: flex-start;
-    margin: 0;
+    margin: 0 0 2em;;
   }
    /*.item h5 {
     align-self: center;
