@@ -66,12 +66,11 @@ h1 {
 h2 {
   font-size: 1.4em;
   font-weight: 700;
-  letter-spacing: 0;
+  margin: 0;
 }
 h3 {
-  font-size: 1.3em;
-  font-weight: 700;
-  letter-spacing: 0;
+  font-size: 24px;
+  margin: 0;
 }
 h4 {
   font-size: 1.2em;
@@ -210,10 +209,11 @@ h3.baloo {
   background-color: transparent;
 }
 .left, .right {
+  margin: 2em 0;
   width: 80vw;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
+  align-items: flex-start;
 }
 img.element.proto {
   display: inline;
@@ -224,12 +224,17 @@ img.element.proto {
    padding: 1em;
  }
  .section-head {
-   height: 30px;
-   color: white;
-   width: 100%;
-   background-color: #366797;
-   text-align: center;
-   padding: 1em 0;
+   /*display: flex;
+   align-items: center;*/
+   height: 50px;
+   font-size: 24px;
+   line-height: 50px;
+   color: #484848;
+   /*width: 100%;*/
+   background-color: #FFFFFF;
+   padding-left: 2em;
+
+
 }
 
 /*Methodology*/
@@ -255,7 +260,7 @@ h6 {
   font-size: 1em;
 }
 ul.list {
-  padding-left: 40px;
+  /*padding-left: 40px;*/
   list-style-position: outside;
 }
 ul.left {
@@ -266,7 +271,10 @@ ul.left {
   align-items: flex-start;
 }
 .left {
-  margin: 0;
+  margin-left: 15vw;
+}
+.right {
+  margin-right: 15vw;
 }
 .sub {
   display: flex;
@@ -374,35 +382,41 @@ footer p {
     h1 {
       margin: 0 1em;
     }
-    h2.bold {
-      margin-left: 0;
-      padding-left: 160px;
-    }
-
+    /*h2.bold {
+      margin-left: 15vw;
+    }*/
+.section-head {
+  padding-left: 15vw;
+}
 #methodology, #prototyping {
-  padding: 1em;
+  padding-left : 15vw;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 .detail {
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
-  width: 100vw
-  padding: 1em auto;
+  /*width: 100vw*/
+  padding:0;
 }
 ul.left, .left img {
-  justify-content: flex-end;
+  margin-left: 0;
+}
+.right img {
+  margin-right: 0;
 }
 .left {
-  margin-right: 2em;
+  padding-right: 2em;
 }
   .single {
     align-items: center;
     padding: 1em 10em;
   }
-  h2.bold {
+  /*h2.bold {
     margin-right:auto;
     flex-basis: 100%;
-  }
+  }*/
     .brand1 {
       height: 350px;
       justify-content: center;
@@ -418,7 +432,7 @@ ul.left, .left img {
     }
   .left, .right{
 
-    width: 30vw;
+    width: 35vw;
   }
 
 
@@ -487,13 +501,13 @@ ul.left, .left img {
   h4, h5, h6 {
     margin: 0 auto;
   }
-  .left h4 {
+  /*.left h4 {
     margin: 1em 0;
-  }
+  }*/
   #methodology .detail, #research .detail, #prototyping .detail{
     flex-flow: row nowrap;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-top: 0;
   }
 
