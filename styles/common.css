@@ -129,6 +129,7 @@ body {
   }
 
  h3.logo-text {
+   line-height: 1.3em;
    padding: 0 2em;
    margin-bottom: 0;
    letter-spacing: normal;
