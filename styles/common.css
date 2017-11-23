@@ -14,7 +14,7 @@ body {
    flex-flow: column nowrap;
    justify-content: space-between;
    align-items: center;
-   padding: 1em 0;
+   padding: 1em ;
    position: sticky;
    top:0;
    left: 0;
@@ -43,7 +43,7 @@ body {
 /*----- Menu Outline -----*/
 .menu-wrap {
     width:80%;
-    padding: 0;
+    padding-right: 40px;
     margin: 0;
     line-height: 1em;
 }
@@ -205,7 +205,8 @@ p.dark.text-center, .made-in {
 
 @media (min-width: 768px) {
   .menu-wrap {
-    width: 40%;
+    width: 60%;
+    padding-right: 0;
   }
   nav.menu {
     display: inline;
@@ -216,7 +217,7 @@ p.dark.text-center, .made-in {
   }
   .heading, .heading-custom {
     flex-flow: row wrap;
-    padding: 0 0 0 1.5em;
+    padding: 0;
   }
   .heading ul.clearfix a, .heading-custom ul.clearfix > li > a {
     text-decoration: none;

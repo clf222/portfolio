@@ -85,6 +85,7 @@ h5 {
 
 li span {
   font-weight: 700;
+  font-size: 1.2em;
 }
 
 p {
@@ -280,11 +281,11 @@ ul.left.list {
   align-items: flex-start;
 }
 .left {
-  margin-left: 15vw;
+  margin-left: 20vw;
   padding-right: 1em;
 }
 .right {
-  margin-right: 15vw;
+  margin-right: 20vw;
   margin-left: auto;
 }
 .sub {
@@ -365,7 +366,7 @@ img.element {
   padding: 1em;
 }
 .method-text {
-  width: 70vw;
+  width: 60vw;
   margin: 1em 0 0;
 }
 /*lessons learned*/
@@ -400,7 +401,7 @@ img.element.proto {
   padding-left: auto;
 }
 .section-head {
-  padding-left: 15vw;
+  padding-left: 20vw;
 }
  #methodology .detail, #research, #prototyping  {
   /*margin-left : 15vw;*/
@@ -420,7 +421,7 @@ ul.left, .left img {
 }
   #design, #user-test .white-g {
   flex-flow: column wrap;
-  padding: 1em 15vw;
+  padding: 1em 20vw;
 }
 /*.left {
   padding-right: 1em;
@@ -436,7 +437,7 @@ ul.left, .left img {
     align-self: flex-start;
   }
   .detail.white-g , #methodology, #research, #design, #user-test, #prototyping {
-    padding: 1em 15vw;
+    padding: 1em 20vw;
   }
     .brand1 {
       height: 350px;
@@ -453,7 +454,7 @@ ul.left, .left img {
     }
   .left, .right{
     margin: 0;
-    width: 35vw;
+    width: 30vw;
   }
 
 
@@ -518,7 +519,7 @@ ul.left, .left img {
     flex-flow: column wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 35vw;
+    width: 30vw;
     padding-right: 0;
   }
   h4, h5, h6 {
@@ -527,7 +528,7 @@ ul.left, .left img {
 
   .detail.white-g, #methodology .detail, #research .detail,  .detail.white-g {
     flex-flow: row nowrap;
-    width: 70vw;
+    width: 60vw;
     align-items: flex-start;
     justify-content: space-between;
     /*margin: 0 15vw;*/
@@ -558,7 +559,7 @@ h6 {
    .item {
     display: flex;
     flex-flow: row nowrap;
-    width: 70vw;
+    width: 60vw;
     align-items: flex-start;
     justify-content: flex-start;
     margin: 0 0 2em;;
