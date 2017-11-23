@@ -344,7 +344,9 @@ ul.left.list {
   width: 80%;
   margin: 0 ;
 }*/
-
+#methodology h4 {
+  align-self: flex-start;
+}
 #user-test h4 {
   color: #151515;
 }
