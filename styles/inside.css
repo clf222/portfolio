@@ -42,10 +42,10 @@ img.center {
 }
 .socials {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin-right: 0;
-  font-size: 1.25em;
+  margin: 0;
+  font-size: 1em;
 }
 p {
   margin-bottom: 0;
@@ -252,6 +252,7 @@ img.center {
     justify-content: space-between;
     /*width: 100%;*/
     padding: 0 32px;
+    font-size: 1em;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -262,7 +263,8 @@ img.center {
     padding-left: 4em;
   }*/
   .center {
-    margin: 0;
+    /*margin: 0;*/
+    text-align: center;
   }
   /*.right {
     padding-right: 4em;
