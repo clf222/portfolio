@@ -206,12 +206,13 @@ p.dark.text-center, .made-in {
 
 @media (min-width: 768px) {
   .menu-wrap {
-    width: 90%;
+    width: 55%;
     padding-right: 0;
   }
   ul.clearfix {
     /*margin-right: -8em;*/
-    padding-left: 6em;
+    padding-left: 3em;
+    padding-right: 0;
   }
   li.last-social, p.last-social {
     padding-right: 0;
@@ -320,13 +321,15 @@ p.dark.text-center, .made-in {
     flex-basis: 37%;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   ul.clearfix {
-    padding-left: 0;
+    padding-left:0;
+    margin-left: 8em;
 
   }
   .menu-wrap {
-    width: 35%;
+    width: 40%;
+    /*padding-left: 8em;*/
   }
 
 }
