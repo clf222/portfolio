@@ -12,13 +12,13 @@ body {
  .heading, .heading-custom {
    display: flex;
    flex-flow: column nowrap;
-   justify-content: space-between;
+   justify-content: flex-start;
    align-items: center;
    padding: 0 2em;
    position: sticky;
    top:0;
    left: 0;
-   height: 50px;
+   height: 60px;
    z-index: 10;
  }
  .heading {
@@ -49,8 +49,9 @@ body {
 }
 
 .menu {
-    width: 100%;
+    width: 80%;
     margin:0px auto;
+    text-align: center;
 }
   .heading a.active {
   border-bottom: 1px solid #0F2E42;
@@ -62,7 +63,7 @@ body {
     float: none;
     display:inline-block;
     position:relative;
-    font-size:16px;
+    font-size:1.25em;
 }
 
 
@@ -129,9 +130,7 @@ body {
   }
 
  h3.logo-text {
-   /*line-height: 1.3em;*/
-   /*padding: 0 2em;
-   margin-bottom: 0;*/
+   margin: 7px 0;
    letter-spacing: normal;
  }
  h3.logo-text a, .heading ul li a{
@@ -155,10 +154,10 @@ body {
    margin: 0;
    width: 100%;
  }
- nav.menu ul {
+ nav.menu > ul {
    margin-bottom: 0;
    list-style: none;
-   text-align: center;
+
  }
  nav.menu ul li {
    display: inline;
@@ -206,9 +205,13 @@ p.dark.text-center, .made-in {
 
 @media (min-width: 768px) {
   .menu-wrap {
-    width: 55%;
+    width:50%;
     padding-right: 0;
     padding-left: 0;
+  }
+  nav.menu > ul {
+
+    text-align: right;
   }
   ul.clearfix {
     /*margin-right: -8em;*/
@@ -225,12 +228,13 @@ p.dark.text-center, .made-in {
   nav.menu {
     display: inline;
     margin: 0 0 0 0;
-    width: 100%;
+    width: 50%;
     padding-left: 0;
 
   }
   .heading, .heading-custom {
     flex-flow: row nowrap;
+    justify-content: space-between;
     align-items: center;
     padding: 0 2em;
   }
@@ -251,6 +255,7 @@ p.dark.text-center, .made-in {
 
   .heading ul.clearfix ul.sub-menu a, .heading-custom ul.clearfix ul.sub-menu a{
     padding: 8px 7px;
+    text-align: center;
   }
 
   .heading ul.clearfix > li > a:focus, .heading-custom ul.clearfix > li > a:focus, .heading ul.clearfix > li > a:hover, .heading-custom ul.clearfix > li > a:hover {
