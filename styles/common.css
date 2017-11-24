@@ -5,7 +5,7 @@ html {
 }
 body {
   font-size: 16px;
-  height: 100vh;
+  /*height: 100vh;*/
 
 }
 /***HEADER STYLES ***/
@@ -14,7 +14,7 @@ body {
    flex-flow: column nowrap;
    justify-content: space-between;
    align-items: center;
-   padding: 1em;
+   padding: 0 2em;
    position: sticky;
    top:0;
    left: 0;
@@ -129,9 +129,9 @@ body {
   }
 
  h3.logo-text {
-   line-height: 1.3em;
-   padding: 0 2em;
-   margin-bottom: 0;
+   /*line-height: 1.3em;*/
+   /*padding: 0 2em;
+   margin-bottom: 0;*/
    letter-spacing: normal;
  }
  h3.logo-text a, .heading ul li a{
@@ -212,7 +212,7 @@ p.dark.text-center, .made-in {
   }
   ul.clearfix {
     /*margin-right: -8em;*/
-    padding-left:5em;
+    /*padding-left:5em;*/
     padding-right: 0;
   }
   li.last-social, p.last-social {
@@ -231,7 +231,8 @@ p.dark.text-center, .made-in {
   }
   .heading, .heading-custom {
     flex-flow: row nowrap;
-    padding: 0;
+    align-items: center;
+    padding: 0 2em;
   }
   .heading ul.clearfix a, .heading-custom ul.clearfix > li > a {
     text-decoration: none;
@@ -325,11 +326,11 @@ p.dark.text-center, .made-in {
 @media (min-width: 1200px) {
   ul.clearfix {
     padding-left:0;
-    margin-left: 9em;
+    /*margin-left: 9em;*/
 
   }
   .menu-wrap {
-    width: 40%;
+    /*width: 40%;*/
     /*padding-left: 8em;*/
   }
 

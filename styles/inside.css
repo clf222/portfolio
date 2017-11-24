@@ -12,18 +12,19 @@ body {
 }
 
 footer {
-  position: fixed;
+  /*position: fixed;*/
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: .5em ;
+  padding: .5em 0;
   bottom: 0;
-  left: 0;
-  width: 100vw;
-  background-color: #0F2E42;;
-  height: 50px;
-  font-size: .875em;
+  /*left: 0;*/
+  /*width: 100vw;*/
+  background-color: #0F2E42;
+  height: 60px;
+  font-size: 1em;
+  letter-spacing: .1;
 }
 img.center {
   align-self: center;
@@ -31,16 +32,20 @@ img.center {
 
 .container-form, .container-about {
   padding-top: 2em;
+  padding-bottom: 2em;
+  min-height: calc(100vh-110px);
 }
 .one-column {
   display: flex;
   flex-flow: column nowrap;
-  margin-bottom: 5em;
+  margin-bottom: 2em;
 }
 .socials {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 0;
+  font-size: 1.25em;
 }
 p {
   margin-bottom: 0;
@@ -115,7 +120,7 @@ strong {
 
 /*utilities*/
 
-.center {
+p.center {
   margin: auto;
 }
 .text-right {
@@ -145,7 +150,7 @@ input[type=text]:hover,  input[type=email]:hover, input[type=tel]:hover, textare
   justify-content: flex-start;
   align-items: center;
   background-color: #FFF;
-  margin: 0 auto;
+  margin: 0;
   padding: 1em 2em;
 }
 /*.container-about {
@@ -217,13 +222,13 @@ textarea, input {
 .container-form, .container-about{
   display: flex;
   flex-flow: column nowrap;
-  padding: 2em 2em 5em 2em;
+  padding: 2em 2em 0 2em;
   justify-content: flex-start;
   align-items: center;
   background-color: #FFF;
-  width: 50em;
+  width: 60vw;
 
-  margin: 0 auto  ;
+  margin: 0 auto;
 }
 .container-about {
   margin-bottom: 0;
@@ -243,22 +248,36 @@ img.center {
     padding: 0;
   }
     footer {
-    flex-flow: row nowrap;
-    justify-content: center;
-    padding: 0 2em;
-    margin: 0 auto;
-    right:0;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    /*width: 100%;*/
+    padding: 0 32px;
     position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 
-  .left {
+  /*.left {
     padding-left: 4em;
-  }
+  }*/
   .center {
-    margin: 0 auto;
+    margin: 0;
   }
-  .right {
+  /*.right {
     padding-right: 4em;
+  }*/
+  .socials {
+    justify-content: flex-start;
+
   }
+  .socials p {
+    padding-right: 2em;
+    margin-bottom: 0;
+  }
+  p.last-social {
+    padding-right: 0;
+  }
+
 
 }
