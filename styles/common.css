@@ -166,7 +166,7 @@ body {
    font-size: 16px;
    font-family: 'Lato', sans-serif;
    margin: 0;
-   padding: 0 5px;
+   padding: 0 7px;
  }
 h3.logo-text {
   font-size: 1em;
@@ -210,8 +210,8 @@ p.dark.text-center, .made-in {
     padding-right: 0;
   }
   ul.clearfix {
-    margin-right: -8em;
-    padding:0;
+    /*margin-right: -8em;*/
+    padding-left: 8em;
   }
   li.last-social, p.last-social {
     padding-right: 0;
