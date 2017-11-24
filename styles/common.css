@@ -206,9 +206,20 @@ p.dark.text-center, .made-in {
 
 @media (min-width: 768px) {
   .menu-wrap {
-    width: 60%;
+    width: 40%;
     padding-right: 0;
   }
+  ul.clearfix {
+    margin-right: -8em;
+    padding:0;
+  }
+  li.last-social, p.last-social {
+    padding-right: 0;
+  }
+  /*a.end {
+    padding-right: 0;
+  }*/
+
   nav.menu {
     display: inline;
     margin: 0 0 0 auto;
