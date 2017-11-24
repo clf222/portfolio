@@ -151,7 +151,7 @@ body {
  }
 
  nav.menu {
-   display: table;
+   display: inline;
    margin: 0;
    width: 100%;
  }
@@ -206,12 +206,12 @@ p.dark.text-center, .made-in {
 
 @media (min-width: 768px) {
   .menu-wrap {
-    width: 40%;
+    width: 90%;
     padding-right: 0;
   }
   ul.clearfix {
     /*margin-right: -8em;*/
-    padding-left: 8em;
+    padding-left: 6em;
   }
   li.last-social, p.last-social {
     padding-right: 0;
@@ -319,4 +319,14 @@ p.dark.text-center, .made-in {
     justify-content: space-between;
     flex-basis: 37%;
   }
+}
+@media (min-width: 1000px) {
+  ul.clearfix {
+    padding-left: 0;
+
+  }
+  .menu-wrap {
+    width: 35%;
+  }
+
 }
