@@ -208,10 +208,11 @@ p.dark.text-center, .made-in {
   .menu-wrap {
     width: 55%;
     padding-right: 0;
+    padding-left: 0;
   }
   ul.clearfix {
     /*margin-right: -8em;*/
-    padding-left: 3em;
+    padding-left:5em;
     padding-right: 0;
   }
   li.last-social, p.last-social {
@@ -223,7 +224,7 @@ p.dark.text-center, .made-in {
 
   nav.menu {
     display: inline;
-    margin: 0 0 0 auto;
+    margin: 0 0 0 0;
     width: 100%;
     padding-left: 0;
 
@@ -324,7 +325,7 @@ p.dark.text-center, .made-in {
 @media (min-width: 1200px) {
   ul.clearfix {
     padding-left:0;
-    margin-left: 8em;
+    margin-left: 9em;
 
   }
   .menu-wrap {
