@@ -470,6 +470,7 @@ footer p {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
+  align-items: flex-end;
 }
 figure {
   display: table;
@@ -481,6 +482,7 @@ figure {
 figcaption {
   display: table-caption;
   caption-side: bottom;
+  font-weight: 700;
 }
 /*img.logo {
   padding-right: 2em;
