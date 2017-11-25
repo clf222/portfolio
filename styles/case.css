@@ -451,7 +451,7 @@ footer p {
   /*padding-left: 1em;*/
   /*padding-right: 10vw;*/
 }
-#methodology, #research, #prototyping {
+#methodology, #research, #prototyping, #lessons-learned {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
@@ -466,6 +466,26 @@ footer p {
   align-items: flex-start;
   padding-bottom: 1em;
 }
+.logos {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+figure {
+  display: table;
+  margin: 0 1em;
+  text-align: center;
+  /*width: 100%;*/
+  padding: .5em;
+}
+figcaption {
+  display: table-caption;
+  caption-side: bottom;
+}
+/*img.logo {
+  padding-right: 2em;
+}*/
+
   /*#research, #prototyping  {
   /*margin-left : 15vw;*/
 /*  flex-flow: row wrap;
@@ -502,10 +522,10 @@ align-content: flex-start;
     height: 350px;
   }
 
-  img.logo {
+  /*img.logo {
     align-self: flex-end;
     margin: 0 1em 0 0;
-  }
+  }*/
   .brand:after, .brand1:after {
     height: auto;
   }
