@@ -219,9 +219,9 @@ h3.baloo {
   padding: 1em 0;
   background-color: rgba(255,255,255,0);
 }
-.detail.cream {
+/*.detail.cream {
   background-color: transparent;
-}
+}*/
 /*.left, .right {
   margin: 2em 0;
   width: 80vw;
@@ -234,14 +234,14 @@ h3.baloo {
   align-items: flex-end;
 }*/
 
-img.element.proto {
-  display: inline;
-  margin: 0 0 1em;
+img.element.proto,img.element.big-element {
+  align-self: center;
+  margin: 0;
   max-width: 300px;
 
 }
 .problem {
-  max-width: 35ch;
+  max-width: 19ch;
 }
 
  .section-head {
@@ -268,6 +268,9 @@ ul.list li {
   justify-content: flex-start;
   align-items: center;
   justify-content: center;
+}
+#design {
+  background-color: #FFFAF0;
 }
 #lessons-learned {
   display: flex;
@@ -301,6 +304,10 @@ ul.list {
 }
 .right {
 width: 40vw;
+display: flex;
+flex-flow: column nowrap;
+align-items: center;
+justify-content: flex-start;
 
   box-sizing: border-box;
 }
@@ -329,18 +336,21 @@ width: 40vw;
 
 /*End Research*/
 /*Design*/
-#design, #user-test {
+/*#design, #user-test {
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
   justify-content: flex-start;
   background-color: #FFFAF0;
+}*/
+#design p, #design img{
+  padding: 0 2em 0 0;
 }
 .enlarge-container {
     position: relative;
     bottom: 0;
     right: 0;
-    width: 80%;
+    width: 100%;
     text-align: right;
     background: #c1c1c1;
     padding: 10px;
@@ -413,9 +423,15 @@ footer p {
     h1 {
       margin: 0 1em;
     }
-img.element.proto {
-  padding-left: auto;
+.summary p {
+  font-size: 1.2em;
+  font-weight: bold;
+
+
 }
+/*img.element.proto {
+  padding-left: auto;
+}*/
 .section-head {
   padding-left: 10vw;
 }
@@ -441,6 +457,14 @@ img.element.proto {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 2em 10vw;
+}
+#design, #user-test {
+  /*padding: 2em 0;*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 1em;
 }
   /*#research, #prototyping  {
   /*margin-left : 15vw;*/
@@ -530,7 +554,7 @@ align-content: flex-start;
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
-    /*padding: 2em 0;*/
+    padding: 2em 0;
   }
   .detail.white-g {
     display: flex;
@@ -538,22 +562,48 @@ align-content: flex-start;
     align-items: flex-start;
     max-width: 100vw;
     padding: 2em 10vw;
-  margin: 0;
+    /*margin-bottom: 2em;*/
   }
-   .right {
+   /*#design .left, #design .right {
     display: flex;
+    height: 40vw;
     flex-flow: column nowrap;
-    align-items: center;
+    align-items: flex-start;
+    padding: 0;
     margin-bottom: 1em;
-  }
+  }*/
+  /*.row {
 
-h6.caption a{
-  text-decoration: none;
+    display: flex;
+    padding-bottom: 2em;
+  }*/
+.summary {
+  display: flex;
+    justify-content: flex-start;
+    flex-flow:column nowrap;
+    align-items: flex-start;
+    /*background-color: #FFFAF0;*/
+    width: 50vw;
+    padding-left: 10vw;
+    padding-bottom:7em;
+    box-sizing: border-box;
+
+  }
+  .summary.summary-right {
+    padding-left: 2vw;
+    padding-bottom: 7em;
+
+  }
+  h4.tag {
+  font-size: 3em;
+  margin-top: 1em;
 }
-h6.caption a:hover {
-  color: #151515;
+.center {
+  margin: 0 auto;
 }
-.img-wrapper {
+
+
+ .img-wrapper {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -585,7 +635,7 @@ h6.caption {
     width: 60vw;
     align-items: flex-start;
     justify-content: flex-start;
-    margin: 0 0 2em;;
+    margin: 0 0 2em;
   }
    /*.item h5 {
     align-self: center;
@@ -594,7 +644,7 @@ h6.caption {
   padding: 1em 15vw;
 }*/
   .big-element {
-    max-width: 80%;
+    /*max-width: 80%;*/
     margin: 0 auto;
   }
   footer {
