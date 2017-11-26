@@ -245,7 +245,7 @@ img.element.proto,img.element.big-element {
 
 }
 .problem {
-  max-width: 19ch;
+  max-width: 17ch;
 }
 
  .section-head {
@@ -476,11 +476,11 @@ justify-content: flex-start;
     align-items: center;
     padding: 1em 10em;
   }
-  h2.bold {
+  /*h2.bold {
     margin-right:auto;
     margin: 1em 0;
     align-self: flex-start;
-  }
+  }*/
     .brand1 {
       height: 350px;
       justify-content: center;

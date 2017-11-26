@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://use.fontawesome.com/ac2791126c.js"></script>
     <link href="../styles/normalize.css" type="text/css" rel="stylesheet">
-    <link href="../styles/skeleton.css" type="text/css" rel="stylesheet">
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:400,700|Baloo|Hind|Special+Elite" rel="stylesheet">
     <!--  custom css -->
@@ -41,7 +40,7 @@
       </div>
           <div class="detail white-g">
             <div class="left">
-              <h2 class="problem">The Design Problem: Be the first to bring a global food trend to Waikiki</h2>
+              <h2>The Design Problem: </h2><h2>Be the first to bring a global food trend to Waikiki</h2>
               <p>I was asked to develop the opening website for the first Bubble Waffle shop located in Waikiki, Hawaii. Being the first bubble waffle shop in the area creates a unique challenge to be visible to tourists who know the product, and to educate the local market to the product. </p>
               <h4>Roles:</h4>
               <p>Research, Branding, Design, UI, Development (HTML, CSS, JS)</p>
@@ -56,25 +55,28 @@
      </div>
   </div>
   <div class="section-head">
-    <h3 id="methodology-head">Methodology</h3>
+    <h2>Methodology</h2>
   </div>
   <div id="methodology" class="blue-g">
-
-        <h2 class="bold">User research was developed to learn the following:</h2>
-         <div class="detail cream">
-          <ul class="left list">
-            <li>The frequency of snack and beverage purchases</li>
-  	 	      <li>How consumers choose where to buy snacks and beverages</li>
-          	<li>Use of mobile vs. desktop browsing</li>
-          	<li>Importance of social platforms such as Instagram</li>
-          	<li>What causes a user to abandon a restaurant website</li>
-          </ul>
+         <div class="cream left">
+           <h4>User research was developed to learn the following:</h4>
+            <ul class="list">
+              <li>The frequency of snack and beverage purchases</li>
+    	 	      <li>How consumers choose where to buy snacks and beverages</li>
+            	<li>Use of mobile vs. desktop browsing</li>
+            	<li>Importance of social platforms such as Instagram</li>
+            	<li>What causes a user to abandon a restaurant website</li>
+            </ul>
+          </div>
           <div class="right">
-            <img class = "element proto" alt="persona" src="../images/aoki-case.jpg">
-            <h6><a href="../images/aoki.pdf" target="_blank" class="dark">Enlarge</a></h6>
+            <div class="img-wrapper" style="display: relative;">
+            <img class = "element big-element" alt="persona" src="../images/aoki-case.jpg">
+               <div class="enlarge-container">
+                <a href="../images/aoki.pdf" target="_blank" >Enlarge</a>
+              </div>
           </div>
         </div>
-          <div class="method-text">
+          <div class="text">
             <p>After completing this research, I decided to develop a design that highlights realistic photography
               of the bubble waffle product to help educate the market. </p>
             <p>For typography, I wanted to develop a wordmark that would be friendly but not juvenile or kitschy. </p>
@@ -84,11 +86,13 @@
       </div>
 
    <div class="section-head">
-        <h3 id="research-head">Research Results</h3>
+        <h2>Research Results</h2>
    </div>
  <div id="research" class="white-g">
-   <div class="detail white-g">
-        <ul class="left list">
+   <div class="left">
+     <h4>200 partipants responded to an online survey.</h4>
+     <h4> Critical findings that describe popBubblepop's target audience include:</h4>
+        <ul class="list">
           <li> Only <span>25 of 200</span> respondents could identify a picture of a bubble waffle by one of its common names</li>
           <li><span>42</span>&percnt; buy drinks and snacks 2 or more times per week</li>
           <li><span>83</span>&percnt; use a cell phone to locate restaurants for drink and snack purchases</li>
@@ -96,31 +100,38 @@
           <li><span>91</span>&percnt; of respondents were female</li>
           <li><span>54</span>&percnt; of respondents go on more than one vacation per year.</li>
         </ul>
-        <div class="right">
-        <img class="element big-element" alt="picture of research" src="../images/pbp-research.png">
-        <h6><a href="../images/pbp-research.png" target="_blank" class="dark">Enlarge</a></h6>
       </div>
-  </div>
-</div>
+        <div class="right">
+          <div class="img-wrapper" style="display: relative;">
+            <img class="element big-element" alt="picture of research" src="../images/pbp-research.png">
+            <div class="enlarge-container">
+              <a href="../images/pbp-research.png" target="_blank">Enlarge</a>
+            </div>
+          </div>
+        </div>
+      </div>
   <div class="section-head">
-   <h3 id="design-head">Development and Design Decisions</h3>
+   <h2>Development and Design Considerations</h2>
  </div>
    <div id="design" class="blue-g">
-     <div class="item">
-        <h4>Fonts</h4>
+     <div class="summary">
+       <h4 class="transform">Approach</h4>
+     </div>
+     <div class="summary summary-right">
+        <h4 class="transform">Fonts</h4>
         <p>Baloo, a font-family with Asian roots, was chosen for the wordmark for its playful and friendly appearance. Its rounded terminals are reminiscent of Hello Kitty, the popular Asian character.</p>
         <p>Hind was chosen for the body of the site. It's a sans-serif font that was developed for user interface design. Most strokes have straight endings, which provides needed balance to Baloo's rounded features. The two fonts share similar x-heights as well.</p>
         <h2 class="baloo">Baloo</h2>
         <h2 class="hind">Hind</h2>
     </div>
-    <div class="item">
-        <h4>Development</h4>
+    <div class="summary">
+        <h4 class="transform">Development</h4>
         <p> Flexbox CSS was utilized in order to take advantage of modern browser support  for improved responsive layouts. It is designed to accommodate additional content while maintaining appropriate spacing across various screen widths and heights.</p>
         <p><a href="https://alvarotrigo.com/fullPage/" target="_blank" class="link"> Fullpage.js </a>was utilized to create smooth scrolling that works both on mobile touch screens and desktops.  </p>
         <img class="element" alt="logo for fullpage.js" src="../images/dev.png">
     </div>
-     <div class="item">
-        <h4>Branding</h4>
+     <div class="summary summary-right">
+        <h4 class="transform">Branding</h4>
         <p>It is critical that the site's imagery resonate with the Asian Market. Rose Pink is uniformly associated with feminine characteristics in Asian countries. Although shades of black are uniformly viewed as masculine, it was rejected for Cerulean Blue, which also is viewed as masculine in Asia, <sup ><a class="alt" href="https://www.intage.co.jp/english/asia_insight/20130911.html#.WfXr8hOPJE5" target="_blank">1</a></sup> and is universally recognized as symbolizing trust. Pairing the two colors presents a brand that is fun, trustworthy, and for both men and women. </p>
         <span class="pbp-logo"><h3 class ="baloo"><span class="blue">pop.</span><span class="pink">Bubble.</span> <span class="blue">pop</span></h3></span>
      </div>
@@ -128,7 +139,7 @@
 
 
   <div class="section-head">
-     <h3 id="user-testing-head">User Testing</h3>
+     <h2>User Testing</h2>
    </div>
   <div id="user-test" class="white-g">
           <div class="item">
@@ -150,7 +161,7 @@
           </div>
       </div>
       <div class="section-head">
-        <h3>Prototyping</h3>
+        <h2>Prototyping</h2>
       </div>
       <div id="prototyping" class="blue-g">
         <div class="detail">
@@ -170,7 +181,7 @@
             </div>
       </div>
     <div class="section-head">
-      <h3 id="lessons-learned-head">Lessons Learned</h3>
+      <h2>Lessons Learned</h2>
     </div>
     <div id="lessons-learned" class="blue-g">
       <div class="method-text">
