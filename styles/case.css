@@ -26,7 +26,7 @@ body {
 .blue {
   color: #336699;
 }
-a:visited {
+p a:visited {
   color: #9CAA5F;
 }
 
