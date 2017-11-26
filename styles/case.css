@@ -73,14 +73,14 @@ h3 {
   margin: 0;
 }
 h4 {
-  font-size: 1.6em;
+  font-size: 1.3
   font-weight: 700;
 
 }
 h4.transform {
   text-transform: uppercase;
   letter-spacing: 5px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 h5 {
@@ -94,16 +94,16 @@ li span {
 }
 
 p {
-  line-height: 1.8em;
-  font-size: 1.1em;
-  margin-bottom: 1em;
+  line-height: 1.3em;
+  font-size: 1em;
+  /*margin-bottom: 1em;*/
 }
 p.bold {
   font-weight: 700;
 }
-p.dark {
+/*p.dark {
   margin-bottom: 1em;
-}
+}*/
 p.last {
   padding-bottom: 1em;
   align-self: flex-start;
@@ -168,11 +168,12 @@ h3.baloo {
   align-self: center;
   margin-top: 2em auto;
 }
- #intro {
+ #intro{
    display: flex;
    flex-flow: column nowrap;
    justify-content: flex-start;
    align-items: flex-start;
+
  }
  .brand, .brand1 {
    display: flex;
@@ -216,29 +217,22 @@ h3.baloo {
   height: auto;
   margin-top: 1em;
 }
-.detail {
+.detail.white-g, #research {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: flex-start;
-  padding: 1em 0;
+  padding: 1em;
   background-color: rgba(255,255,255,0);
 }
-/*.detail.cream {
-  background-color: transparent;
-}*/
-/*.left, .right {
-  margin: 2em 0;
-  width: 80vw;
+.left, .right {
   display: flex;
+  width: 100%;
   flex-flow: column nowrap;
-  align-items: flex-start;
-  flex-grow: 0;
 }
-.right {
-  align-items: flex-end;
-}*/
-
+.summary, .summary-right {
+  padding: 1em 0;
+}
 img.element.proto,img.element.big-element {
   align-self: center;
   margin: 0;
@@ -250,22 +244,19 @@ img.element.proto,img.element.big-element {
 }
 
  .section-head {
-   /*display: flex;
-   align-items: center;*/
    height: 60px;
    line-height: 60px;
    color: #484848;
-   /*width: 100%;*/
    background-color: #FFFFFF;
-   padding-left: 10vw;
+   text-align: center;
 }
 ul.list li {
     margin-bottom: 1em;
 }
 
 /*Methodology*/
-#methodology, #prototyping {
-  padding: 2em 0;
+#methodology, #prototyping, #design {
+  padding: 1em;
   display: flex;
   flex-flow: column nowrap;
   background-color: #FFFAF0;
@@ -274,9 +265,7 @@ ul.list li {
   align-items: center;
   justify-content: center;
 }
-#design {
-  background-color: #FFFAF0;
-}
+
 #lessons-learned {
   display: flex;
   flex-flow: column nowrap;
@@ -284,38 +273,24 @@ ul.list li {
 }
 h5, h6 {
   text-align: center;
-  margin: 0 auto;
+  margin: 1em auto;
 }
 h6 {
   font-size: 1.2em;
-  margin: 0 auto;
 }
 
 ul.list {
-  /*list-style-position: outside;*/
-  margin-bottom: 0;
-  /*margin-right: 1em;
-  padding-left: 1em;*/
+  list-style-position: inside;
+  margin-bottom: 1em;
   line-height: 1.3em;
+  text-indent: -1.2em;
+  padding-left: 1.2em;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.left {
-  width: 40vw;
-  padding-right: 1em;
-  box-sizing: border-box;
-}
-.right {
-width: 40vw;
-display: flex;
-flex-flow: column nowrap;
-align-items: center;
-justify-content: flex-start;
 
-  box-sizing: border-box;
-}
 .sub {
   display: flex;
   flex-basis: 40%;
@@ -348,14 +323,12 @@ justify-content: flex-start;
   justify-content: flex-start;
   background-color: #FFFAF0;
 }*/
-#design p, #design img{
-  padding: 0 2em 0 0;
-}
+
 .enlarge-container {
     position: relative;
     bottom: 0;
     right: 0;
-    width: 100%;
+    width: 300px;
     text-align: right;
     background: #c1c1c1;
     padding: 10px;
@@ -364,19 +337,12 @@ justify-content: flex-start;
     display: flex;
     flex-flow: column nowrap;
 }
-
-.img-wrapper {
-    position: relative;
+ .img-wrapper {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
 }
-
-
-
-
- h4 {
-  margin-bottom: 1em;
-}
-
-
 #methodology h4 {
   align-self: flex-start;
 }
@@ -384,22 +350,6 @@ justify-content: flex-start;
   color: #151515;
 }
 
-/*img.element {
-  margin-bottom: 0;
-}*/
-
-/*End User testing*/
-/* prototype*/
-/*#methodology .detail .cream, #prototyping .detail .left{
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  /*padding: 2em 1em;*/
-
-.text {
-
-}
 /*lessons learned*/
 #lessons-learned {
   display:flex;
@@ -428,19 +378,36 @@ footer p {
     h1 {
       margin: 0 1em;
     }
+    h4 {
+     margin-bottom: 1em;
+    }
+
+    p {
+      line-height: 1.8em;
+      font-size: 1.1em;
+      margin-bottom: 1em;
+    }
 .summary p {
   font-size: 1.2em;
   font-weight: bold;
-
-
 }
-/*img.element.proto {
-  padding-left: auto;
-}*/
+.left {
+  width: 40vw;
+  padding-right: 1em;
+  box-sizing: border-box;
+}
+.right {
+width: 40vw;
+display: flex;
+flex-flow: column nowrap;
+align-items: center;
+justify-content: flex-start;
+  box-sizing: border-box;
+}
 .section-head {
   padding-left: 10vw;
 }
-.large-left, .large-right {
+/*.large-left, .large-right {
   width: 50vw;
   padding-top: 0;
   display: flex;
@@ -451,11 +418,7 @@ footer p {
 .large-left {
   padding-right: 1em;
   /*padding-left: 10vw;*/
-}
-.large-right {
-  /*padding-left: 1em;*/
-  /*padding-right: 10vw;*/
-}
+
 #methodology, #research, #prototyping, #lessons-learned {
   display: flex;
   flex-flow: row wrap;
@@ -469,7 +432,7 @@ footer p {
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-bottom: 2em 0;
+  padding: 2em 0;
 }
 .logos {
   display: flex;
@@ -504,9 +467,7 @@ figcaption {
       justify-content: center;
     }
 
-    p {
-      font-size: 1.1em;
-    }
+
 
 
  .sub {
@@ -595,7 +556,7 @@ figcaption {
 
   }
   .summary.summary-right {
-    padding:2em 2em 7em;
+    padding:2 2em 7em;
 
 
   }
@@ -608,11 +569,6 @@ figcaption {
 }
 
 
- .img-wrapper {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-}
 h6.caption {
   padding: 5px;
   background: rgba(164,179,87,1);
