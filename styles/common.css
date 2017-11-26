@@ -182,6 +182,9 @@ p {
   line-height: 1.3em;
   font-family: 'Lato', sans-serif;
 }
+p.top {
+  margin-top: 0;
+}
 p.light {
   color: #FFFFFF;
 }

@@ -75,7 +75,12 @@ h3 {
 h4 {
   font-size: 1.6em;
   font-weight: 700;
-  margin-bottom: 1em;
+
+}
+h4.transform {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 0;
 }
 
 h5 {
@@ -459,12 +464,12 @@ footer p {
   padding: 2em 10vw;
 }
 #design, #user-test {
-  /*padding: 2em 0;*/
+
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-bottom: 1em;
+  padding-bottom: 2em 0;
 }
 .logos {
   display: flex;
@@ -476,7 +481,7 @@ figure {
   display: table;
   margin: 0 1em;
   text-align: center;
-  /*width: 100%;*/
+
   padding: .5em;
 }
 figcaption {
@@ -484,16 +489,6 @@ figcaption {
   caption-side: bottom;
   font-weight: 700;
 }
-/*img.logo {
-  padding-right: 2em;
-}*/
-
-  /*#research, #prototyping  {
-  /*margin-left : 15vw;*/
-/*  flex-flow: row wrap;
-  justify-content: flex-start;
-align-content: flex-start;
-}*/
 
   .single {
     align-items: center;
@@ -576,7 +571,7 @@ align-content: flex-start;
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
-    padding: 2em 0;
+    /*padding: 2em 0;*/
   }
   .detail.white-g {
     display: flex;
@@ -584,36 +579,24 @@ align-content: flex-start;
     align-items: flex-start;
     max-width: 100vw;
     padding: 2em 10vw;
-    /*margin-bottom: 2em;*/
-  }
-   /*#design .left, #design .right {
-    display: flex;
-    height: 40vw;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-    padding: 0;
-    margin-bottom: 1em;
-  }*/
-  /*.row {
 
-    display: flex;
-    padding-bottom: 2em;
-  }*/
+  }
+
 .summary {
   display: flex;
     justify-content: flex-start;
     flex-flow:column nowrap;
     align-items: flex-start;
-    /*background-color: #FFFAF0;*/
     width: 50vw;
     padding-left: 10vw;
     padding-bottom:7em;
+    padding-top: 2em;
     box-sizing: border-box;
 
   }
   .summary.summary-right {
-    padding-left: 2vw;
-    padding-bottom: 7em;
+    padding:2em 2em 7em;
+
 
   }
   h4.tag {
@@ -647,10 +630,7 @@ h6.caption {
   flex-flow: row wrap;
   justify-content: center;
 }
-  /*#design .white-g,  #user-test .white-g {*/
-    /*flex-flow: row wrap;
-    justify-content: center;
-  } */
+
    .item {
     display: flex;
     flex-flow: row nowrap;
@@ -659,12 +639,7 @@ h6.caption {
     justify-content: flex-start;
     margin: 0 0 2em;
   }
-   /*.item h5 {
-    align-self: center;
-  }*/
-/*#prototyping, #lessons-learned {
-  padding: 1em 15vw;
-}*/
+
   .big-element {
     /*max-width: 80%;*/
     margin: 0 auto;
