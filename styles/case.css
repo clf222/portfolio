@@ -11,10 +11,10 @@ body {
   color: #FFFFFF;
   border-bottom: 1px solid #FFFFFF;
 }
-.dark {
+/*.dark {
   color: #151515;
   text-decoration: underline;
-}
+}*/
 
 .light {
     color: #FFFAF0;
@@ -25,6 +25,9 @@ body {
 }
 .blue {
   color: #336699;
+}
+a:visited {
+  color: #9CAA5F;
 }
 
 /** buttons **/
