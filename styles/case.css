@@ -85,7 +85,8 @@ h4.transform {
 
 h5 {
   font-size: 1.4em;
-  margin-bottom: .5em;
+  margin: 5px 0;
+
 }
 
 li span {
@@ -230,6 +231,10 @@ h3.baloo {
   width: 100%;
   flex-flow: column nowrap;
 }
+.right {
+  align-items: center;
+  justify-content: flex-start;
+}
 .summary, .summary-right {
   padding: 1em 0;
 }
@@ -265,18 +270,19 @@ ul.list li {
   align-items: center;
   justify-content: center;
 }
+.align-center {
+  align-self: center;
+}
 
 #lessons-learned {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
-h5, h6 {
-  text-align: center;
-  margin: 1em auto;
-}
+
 h6 {
   font-size: 1.2em;
+  margin: 0;
 }
 
 ul.list {
@@ -314,15 +320,26 @@ ul.list {
 }
 
 
-/*End Research*/
-/*Design*/
-/*#design, #user-test {
+.summary {
   display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
-  justify-content: flex-start;
-  background-color: #FFFAF0;
-}*/
+    justify-content: flex-start;
+    flex-flow:column nowrap;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+
+  figure {
+    display: table;
+    margin: 0 1em;
+    text-align: center;
+    padding: .5em;
+  }
+  figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    font-weight: 700;
+  }
 
 .enlarge-container {
     position: relative;
@@ -330,12 +347,25 @@ ul.list {
     right: 0;
     width: 300px;
     text-align: right;
-    background: #c1c1c1;
+    background: rgba(164,179,87,1);
+    background: -moz-linear-gradient(top, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(164,179,87,.7)), color-stop(100%, rgba(117,137,12,.7)));
+    background: -webkit-linear-gradient(top, rgba(164,179,87,.7) 0%, rgba(117,137,12,.7) 100%);
+    background: -o-linear-gradient(top, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+    background: -ms-linear-gradient(top, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+    background: linear-gradient(to bottom, rgba(164,179,87,.7) 0%, rgba(117,137,12,.7) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c', GradientType=0 );
     padding: 10px;
     box-sizing: border-box;
     align-self: center;
     display: flex;
     flex-flow: column nowrap;
+}
+.enlarge-container a {
+  text-decoration: none;
+}
+.enlarge-container a:hover {
+  color: #151515;
 }
  .img-wrapper {
   position: relative;
@@ -406,6 +436,7 @@ justify-content: flex-start;
 }
 .section-head {
   padding-left: 10vw;
+  text-align: left;
 }
 /*.large-left, .large-right {
   width: 50vw;
@@ -439,18 +470,6 @@ justify-content: flex-start;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: flex-end;
-}
-figure {
-  display: table;
-  margin: 0 1em;
-  text-align: center;
-
-  padding: .5em;
-}
-figcaption {
-  display: table-caption;
-  caption-side: bottom;
-  font-weight: 700;
 }
 
   .single {
@@ -522,10 +541,11 @@ figcaption {
     margin-bottom: .6em;
     text-indent: -1.3em;
   }
-   h4, h5, h6{
+   h4 {
     margin-top: 0;
     margin-bottom: 1em;
   }
+
 
 
   #intro {
@@ -553,12 +573,9 @@ figcaption {
     padding-bottom:7em;
     padding-top: 2em;
     box-sizing: border-box;
-
   }
   .summary.summary-right {
-    padding:2 2em 7em;
-
-
+    padding: 2em 7em;
   }
   h4.tag {
   font-size: 3em;
@@ -568,7 +585,7 @@ figcaption {
   margin: 0 auto;
 }
 
-
+/*
 h6.caption {
   padding: 5px;
   background: rgba(164,179,87,1);
@@ -580,7 +597,7 @@ h6.caption {
   background: linear-gradient(to bottom, rgba(164,179,87,.7) 0%, rgba(117,137,12,.7) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c', GradientType=0 );
   width: 100%;
-}
+}*/
 
   #lessons-learned {
   flex-flow: row wrap;
