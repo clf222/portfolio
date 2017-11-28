@@ -11,10 +11,6 @@ body {
   color: #FFFFFF;
   border-bottom: 1px solid #FFFFFF;
 }
-/*.dark {
-  color: #151515;
-  text-decoration: underline;
-}*/
 
 .light {
     color: #FFFAF0;
@@ -76,7 +72,7 @@ h3 {
   margin: 0;
 }
 h4 {
-  font-size: 1.3
+  font-size: 1.3em;
   font-weight: 700;
 
 }
@@ -85,12 +81,39 @@ h4.transform {
   letter-spacing: 5px;
   margin: 0;
 }
+h4.transform.sum-heading {
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 7px;
+  margin-bottom: .5em;
+}
 
 h5 {
   font-size: 1.4em;
   margin: 5px 0;
 
 }
+.test-gradient {
+  color: #FFFAF0;
+  background: rgba(177,184,142,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(177,184,142,1) 0%, rgba(123,139,45,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(177,184,142,1)), color-stop(100%, rgba(123,139,45,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(177,184,142,1) 0%, rgba(123,139,45,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(177,184,142,1) 0%, rgba(123,139,45,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(177,184,142,1) 0%, rgba(123,139,45,1) 100%);
+background: radial-gradient(ellipse at center, rgba(177,184,142,1) 0%, rgba(123,139,45,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b1b88e', endColorstr='#7b8b2d', GradientType=1 );
+}
+.test-gradient1 {
+  color: #151515;
+  background: rgba(255,255,255,1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );}
 
 li span {
   font-weight: 700;
@@ -239,6 +262,13 @@ h3.baloo {
   align-items: center;
   justify-content: flex-start;
 }
+.logos {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .summary, .summary-right {
   padding: 1em 0;
 }
@@ -273,6 +303,10 @@ ul.list li {
   justify-content: flex-start;
   align-items: center;
   justify-content: center;
+}
+#design {
+  padding: 0;
+  background-color: rgba(255,255,255,0);
 }
 .align-center {
   align-self: center;
@@ -380,9 +414,9 @@ ul.list {
 #methodology h4 {
   align-self: flex-start;
 }
-#user-test h4 {
+/*#user-test h4 {
   color: #151515;
-}
+}*/
 
 /*lessons learned*/
 #lessons-learned {
@@ -421,6 +455,7 @@ footer p {
       font-size: 1.1em;
       margin-bottom: 1em;
     }
+
 .summary p {
   font-size: 1.2em;
   font-weight: bold;
@@ -470,7 +505,7 @@ justify-content: flex-start;
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 2em 0;
+  /*padding: 2em 0;*/
 }
 .logos {
   display: flex;
@@ -569,18 +604,25 @@ justify-content: flex-start;
     padding: 2em 10vw;
 
   }
-
-.summary {
+.row {
   display: flex;
-    justify-content: flex-start;
+}
+.summary.summary-header {
+    display: flex;
     flex-flow:column nowrap;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     width: 50vw;
-    padding-left: 10vw;
-    /*padding-bottom:7em;*/
-    padding-top: 2em;
-    box-sizing: border-box;
+    padding:5em 3em;
+    /*padding-left: 10vw;
+    padding-top: 2em;*/
+    /*box-sizing: border-box;*/
   }
+  /*.summary.summary-header {
+      justify-content: center;
+      align-items: center;
+      /*padding: 4em;*/
+    }*/
   .summary-right {
     padding: 2em 10vw 0 1em;
   }*/
