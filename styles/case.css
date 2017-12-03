@@ -382,14 +382,15 @@ ul.list {
     right: 0;
     width: 300px;
     text-align: right;
-    background: rgba(164,179,87,1);
-    background: -moz-linear-gradient(top, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(164,179,87,.7)), color-stop(100%, rgba(117,137,12,.7)));
-    background: -webkit-linear-gradient(top, rgba(164,179,87,.7) 0%, rgba(117,137,12,.7) 100%);
-    background: -o-linear-gradient(top, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
-    background: -ms-linear-gradient(top, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
-    background: linear-gradient(to bottom, rgba(164,179,87,.7) 0%, rgba(117,137,12,.7) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c', GradientType=0 );
+    color: #FFFAF0;
+    background: rgba(73,155,234,1);
+    background: -moz-linear-gradient(-45deg, rgba(73,155,234,1) 0%, rgba(16,47,66,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(16,47,66,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(73,155,234,1) 0%, rgba(16,47,66,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(73,155,234,1) 0%, rgba(16,47,66,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(73,155,234,1) 0%, rgba(16,47,66,1) 100%);
+    background: linear-gradient(135deg, rgba(73,155,234,1) 0%, rgba(16,47,66,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#102f42', GradientType=1 );
     padding: 10px;
     box-sizing: border-box;
     align-self: center;
@@ -577,12 +578,12 @@ footer p {
     flex-flow:column nowrap;
     justify-content: flex-start;
     align-items: center;
-    width: 48vw;
+    width: 50vw;
     padding:5em 3em;
-    margin: 0 1vw 1em 1vw;
-    border-radius: 40px;
-    flex-grow: 1;
-    box-sizing: border-box;
+    /*margin: 0 1vw 1em 1vw;*/
+    /*border-radius: 40px;*/
+    /*flex-grow: 1;
+    box-sizing: border-box;*/
   }
   .summary-right {
     margin: 0 1vw 1em 1vw;
