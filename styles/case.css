@@ -291,7 +291,6 @@ img.element.proto,img.element.big-element {
   align-self: center;
   margin: 0;
   max-width: 300px;
-
 }
 
 .problem {
@@ -323,7 +322,6 @@ ul.list li {
 }
 #design {
   padding: 0;
-  background-color: rgba(255,255,255,0);
 }
 .align-center {
   align-self: center;
@@ -359,25 +357,11 @@ ul.list {
   align-items: center;
   flex-flow: column nowrap;
 }
-/*Research*/
-#research {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: flex-start;
-}
-.single {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 1em;
-}
 
 .summary {
   display: flex;
   justify-content: flex-start;
-  flex-flow:column nowrap;
+  flex-flow: column nowrap;
   align-items: center;
   padding: 1em;
   box-sizing: border-box;
@@ -439,8 +423,6 @@ figcaption {
 
 /*lessons learned*/
 #lessons-learned {
-  display:flex;
-  flex-flow: column nowrap;
   padding: 1em;
   background-color: #FFFAF0;
 }
@@ -499,15 +481,12 @@ footer p {
 }
 
 #methodology, #research, #prototyping, #lessons-learned {
-  display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
   align-items: flex-start;
   padding: 2em 10vw;
 }
 
 #design, #user-test {
-  display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: flex-start;
@@ -606,18 +585,9 @@ ul.list li {
 }
 
 .summary {
-  display: flex;
-  flex-flow:column nowrap;
-  justify-content: flex-start;
-  align-items: center;
   width: 50vw;
   padding:5em 3em;
   }
-
-.summary-right {
-  margin: 0 1vw 1em 1vw;
-  box-sizing: border-box;
-}
 
 h4.tag {
   font-size: 3em;
